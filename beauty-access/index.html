@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Access — Salon de beauté à Abidjan | Brushing • Kératine • Maquillage</title>
+<meta name="description" content="Beauty Access, salon de beauté à Abidjan (Rue Alex Fleming) : brushing, kératine & lissage, pédicure, maquillage. Réservez sur WhatsApp au +225 07 59 34 92 48.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrole:#0B3538;
+  --petrole-2:#0F454A;
+  --petrole-3:#155E63;
+  --turq:#17A398;
+  --turq-clair:#7FD1C8;
+  --sable:#F5EFE3;
+  --sable-2:#EFE5D0;
+  --sable-3:#E4D5B8;
+  --encre:#14312F;
+  --encre-doux:#5F7470;
+  --ligne:rgba(11,53,56,.16);
+  --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Karla',sans-serif;
+  background:var(--sable);
+  color:var(--encre);
+  line-height:1.65;
+  font-weight:400;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,.serif{font-family:'Italiana',serif;font-weight:400;line-height:1.08;letter-spacing:.015em}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.7rem;
+  text-transform:uppercase;letter-spacing:.32em;font-size:.68rem;font-weight:700;color:var(--turq);
+}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--turq)}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.95rem 2rem;border-radius:999px;font-weight:600;font-size:.96rem;
+  letter-spacing:.02em;transition:.25s ease;border:1px solid transparent;cursor:pointer;
+}
+.btn-turq{background:var(--turq);color:#F2FBF9}
+.btn-turq:hover{background:var(--petrole-3);transform:translateY(-2px)}
+.btn-contour{border-color:var(--petrole);color:var(--petrole);background:transparent}
+.btn-contour:hover{background:var(--petrole);color:var(--sable)}
+.btn-clair{background:var(--sable);color:var(--petrole)}
+.btn-clair:hover{background:#fff;transform:translateY(-2px)}
+
+/* ---------- Bandeau démo ---------- */
+.demo-banner{
+  background:var(--turq);color:#EAFBF7;text-align:center;
+  font-size:.82rem;letter-spacing:.04em;padding:.55rem 1rem;
+}
+.demo-banner strong{font-weight:700}
+
+/* ---------- Navigation ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(245,239,227,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--ligne);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+.logo{display:flex;align-items:center;gap:.75rem}
+.logo-mark{
+  width:46px;height:46px;border-radius:14px 14px 14px 2px;
+  background:var(--petrole);color:var(--turq-clair);
+  display:grid;place-items:center;
+  font-family:'Italiana',serif;font-size:1.15rem;
+}
+.logo-text{font-family:'Italiana',serif;font-size:1.42rem;color:var(--petrole);line-height:1.05;letter-spacing:.04em}
+.logo-text small{display:block;font-family:'Karla',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--turq);margin-top:.28rem}
+.nav-links{display:flex;gap:2rem;font-size:.94rem;font-weight:500}
+.nav-links a{position:relative;padding:.2rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--turq);transition:.25s}
+.nav-links a:hover::after{width:100%}
+.nav .btn{padding:.62rem 1.35rem}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* ---------- Hero asymétrique ---------- */
+.hero{padding:3.4rem 0 4.4rem;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.hero-txt .surtitre{font-size:.78rem;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--encre-doux)}
+.hero h1{font-size:clamp(3rem,6.4vw,5rem);color:var(--petrole);margin:.8rem 0 .4rem}
+.hero h1 em{font-style:normal;color:var(--turq)}
+.hero p.lead{font-size:1.12rem;color:var(--encre-doux);margin:1.1rem 0 1.9rem;max-width:32rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-infos{display:flex;gap:2.2rem;margin-top:2.4rem;flex-wrap:wrap}
+.hero-infos div{border-left:2px solid var(--turq);padding-left:1rem}
+.hero-infos strong{display:block;font-family:'Italiana',serif;font-size:1.25rem;color:var(--petrole)}
+.hero-infos span{font-size:.84rem;color:var(--encre-doux)}
+.hero-visuel{position:relative}
+.hero-visuel .photo-main{
+  border-radius:var(--radius);overflow:hidden;aspect-ratio:4/4.7;
+  box-shadow:26px 26px 0 var(--sable-2);
+}
+.hero-visuel .photo-main img{width:100%;height:100%;object-fit:cover}
+.hero-visuel .photo-mini{
+  position:absolute;left:-2.6rem;bottom:2.4rem;width:46%;
+  border-radius:16px;overflow:hidden;border:6px solid var(--sable);
+  box-shadow:0 18px 40px rgba(11,53,56,.25);aspect-ratio:4/3;
+}
+.hero-visuel .photo-mini img{width:100%;height:100%;object-fit:cover}
+.hero-badge{
+  position:absolute;top:1.4rem;right:-.6rem;
+  background:var(--petrole);color:var(--sable);
+  border-radius:16px;padding:.95rem 1.2rem;text-align:left;
+  box-shadow:0 16px 34px rgba(11,53,56,.28);
+}
+.hero-badge strong{display:block;font-family:'Italiana',serif;font-size:1.45rem;color:var(--turq-clair);line-height:1}
+.hero-badge span{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#BCD8D2}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visuel .photo-mini{left:.8rem}
+  .hero-visuel .photo-main{aspect-ratio:4/3.4}
+}
+
+/* ---------- Marquee ---------- */
+.marquee{
+  background:var(--turq);color:#EAFBF7;overflow:hidden;white-space:nowrap;
+  padding:.85rem 0;transform:rotate(-1.1deg) scale(1.02);
+}
+.marquee-track{display:inline-block;animation:defile 30s linear infinite;font-family:'Italiana',serif;font-size:1.15rem;letter-spacing:.22em;text-transform:uppercase}
+.marquee-track span{margin:0 1.6rem}
+.marquee-track i{font-style:normal;color:var(--petrole)}
+@keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+section{padding:4.6rem 0}
+.sec-head{max-width:40rem;margin-bottom:2.8rem}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--petrole);margin:.7rem 0 .6rem}
+.sec-head p{color:var(--encre-doux)}
+
+/* ---------- Prestations (liste éditoriale) ---------- */
+.presta-liste{border-top:1px solid var(--ligne)}
+.presta{
+  display:grid;grid-template-columns:110px 1fr 300px auto;gap:1.8rem;align-items:center;
+  padding:1.9rem .4rem;border-bottom:1px solid var(--ligne);transition:.25s;
+}
+.presta:hover{background:rgba(255,255,255,.45)}
+.presta .num{font-family:'Italiana',serif;font-size:2.6rem;color:var(--turq);line-height:1}
+.presta h3{font-size:1.65rem;color:var(--petrole);margin-bottom:.35rem}
+.presta p{color:var(--encre-doux);font-size:.96rem;max-width:34rem}
+.presta figure{border-radius:14px;overflow:hidden;aspect-ratio:16/10}
+.presta figure img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.presta:hover figure img{transform:scale(1.05)}
+.presta .lien-presta{
+  font-weight:700;font-size:.88rem;color:var(--petrole);white-space:nowrap;
+  border-bottom:2px solid var(--turq);padding-bottom:.2rem;transition:.25s;
+}
+.presta .lien-presta:hover{color:var(--turq)}
+@media(max-width:960px){
+  .presta{grid-template-columns:64px 1fr}
+  .presta figure{grid-column:2}
+  .presta .lien-presta{grid-column:2}
+}
+
+/* ---------- Bande Instagram ---------- */
+.bande{background:var(--petrole);color:var(--sable);padding:3rem 0;border-radius:26px;margin:0 auto;width:min(1180px,92%)}
+.bande-in{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding:0 2.4rem}
+.bande h2{font-size:clamp(1.6rem,3vw,2.3rem);color:var(--sable)}
+.bande h2 em{font-style:normal;color:var(--turq-clair)}
+.bande p{color:#B9D2CC;font-size:.98rem;max-width:34rem}
+.bande .chiffres{display:flex;gap:2.4rem}
+.bande .chiffres div{text-align:left}
+.bande .chiffres strong{display:block;font-family:'Italiana',serif;font-size:1.9rem;color:var(--turq-clair);line-height:1}
+.bande .chiffres span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#9DBFB6}
+
+/* ---------- Expérience ---------- */
+.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.exp-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.exp-photos figure{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/3.6}
+.exp-photos figure:nth-child(2){margin-top:2.2rem}
+.exp-photos figure:nth-child(3){grid-column:span 2;aspect-ratio:16/8;margin-top:-1rem}
+.exp-photos img{width:100%;height:100%;object-fit:cover}
+.exp-grid h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--petrole);margin:.7rem 0 .8rem}
+.exp-grid p{color:var(--encre-doux);margin-bottom:1rem}
+.exp-grid ul{list-style:none;margin:1.2rem 0 1.8rem}
+.exp-grid li{padding:.55rem 0 .55rem 1.9rem;position:relative;border-bottom:1px dashed var(--ligne)}
+.exp-grid li::before{content:"✦";position:absolute;left:.2rem;color:var(--turq)}
+@media(max-width:900px){.exp-grid{grid-template-columns:1fr}}
+
+/* ---------- Galerie ---------- */
+.galerie{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.galerie figure{border-radius:16px;overflow:hidden;aspect-ratio:3/3.4}
+.galerie figure:nth-child(2),.galerie figure:nth-child(6){transform:translateY(1.4rem)}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.galerie figure:hover img{transform:scale(1.06)}
+@media(max-width:860px){.galerie{grid-template-columns:repeat(2,1fr)}.galerie figure:nth-child(2),.galerie figure:nth-child(6){transform:none}}
+
+/* ---------- Réservation ---------- */
+.resa{background:var(--sable-2);border-radius:26px;width:min(1180px,92%);margin:0 auto;padding:4.2rem 0}
+.resa .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+.resa .sec-head .eyebrow::after{content:"";width:30px;height:1px;background:var(--turq)}
+.resa-box{
+  background:#FFFDF7;border:1px solid var(--ligne);border-radius:var(--radius);
+  padding:2.2rem;max-width:620px;margin:0 auto;
+  box-shadow:0 20px 44px rgba(11,53,56,.10);
+}
+.resa-box label{display:block;font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--petrole);margin:1.1rem 0 .4rem}
+.resa-box label:first-of-type{margin-top:0}
+.resa-box input,.resa-box select,.resa-box textarea{
+  width:100%;padding:.85rem 1rem;border:1px solid var(--ligne);border-radius:12px;
+  font-family:'Karla',sans-serif;font-size:.98rem;background:var(--sable);color:var(--encre);
+}
+.resa-box textarea{min-height:96px;resize:vertical}
+.resa-box .btn{width:100%;justify-content:center;margin-top:1.5rem}
+.resa-note{text-align:center;color:var(--encre-doux);font-size:.9rem;margin-top:1.2rem}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.contact-card{
+  background:#FFFDF7;border:1px solid var(--ligne);border-radius:var(--radius);
+  padding:1.9rem;transition:.25s;
+}
+.contact-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(11,53,56,.10)}
+.contact-card .ic{font-size:1.5rem;margin-bottom:.7rem}
+.contact-card h3{font-size:1.35rem;color:var(--petrole);margin-bottom:.45rem}
+.contact-card p{color:var(--encre-doux);font-size:.95rem}
+.contact-card .lien{color:var(--turq);font-weight:700}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+/* ---------- Pied de page ---------- */
+footer{background:var(--petrole);color:#B9D2CC;padding:3rem 0 2.4rem;text-align:center;margin-top:2rem}
+footer .logo-text{color:var(--sable);font-size:1.5rem}
+footer p{font-size:.92rem;margin-top:.7rem}
+footer a{text-decoration:underline;color:var(--turq-clair)}
+.demo-mention{
+  margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid rgba(245,239,227,.18);
+  font-size:.8rem;color:#8FB3AA;max-width:44rem;margin-left:auto;margin-right:auto;
+}
+
+/* ---------- Bouton WhatsApp flottant ---------- */
+.wa-float{
+  position:fixed;right:1.3rem;bottom:1.3rem;z-index:80;
+  width:58px;height:58px;border-radius:50%;background:#25D366;
+  display:grid;place-items:center;box-shadow:0 12px 28px rgba(11,53,56,.3);transition:.25s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Maquette de démonstration — <strong>site non officiel du salon Beauty Access</strong>, réalisée à titre d'aperçu gratuit.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">
+      <span class="logo-mark">B</span>
+      <span class="logo-text">Beauty Access<small>Salon de beauté — Abidjan</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#prestations">Prestations</a>
+      <a href="#salon">Le salon</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-turq" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener">Réserver</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <span class="surtitre">Rue Alex Fleming · Abidjan</span>
+      <h1>Des cheveux <em>lisses</em>,<br>un teint <em>éclatant</em>,<br>sans y passer la journée.</h1>
+      <p class="lead">Beauty Access réunit les gestes qui changent tout : brushing impeccable, kératine qui discipline durablement, pédicure soignée et maquillage qui tient du matin au soir.</p>
+      <div class="hero-cta">
+        <a class="btn btn-turq" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener">Prendre rendez-vous sur WhatsApp</a>
+        <a class="btn btn-contour" href="#prestations">Découvrir les prestations</a>
+      </div>
+      <div class="hero-infos">
+        <div>
+          <strong>Rue Alex Fleming</strong>
+          <span>Abidjan, Côte d'Ivoire</span>
+        </div>
+        <div>
+          <strong>Sur rendez-vous</strong>
+          <span>Créneaux confirmés sur WhatsApp</span>
+        </div>
+        <div>
+          <strong>+225 07 59 34 92 48</strong>
+          <span>Appels & WhatsApp</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visuel">
+      <figure class="photo-main"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1000&q=80&auto=format&fit=crop" alt="Coiffage et brushing en salon"></figure>
+      <figure class="photo-mini"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=80&auto=format&fit=crop" alt="Maquillage professionnel en cours"></figure>
+      <div class="hero-badge">
+        <strong>3 400+</strong>
+        <span>abonnés Instagram</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Brushing</span><i>✦</i><span>Kératine</span><i>✦</i><span>Lissage</span><i>✦</i><span>Pédicure</span><i>✦</i><span>Maquillage</span><i>✦</i><span>Beauté des pieds</span><i>✦</i>
+    <span>Brushing</span><i>✦</i><span>Kératine</span><i>✦</i><span>Lissage</span><i>✦</i><span>Pédicure</span><i>✦</i><span>Maquillage</span><i>✦</i><span>Beauté des pieds</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ================= PRESTATIONS ================= -->
+<section id="prestations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Prestations</span>
+      <h2>La carte du salon</h2>
+      <p>Cinq prestations, un même niveau d'exigence. Les tarifs se confirment en quelques messages sur WhatsApp, selon votre longueur de cheveux et l'effet recherché.</p>
+    </div>
+    <div class="presta-liste">
+
+      <article class="presta">
+        <span class="num">01</span>
+        <div>
+          <h3>Brushing signature</h3>
+          <p>Le brushing qui tombe juste : volume maîtrisé, pointes disciplinées et brillance miroir, pour une coiffure qui tient plusieurs jours.</p>
+        </div>
+        <figure><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80&auto=format&fit=crop" alt="Brushing et mise en forme des cheveux"></figure>
+        <a class="lien-presta" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20devis%20pour%20un%20brushing." target="_blank" rel="noopener">Devis WhatsApp →</a>
+      </article>
+
+      <article class="presta">
+        <span class="num">02</span>
+        <div>
+          <h3>Kératine & lissage</h3>
+          <p>Le soin profond qui nourrit la fibre, dompte les frisottis et laisse les cheveux souples et lisses durablement — même sous l'humidité d'Abidjan.</p>
+        </div>
+        <figure><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&q=80&auto=format&fit=crop" alt="Soin capillaire et lissage en salon"></figure>
+        <a class="lien-presta" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20devis%20pour%20un%20soin%20k%C3%A9ratine." target="_blank" rel="noopener">Devis WhatsApp →</a>
+      </article>
+
+      <article class="presta">
+        <span class="num">03</span>
+        <div>
+          <h3>Pédicure & beauté des pieds</h3>
+          <p>Bain relaxant, soin des ongles et de la peau, finition impeccable : des pieds doux et soignés, prêts pour les sandales toute l'année.</p>
+        </div>
+        <figure><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80&auto=format&fit=crop" alt="Pédicure et soin des pieds"></figure>
+        <a class="lien-presta" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20devis%20pour%20une%20p%C3%A9dicure." target="_blank" rel="noopener">Devis WhatsApp →</a>
+      </article>
+
+      <article class="presta">
+        <span class="num">04</span>
+        <div>
+          <h3>Maquillage jour & soirée</h3>
+          <p>Un teint lumineux et un regard souligné, naturel le jour et plus intense le soir — avec des produits adaptés aux peaux et à la lumière d'Abidjan.</p>
+        </div>
+        <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80&auto=format&fit=crop" alt="Maquillage et mise en beauté du teint"></figure>
+        <a class="lien-presta" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20devis%20pour%20un%20maquillage." target="_blank" rel="noopener">Devis WhatsApp →</a>
+      </article>
+
+      <article class="presta">
+        <span class="num">05</span>
+        <div>
+          <h3>Maquillage événementiel</h3>
+          <p>Mariages, cérémonies, shootings : une mise en beauté complète et longue tenue, pensée pour durer toute la fête et briller sur les photos.</p>
+        </div>
+        <figure><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80&auto=format&fit=crop" alt="Maquillage de cérémonie"></figure>
+        <a class="lien-presta" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20devis%20pour%20un%20maquillage%20%C3%A9v%C3%A9nementiel." target="_blank" rel="noopener">Devis WhatsApp →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANDE INSTAGRAM ================= -->
+<div class="bande">
+  <div class="bande-in">
+    <div>
+      <h2>Le salon se vit aussi sur <em>Instagram</em></h2>
+      <p>Réalisations, nouveautés et coulisses : @beautyaccessabj partage le quotidien du salon et les résultats de ses clientes, semaine après semaine.</p>
+    </div>
+    <div class="chiffres">
+      <div>
+        <strong>3 400+</strong>
+        <span>abonnés Instagram</span>
+      </div>
+      <div>
+        <strong>5</strong>
+        <span>prestations signature</span>
+      </div>
+    </div>
+    <a class="btn btn-clair" href="https://www.instagram.com/beautyaccessabj/" target="_blank" rel="noopener">Voir le compte Instagram</a>
+  </div>
+</div>
+
+<!-- ================= LE SALON ================= -->
+<section id="salon">
+  <div class="wrap exp-grid">
+    <div class="exp-photos">
+      <figure><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=900&q=80&auto=format&fit=crop" alt="Intérieur d'un salon de beauté"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80&auto=format&fit=crop" alt="Espace coiffure du salon"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?w=900&q=80&auto=format&fit=crop" alt="Shampooing et soin des cheveux"></figure>
+    </div>
+    <div>
+      <span class="eyebrow">Le salon</span>
+      <h2>La beauté en accès direct, rue Alex Fleming</h2>
+      <p>Installé rue Alex Fleming à Abidjan, Beauty Access mise sur l'essentiel : des gestes techniques maîtrisés — brushing, kératine, pédicure, maquillage — et une réservation simple, directement sur WhatsApp.</p>
+      <p>Pas d'attente interminable ni de mauvaise surprise : vous décrivez votre envie, le salon confirme le créneau et le tarif avant votre venue.</p>
+      <ul>
+        <li>Spécialiste du cheveu lisse : brushing et kératine</li>
+        <li>Beauté complète au même endroit : cheveux, pieds, maquillage</li>
+        <li>Suivi par plus de 3 400 abonnés sur Instagram</li>
+        <li>Réponse rapide sur WhatsApp, rendez-vous confirmé en quelques messages</li>
+      </ul>
+      <a class="btn btn-turq" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20des%20informations%20sur%20vos%20prestations." target="_blank" rel="noopener">Écrire au salon</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIE ================= -->
+<section id="galerie">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Galerie</span>
+      <h2>L'univers Beauty Access en images</h2>
+      <p>Cheveux soyeux, teints lumineux et finitions nettes : un aperçu de l'atmosphère qui vous attend rue Alex Fleming.</p>
+    </div>
+    <div class="galerie">
+      <figure><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800&q=80&auto=format&fit=crop" alt="Cheveux longs et brillants"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&q=80&auto=format&fit=crop" alt="Portrait beauté au teint lumineux"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80&auto=format&fit=crop" alt="Produits et pinceaux de maquillage"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=800&q=80&auto=format&fit=crop" alt="Poste de coiffure en salon"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80&auto=format&fit=crop" alt="Mise en beauté en cours"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80&auto=format&fit=crop" alt="Détente et soin des pieds"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80&auto=format&fit=crop" alt="Soin et finition soignée"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&q=80&auto=format&fit=crop" alt="Finition brushing en salon"></figure>
+    </div>
+    <div style="text-align:center;margin-top:3.2rem">
+      <a class="btn btn-contour" href="https://wa.me/2250759349248?text=Bonjour%2C%20j%27ai%20vu%20vos%20r%C3%A9alisations%20et%20je%20souhaite%20r%C3%A9server%20la%20m%C3%AAme%20prestation." target="_blank" rel="noopener">Je veux la même chose → WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RÉSERVATION ================= -->
+<section id="reservation" style="padding-top:0">
+  <div class="resa">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Réservation</span>
+        <h2>Votre moment commence ici</h2>
+        <p>Remplissez ce court formulaire : WhatsApp s'ouvre avec votre demande déjà rédigée, prête à être envoyée au salon.</p>
+      </div>
+      <form class="resa-box" id="resaForm">
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Ex : Aïcha Koné" required>
+        <label for="prestation">Prestation souhaitée</label>
+        <select id="prestation" name="prestation">
+          <option>Brushing signature</option>
+          <option>Kératine & lissage</option>
+          <option>Pédicure & beauté des pieds</option>
+          <option>Maquillage jour & soirée</option>
+          <option>Maquillage événementiel</option>
+          <option>Autre demande</option>
+        </select>
+        <label for="date">Jour souhaité</label>
+        <input type="text" id="date" name="date" placeholder="Ex : samedi prochain, en fin de matinée">
+        <label for="message">Précisions (optionnel)</label>
+        <textarea id="message" name="message" placeholder="Dites-nous en plus : envie particulière, question sur une prestation..."></textarea>
+        <button type="submit" class="btn btn-turq">Envoyer ma demande sur WhatsApp</button>
+      </form>
+      <p class="resa-note">Le salon reçoit votre message sur WhatsApp et vous confirme le rendez-vous directement. Aucun paiement en ligne : tout se règle sur place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Nous trouver, nous écrire</h2>
+      <p>Rue Alex Fleming, à Abidjan : un seul numéro pour réserver, poser une question ou demander un devis.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="ic">📍</div>
+        <h3>Adresse</h3>
+        <p>Rue Alex Fleming<br>Abidjan — Côte d'Ivoire</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://maps.app.goo.gl/r1cUJppDTmaHQNkB6?g_st=ic" target="_blank" rel="noopener">Voir l'emplacement →</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="ic">📞</div>
+        <h3>Téléphone & WhatsApp</h3>
+        <p>+225 07 59 34 92 48<br>Sur rendez-vous — écrivez-nous pour réserver votre créneau.</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noopener">Discuter sur WhatsApp →</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="ic">📸</div>
+        <h3>Instagram</h3>
+        <p>BEAUTY ACCESS<br>@beautyaccessabj — réalisations et nouveautés du salon, chaque semaine.</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://www.instagram.com/beautyaccessabj/" target="_blank" rel="noopener">Voir le compte →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo-text">Beauty Access</span>
+    <p>Brushing · Kératine & lissage · Pédicure · Maquillage — Rue Alex Fleming, Abidjan · +225 07 59 34 92 48</p>
+    <p><a href="https://wa.me/2250759349248" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.instagram.com/beautyaccessabj/" target="_blank" rel="noopener">Instagram</a></p>
+    <p class="demo-mention">Maquette de démonstration — site non officiel du salon Beauty Access, réalisée à titre d'aperçu gratuit. Les photos sont des images d'illustration.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250759349248?text=Bonjour%20Beauty%20Access%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" aria-label="Contacter le salon sur WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.4-2.2c1.4.8 3 1.2 4.6 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.5 0-2.9-.4-4.2-1.2l-.3-.2-3.9 1.2 1.2-3.8-.2-.4a9.7 9.7 0 0 1-1.5-5.4C7.1 9.6 11 5.6 16 5.6S24.9 9.6 24.9 14.9 21 24.7 16 24.7zm5.3-7.1c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.1-.3.2-.6.1a7.9 7.9 0 0 1-2.3-1.2 8.7 8.7 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 2-1.3.3-.7.3-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+document.getElementById('resaForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var nom = document.getElementById('nom').value.trim();
+  var prestation = document.getElementById('prestation').value;
+  var date = document.getElementById('date').value.trim();
+  var message = document.getElementById('message').value.trim();
+  var texte = "Bonjour Beauty Access, je suis " + nom + ". Je souhaite réserver : " + prestation + ".";
+  if(date){ texte += " Jour souhaité : " + date + "."; }
+  if(message){ texte += " Précisions : " + message; }
+  texte += " Merci de me confirmer le rendez-vous.";
+  window.open("https://wa.me/2250759349248?text=" + encodeURIComponent(texte), "_blank");
+});
+</script>
+
+</body>
+</html>
