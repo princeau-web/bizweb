@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Kantin — Restaurant africain aux 2 Plateaux, Abidjan · Sauces, Grillades, Plats africains</title>
+<meta name="description" content="La Kantin, restaurant africain atypique à la Résidence Les Vallons, 2 Plateaux, Abidjan : sauces, grillades, coconut prawns, escargots et jus naturels. Réservez votre table sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233A1E12'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23E0A458' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== LA KANTIN — terre cuite, ocre, crème chaude, brun épice. Cantine chic africaine. ===== */
+:root{
+  --brun:#3A1E12; --brun2:#4A2817; --brun3:#5C3420;
+  --creme:#FBF4E6; --creme2:#F4E7CF; --sable:#EAD3AC;
+  --terre:#C0532B; --terre2:#E07B4A; --ocre:#E0A458; --olive:#6B7A3A;
+  --ink:#2E1D12; --gris:#8A6F5C;
+  --wa:#25D366;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Karla",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--creme);color:var(--ink);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--terre);color:var(--creme)}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--terre)}
+.eyebrow::before{content:"";width:38px;height:2px;background:var(--ocre);border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--brun)}
+h2{font-size:clamp(2.1rem,4.4vw,3.3rem)}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--terre)}
+.lead{color:var(--gris);font-size:1.06rem;max-width:56ch}
+section{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head .lead{margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:100px;font-weight:700;font-size:.95rem;transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s,border-color .35s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#08240f;box-shadow:0 12px 30px -10px rgba(37,211,102,.55)}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-ghost{border:1px solid rgba(251,244,230,.45);color:var(--creme)}
+.btn-ghost:hover{border-color:var(--ocre);color:var(--ocre);transform:translateY(-3px)}
+.btn-dark{background:var(--brun);color:var(--creme)}
+.btn-dark:hover{background:var(--brun3);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s var(--ease),border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(42,22,11,.94);backdrop-filter:blur(12px);border-color:rgba(224,164,88,.3)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.55rem;color:var(--creme);font-weight:600}
+.logo b{color:var(--ocre);font-weight:600}
+.logo small{display:block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:rgba(251,244,230,.65)}
+.nav-links{display:flex;gap:36px}
+.nav-links a{color:rgba(251,244,230,.85);font-size:.82rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--ocre);border-radius:2px;transition:width .35s var(--ease)}
+.nav-links a:hover{color:var(--creme)}.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--terre);color:#fff;padding:12px 22px;border-radius:100px;font-weight:800;font-size:.85rem;transition:.35s}
+.nav-cta svg{width:16px;height:16px}
+.nav-cta:hover{background:var(--terre2);transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--brun);color:var(--creme);overflow:hidden;padding:150px 0 0}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,22,11,.9) 0%,rgba(42,22,11,.58) 46%,rgba(42,22,11,.14) 78%),linear-gradient(0deg,rgba(42,22,11,.94) 0%,rgba(42,22,11,0) 44%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:64px}
+.hero .eyebrow{color:var(--ocre)}
+.hero h1{color:var(--creme);font-size:clamp(2.9rem,7vw,5.4rem);font-weight:500;max-width:13ch;margin:26px 0 24px}
+.hero h1 em{color:var(--ocre)}
+.hero p{max-width:52ch;color:rgba(251,244,230,.88);font-size:1.09rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 44px;margin-top:58px;padding-top:26px;border-top:1px solid rgba(251,244,230,.2);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(251,244,230,.75);font-weight:600}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--ocre)}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.24s}.d3{animation-delay:.38s}.d4{animation-delay:.52s}.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.marquee{background:var(--brun);border-top:1px solid rgba(224,164,88,.3);border-bottom:1px solid rgba(224,164,88,.3);overflow:hidden;padding:20px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;animation:marquee 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--serif);font-style:italic;font-size:1.26rem;color:var(--creme);padding:0 26px}
+.marquee-track i{color:var(--ocre);font-style:normal;font-size:.8rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* Carte */
+.carte-sec{background:var(--creme)}
+.dish{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:62px 0;border-top:1px dashed rgba(192,83,43,.35)}
+.dish:first-of-type{border-top:none;padding-top:8px}
+.dish:nth-child(even) .d-media{order:2}
+.d-media{position:relative}
+.d-media::before{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:2px solid var(--ocre);border-radius:18px;z-index:0;transition:transform .6s var(--ease)}
+.dish:hover .d-media::before{transform:translate(10px,10px)}
+.d-media .clip{overflow:hidden;border-radius:18px;position:relative;z-index:1}
+.d-media img{width:100%;height:500px;object-fit:cover;transition:transform .9s var(--ease)}
+.dish:hover .d-media img{transform:scale(1.045)}
+.d-num{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--terre);letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.d-body h3{font-size:clamp(1.9rem,3.2vw,2.6rem);margin:14px 0 6px}
+.d-tag{font-family:var(--serif);font-style:italic;font-size:1.22rem;color:var(--gris);margin-bottom:18px}
+.d-body p{color:#4d3a2a;max-width:48ch}
+.d-points{list-style:none;margin:24px 0 28px;display:grid;gap:11px}
+.d-points li{display:flex;gap:12px;align-items:baseline;font-size:.97rem;font-weight:600;color:var(--ink)}
+.d-points li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--terre);flex:none;transform:translateY(-2px)}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:.95rem;color:var(--brun);border-bottom:2px solid var(--ocre);padding-bottom:4px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:17px;height:17px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+/* Maison / esprit */
+.esprit{background:var(--brun);color:var(--creme)}
+.esprit h2{color:var(--creme)}
+.esprit .lead{color:rgba(251,244,230,.68)}
+.e-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.e-media{position:relative}
+.e-media img{width:100%;height:600px;object-fit:cover;border-radius:18px}
+.e-media::after{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(224,164,88,.4);pointer-events:none}
+.e-badge{position:absolute;left:-24px;bottom:34px;background:var(--ocre);color:var(--brun);padding:18px 24px;border-radius:14px;max-width:260px;box-shadow:0 24px 44px -18px rgba(0,0,0,.65)}
+.e-badge b{font-family:var(--serif);font-size:1.5rem;font-weight:600;display:block;line-height:1.12}
+.e-badge span{font-size:.79rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.e-items{display:grid;margin-top:42px}
+.e-item{display:flex;gap:26px;padding:27px 0;border-top:1px solid rgba(251,244,230,.15)}
+.e-item:first-child{border-top:none;padding-top:4px}
+.e-item .n{font-family:var(--serif);font-style:italic;color:var(--ocre);font-size:1.5rem;line-height:1;flex:none;width:44px}
+.e-item h3{color:var(--creme);font-size:1.32rem;margin-bottom:7px}
+.e-item p{color:rgba(251,244,230,.67);font-size:.97rem;max-width:46ch}
+/* Galerie */
+.galerie{background:var(--creme2)}
+.masonry{columns:3;column-gap:20px}
+.masonry figure{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;border-radius:14px}
+.masonry img{width:100%;transition:transform .9s var(--ease)}
+.masonry figure:hover img{transform:scale(1.06)}
+.masonry figcaption{position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;color:var(--creme);font-family:var(--serif);font-style:italic;font-size:1.05rem;background:linear-gradient(0deg,rgba(42,22,11,.82),transparent);opacity:0;transform:translateY(8px);transition:.45s var(--ease)}
+.masonry figure:hover figcaption{opacity:1;transform:none}
+/* Instagram */
+.insta{background:var(--brun);text-align:center;padding:96px 0}
+.insta .eyebrow{justify-content:center}
+.insta .eyebrow::after{content:"";width:38px;height:2px;background:var(--ocre);border-radius:2px}
+.insta h2{color:var(--creme);font-size:clamp(2rem,5vw,3.5rem);margin:20px 0 14px}
+.insta h2 a{color:var(--ocre);font-style:italic}
+.insta p{color:rgba(251,244,230,.67);max-width:52ch;margin:0 auto}
+.insta .btn{margin-top:34px}
+/* Contact */
+.contact{background:var(--creme)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:start}
+.info-list{display:grid;margin-top:36px}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid rgba(46,29,18,.13)}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;border:1px solid var(--terre);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:var(--terre)}
+.info-item h4{font-size:.77rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gris);font-weight:800;margin-bottom:5px}
+.info-item p{font-weight:600;font-size:1.02rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:var(--brun);color:var(--creme);border-radius:18px;padding:44px 42px;box-shadow:0 34px 60px -30px rgba(42,22,11,.5)}
+.form-card h3{color:var(--creme);font-size:1.7rem;margin-bottom:8px}
+.form-card>p{color:rgba(251,244,230,.64);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--ocre);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:rgba(251,244,230,.07);border:1px solid rgba(251,244,230,.2);border-radius:10px;color:var(--creme);padding:14px 16px;font-family:var(--sans);font-size:.98rem;transition:.3s;appearance:none}
+.f-group select option{color:var(--ink)}
+.f-group textarea{resize:vertical;min-height:96px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--ocre);background:rgba(251,244,230,.1)}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.f-note{font-size:.82rem;color:rgba(251,244,230,.52);text-align:center;margin-top:16px}
+footer{background:var(--brun);color:rgba(251,244,230,.72);padding:76px 0 40px;border-top:1px solid rgba(224,164,88,.3)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between;align-items:flex-start}
+.foot-logo{font-family:var(--serif);font-size:1.7rem;color:var(--creme);font-weight:600}
+.foot-logo b{color:var(--ocre);font-weight:600}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:14px}
+.foot-col h5{color:var(--creme);font-size:.77rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;font-weight:800}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--ocre);transform:translateX(4px)}
+.foot-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(251,244,230,.13);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(251,244,230,.46)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ocre);color:var(--brun);font-size:.8rem;font-weight:700;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.demo-banner b{font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:1020px){.dish{gap:40px}.e-grid{gap:44px}.e-badge{left:14px}}
+@media(max-width:880px){
+  section{padding:78px 0}.nav-links{display:none}.nav{height:66px}
+  .dish{grid-template-columns:1fr;gap:34px;padding:48px 0}.dish:nth-child(even) .d-media{order:0}
+  .d-media img{height:380px}.e-grid,.contact-grid{grid-template-columns:1fr}.e-media img{height:420px}
+  .masonry{columns:2}.f-row{grid-template-columns:1fr}.form-card{padding:34px 24px}.hero{padding-top:120px}.hero-meta{gap:10px 24px}
+}
+@media(max-width:520px){
+  body{font-size:15.5px}.wrap{padding:0 20px}.masonry{columns:1}
+  .hero-ctas .btn{width:100%;justify-content:center}.nav-cta{padding:10px 16px;font-size:.8rem}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}.e-badge{position:static;margin-top:16px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">La Kant<b>'</b>in<small>Restaurant · 2 Plateaux</small></a>
+    <nav class="nav-links">
+      <a href="#carte">La carte</a>
+      <a href="#esprit">L'esprit</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Réserver
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1920&auto=format&fit=crop" alt="Table généreuse au restaurant La Kantin, 2 Plateaux, Abidjan" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Restaurant africain — 2 Plateaux, Abidjan</span>
+    <h1 class="hero-anim d2">La cuisine africaine, <em>comme une fête.</em></h1>
+    <p class="hero-anim d3">Au cœur des Vallons, La Kant'in sert une cuisine africaine riche et généreuse : sauces qui mijotent, grillades parfumées, produits frais — concoctés par un chef expérimenté, dans un cadre atypique qui ne ressemble à aucun autre. Réservez votre table sur WhatsApp.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Réserver une table
+      </a>
+      <a class="btn btn-ghost" href="#carte">Découvrir la carte</a>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Résidence Les Vallons, 2 Plateaux</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> +225 07 77 03 99 82</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Dès 11h30 · jusqu'à 2h le samedi</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Sauces généreuses</span><i>✦</i><span>Grillades</span><i>✦</i><span>Coconut prawns</span><i>✦</i><span>Escargots</span><i>✦</i><span>Jus naturels</span><i>✦</i><span>Plats africains</span><i>✦</i>
+  </div>
+</div>
+
+<section class="carte-sec" id="carte">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">La carte</span>
+      <h2>Des plats qui ont <em>du goût et du cœur</em></h2>
+      <p class="lead">Une carte riche de mets succulents, entre grands classiques africains et clins d'œil d'ailleurs. La carte complète et les suggestions du jour s'obtiennent sur WhatsApp — ou directement à table, aux Vallons.</p>
+    </div>
+
+    <article class="dish reveal">
+      <div class="d-media"><div class="clip"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1000&auto=format&fit=crop" alt="Sauce mijotée servie à La Kantin" loading="lazy" decoding="async"></div></div>
+      <div class="d-body">
+        <span class="d-num">01 — Les sauces</span>
+        <h3>Celles qui mijotent longtemps</h3>
+        <p class="d-tag">Le goût profond des cuisines de famille.</p>
+        <p>Nos sauces sont le cœur de La Kantin : préparées tôt, mijotées avec patience, relevées juste comme il faut. Servies généreusement, elles racontent la cuisine africaine dans ce qu'elle a de plus réconfortant.</p>
+        <ul class="d-points"><li>Préparées chaque jour au restaurant</li><li>Accompagnements au choix à table</li><li>Niveau d'épices à votre goût — demandez</li></ul>
+        <a class="link-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20quelles%20sauces%20proposez-vous%20aujourd%27hui%20%3F" target="_blank" rel="noopener">Les sauces du jour <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="d-media"><div class="clip"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1000&auto=format&fit=crop" alt="Grillades parfumées" loading="lazy" decoding="async"></div></div>
+      <div class="d-body">
+        <span class="d-num">02 — Les grillades</span>
+        <h3>Le parfum du feu, la tendreté en plus</h3>
+        <p class="d-tag">Marinées, grillées, servies fumantes.</p>
+        <p>Viandes et poissons marinés aux épices, grillés à la commande : croustillant dehors, fondant dedans. Les grillades de La Kantin se partagent — ou pas — autour d'une grande table entre amis.</p>
+        <ul class="d-points"><li>Marinades maison aux épices</li><li>Grillées à la commande, jamais réchauffées</li><li>Portions généreuses, esprit partage</li></ul>
+        <a class="link-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20commander%20des%20grillades." target="_blank" rel="noopener">Commander des grillades <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="d-media"><div class="clip"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop" alt="Plat africain généreux" loading="lazy" decoding="async"></div></div>
+      <div class="d-body">
+        <span class="d-num">03 — Plats africains</span>
+        <h3>Les grands classiques, faits maison</h3>
+        <p class="d-tag">Ceux qu'on vient chercher de loin.</p>
+        <p>Les plats qui ont fait la réputation de la cuisine africaine, préparés par un chef expérimenté qui en connaît les secrets : équilibre des épices, cuissons justes, assiettes qui arrivent pleines et parfumées.</p>
+        <ul class="d-points"><li>Recettes traditionnelles respectées</li><li>Produits frais du marché</li><li>Suggestions du chef selon la saison</li></ul>
+        <a class="link-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20voir%20la%20carte%20des%20plats%20africains." target="_blank" rel="noopener">Voir la carte complète <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="d-media"><div class="clip"><img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=1000&auto=format&fit=crop" alt="Crevettes façon coconut prawns" loading="lazy" decoding="async"></div></div>
+      <div class="d-body">
+        <span class="d-num">04 — Coconut prawns</span>
+        <h3>Le clin d'œil croustillant</h3>
+        <p class="d-tag">Crevettes dorées à la noix de coco.</p>
+        <p>Des crevettes enrobées de noix de coco, dorées à la perfection : croustillantes à l'extérieur, tendres à l'intérieur. L'entrée — ou le petit plaisir — qui met tout le monde d'accord avant le plat.</p>
+        <ul class="d-points"><li>Enrobage coco, friture dorée minute</li><li>Parfait à partager en entrée</li><li>Le préféré des habitués</li></ul>
+        <a class="link-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20r%C3%A9serve%20une%20table%20et%20je%20veux%20go%C3%BBter%20les%20coconut%20prawns%20!" target="_blank" rel="noopener">Goûter les coconut prawns <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="d-media"><div class="clip"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1000&auto=format&fit=crop" alt="Assiette savoureuse avec escargots" loading="lazy" decoding="async"></div></div>
+      <div class="d-body">
+        <span class="d-num">05 — Escargots &amp; jus naturels</span>
+        <h3>Les plaisirs qui signent La Kantin</h3>
+        <p class="d-tag">Escargots savoureux, jus pressés du jour.</p>
+        <p>Escargots préparés avec soin pour les amateurs, et jus naturels pressés à partir de fruits frais : le duo qui accompagne les longues soirées des Vallons, quand la Kantin joue les prolongations jusqu'au bout de la nuit le week-end.</p>
+        <ul class="d-points"><li>Escargots pour les connaisseurs</li><li>Jus naturels de fruits frais</li><li>Service tardif le week-end</li></ul>
+        <a class="link-wa" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20r%C3%A9server%20pour%20ce%20soir." target="_blank" rel="noopener">Réserver pour ce soir <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="esprit" id="esprit">
+  <div class="wrap">
+    <div class="e-grid">
+      <div class="e-media reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="La salle chaleureuse de La Kantin aux 2 Plateaux" loading="lazy" decoding="async">
+        <div class="e-badge"><b>Une cantine pas comme les autres</b><span>Résidence Les Vallons, 2 Plateaux</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">L'esprit</span>
+          <h2>Bienvenue à <em>La Kant'in</em></h2>
+          <p class="lead">Un restaurant africain atypique en plein cœur des 2 Plateaux Vallons : on y vient pour la cuisine, on y reste pour l'ambiance.</p>
+        </div>
+        <div class="e-items">
+          <div class="e-item reveal"><span class="n">01</span><div><h3>Un chef, une vraie cuisine</h3><p>Derrière les fourneaux, un chef expérimenté qui prépare chaque jour sauces, grillades et plats africains avec des produits frais — rien d'industriel, tout est fait maison.</p></div></div>
+          <div class="e-item reveal dl1"><span class="n">02</span><div><h3>Le midi comme la nuit</h3><p>Déjeuner entre collègues, dîner en famille, soirée entre amis : La Kantin ouvre dès 11h30 et prolonge jusqu'à 2h du matin le samedi. Les Vallons vivent, La Kantin aussi.</p></div></div>
+          <div class="e-item reveal dl2"><span class="n">03</span><div><h3>Groupes &amp; événements</h3><p>Anniversaire, sortie de groupe, repas d'affaires décontracté : écrivez-nous sur WhatsApp, on vous prépare une table — et un menu — à la hauteur de l'occasion.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>En images, <em>à table</em></h2>
+      <p class="lead">Les assiettes, la salle, l'ambiance. Pour le quotidien du restaurant, rendez-vous sur Instagram.</p>
+    </div>
+    <div class="masonry reveal">
+      <figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" alt="Table dressée au restaurant" loading="lazy" decoding="async"><figcaption>À table, aux Vallons</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" alt="Grillades" loading="lazy" decoding="async"><figcaption>Les grillades</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" alt="Sauce mijotée" loading="lazy" decoding="async"><figcaption>Sauces mijotées</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Salle du restaurant" loading="lazy" decoding="async"><figcaption>La salle</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" alt="Plat généreux" loading="lazy" decoding="async"><figcaption>Assiettes généreuses</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop" alt="Assiette fraîche et colorée" loading="lazy" decoding="async"><figcaption>Frais et coloré</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop" alt="Plat savoureux" loading="lazy" decoding="async"><figcaption>Le goût d'abord</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Dîner au restaurant" loading="lazy" decoding="async"><figcaption>Les soirées Kantin</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="insta">
+  <div class="wrap reveal">
+    <span class="eyebrow">Suivez-nous</span>
+    <h2>Les plats du jour, sur <a href="https://www.instagram.com/explore/locations/105413537490033" target="_blank" rel="noopener">Instagram</a></h2>
+    <p>Suggestions du chef, soirées, coulisses de la cuisine : La Kantin se raconte aussi en ligne. Et pour réserver, le plus rapide reste WhatsApp.</p>
+    <a class="btn btn-ghost" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg>
+      Réserver sur WhatsApp
+    </a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2>Aux Vallons, <em>2 Plateaux</em></h2>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Résidence Les Vallons, 2 Plateaux, Cocody — Abidjan, Côte d'Ivoire</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250777039982">+225 07 77 03 99 82</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horaires</h4><p>Lun – jeu : 11h30 – 00h · Ven : 11h30 – 1h30 · Sam : 11h30 – 2h. Dimanche : nous appeler.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Réserver une table</h3>
+        <p>Quelques infos, et votre demande part directement sur le WhatsApp du restaurant, prête à être envoyée.</p>
+        <form id="rdvForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" type="text" placeholder="Ex. Fatou S." required></div>
+            <div class="f-group"><label for="f-tel">Votre téléphone</label><input id="f-tel" name="tel" type="tel" placeholder="07 xx xx xx xx"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label for="f-presta">Nombre de personnes</label>
+              <select id="f-presta" name="presta" required>
+                <option value="2 personnes">2 personnes</option>
+                <option value="3 à 4 personnes">3 à 4 personnes</option>
+                <option value="5 à 8 personnes">5 à 8 personnes</option>
+                <option value="Groupe / événement">Groupe / événement</option>
+              </select>
+            </div>
+            <div class="f-group"><label for="f-date">Date &amp; heure souhaitées</label><input id="f-date" name="date" type="text" placeholder="Ex. vendredi 20h"></div>
+          </div>
+          <div class="f-group"><label for="f-msg">Votre message</label><textarea id="f-msg" name="msg" placeholder="Occasion, plats que vous voulez goûter, demandes particulières..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer ma réservation
+          </button>
+          <p class="f-note">Confirmation rapide du restaurant, directement sur WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">La Kant<b>'</b>in</div>
+        <p>Restaurant africain atypique aux 2 Plateaux Vallons, Abidjan. Sauces, grillades et plats africains généreux, du déjeuner aux soirées du week-end.</p>
+      </div>
+      <div class="foot-col"><h5>La carte</h5><a href="#carte">Les sauces</a><a href="#carte">Les grillades</a><a href="#carte">Plats africains</a><a href="#carte">Coconut prawns</a><a href="#carte">Escargots &amp; jus naturels</a></div>
+      <div class="foot-col"><h5>Le restaurant</h5><a href="#esprit">L'esprit Kantin</a><a href="#galerie">Galerie</a><a href="#contact">Groupes &amp; événements</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Résidence Les Vallons, 2 Plateaux</a><a href="tel:+2250777039982">+225 07 77 03 99 82</a><a href="https://wa.me/2250777039982" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 La Kantin — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel de La Kantin.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250777039982?text=Bonjour%20La%20Kantin%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener" aria-label="Discuter avec La Kantin sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de La Kantin.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('marqueeTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+document.getElementById('rdvForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim(),tel=document.getElementById('f-tel').value.trim(),presta=document.getElementById('f-presta').value,date=document.getElementById('f-date').value.trim(),msg=document.getElementById('f-msg').value.trim();
+  var lignes=['Bonjour La Kantin, je souhaite réserver une table.'];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Convives : '+presta);
+  if(date)lignes.push('Date & heure : '+date);
+  if(msg)lignes.push('Message : '+msg);
+  if(tel)lignes.push('Mon téléphone : '+tel);
+  window.open('https://wa.me/2250777039982?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>

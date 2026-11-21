@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passion Pâtisserie — Gâteaux personnalisés à Yopougon, Abidjan · Notée 4,9/5</title>
+<meta name="description" content="Passion Pâtisserie, Yopougon Maroc, Abidjan : gâteaux personnalisés, wedding cakes, heart cakes, bento cakes et cupcakes. Notée 4,9/5 sur Google. Commandez sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235A2A20'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23F6A8C1' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --choco:#4A241C; --choco-2:#5A2A20; --choco-3:#6E3A2B;
+  --rose:#E7548C; --rose-2:#F6A8C1; --rose-pale:#FDECEF;
+  --creme:#FFF8F1; --creme-2:#FDEEDD; --caramel:#E9A13B; --menthe:#7BC8A4;
+  --ink:#3D231C; --gris:#8A6A5E; --wa:#25D366;
+  --disp:"Baloo 2",system-ui,sans-serif; --sans:"Nunito",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--creme);color:var(--ink);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--rose-2);color:var(--choco)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--rose)}
+.eyebrow::before{content:"";width:38px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--rose),var(--caramel))}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.12;color:var(--choco)}
+h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
+h1 em,h2 em{font-style:normal;color:var(--rose)}
+.lead{color:var(--gris);font-size:1.05rem;max-width:57ch}
+section{padding:102px 0}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head .lead{margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:100px;font-weight:800;font-size:.95rem;transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#08240f;box-shadow:0 14px 30px -10px rgba(37,211,102,.55)}
+.btn-wa:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn-rose{background:var(--rose);color:#fff;box-shadow:0 14px 30px -12px rgba(231,84,140,.6)}
+.btn-rose:hover{background:var(--choco-2);transform:translateY(-3px)}
+.btn-ghost{border:2px solid rgba(255,248,241,.6);color:var(--creme);background:rgba(255,255,255,.03);backdrop-filter:blur(4px)}
+.btn-ghost:hover{border-color:var(--rose-2);color:var(--rose-2);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s,box-shadow .45s,border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(74,36,28,.95);backdrop-filter:blur(12px);border-color:rgba(246,168,193,.3);box-shadow:0 10px 40px -18px rgba(0,0,0,.55)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{font-family:var(--disp);font-size:1.5rem;font-weight:800;color:var(--creme);line-height:1.1}
+.logo b{color:var(--rose-2)}
+.logo small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,248,241,.65);font-weight:800}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:rgba(255,248,241,.88);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:3px;border-radius:3px;background:var(--rose);transition:width .35s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--rose);color:#fff;padding:12px 22px;border-radius:100px;font-weight:800;font-size:.84rem;transition:transform .35s,background .35s}
+.nav-cta svg{width:16px;height:16px}
+.nav-cta:hover{background:var(--caramel);color:var(--choco);transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--choco);color:var(--creme);overflow:hidden;padding:150px 0 0}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(58,26,19,.88) 0%,rgba(58,26,19,.52) 48%,rgba(58,26,19,.08) 80%),linear-gradient(0deg,rgba(58,26,19,.93) 0%,rgba(58,26,19,0) 44%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:60px}
+.hero .eyebrow{color:var(--rose-2)}
+.hero h1{color:var(--creme);font-size:clamp(2.9rem,7.2vw,5.6rem);max-width:13.5ch;margin:24px 0 20px}
+.hero h1 em{color:var(--rose-2)}
+.hero p{max-width:53ch;color:rgba(255,248,241,.88);font-size:1.08rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px;align-items:center}
+.note-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,248,241,.1);border:1px solid rgba(246,168,193,.5);border-radius:100px;padding:12px 22px;font-weight:800;font-size:.9rem}
+.note-pill .stars{color:var(--caramel);letter-spacing:2px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 42px;margin-top:52px;padding-top:26px;border-top:1px solid rgba(255,248,241,.2);font-size:.81rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,248,241,.76);font-weight:700}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--rose-2)}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.hero-anim.d1{animation-delay:.1s}.hero-anim.d2{animation-delay:.24s}.hero-anim.d3{animation-delay:.38s}.hero-anim.d4{animation-delay:.52s}.hero-anim.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.marquee{background:var(--choco);border-top:1px solid rgba(246,168,193,.3);border-bottom:1px solid rgba(246,168,193,.3);overflow:hidden;padding:18px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;animation:marquee 28s linear infinite}
+.marquee-track span{font-family:var(--disp);font-weight:600;font-size:1.2rem;color:var(--creme);padding:0 24px}
+.marquee-track i{color:var(--caramel);font-style:normal;font-size:.85rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.spec{background:var(--creme)}
+.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--creme-2);box-shadow:0 10px 30px -18px rgba(74,36,28,.25);transition:transform .45s var(--ease),box-shadow .45s}
+.card:hover{transform:translateY(-7px) rotate(-.4deg);box-shadow:0 30px 48px -24px rgba(74,36,28,.35)}
+.card img{width:100%;height:230px;object-fit:cover}
+.card-body{padding:28px 26px 30px}
+.card .tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);background:var(--rose-pale);border-radius:100px;padding:6px 13px}
+.card h3{font-size:1.55rem;margin:14px 0 8px}
+.card p{color:var(--gris);font-size:.96rem}
+.card .link-wa{margin-top:18px}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:.92rem;color:var(--choco);border-bottom:2px solid var(--rose);padding-bottom:3px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:16px;height:16px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+.commande{background:linear-gradient(160deg,var(--rose-pale),var(--creme-2))}
+.cmd-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.cmd-steps{display:grid;gap:16px;margin-top:32px}
+.cmd-step{display:flex;gap:18px;align-items:flex-start;background:#fff;border-radius:14px;padding:20px 22px;border:1px solid var(--creme-2)}
+.cmd-step .n{font-family:var(--disp);font-weight:800;font-size:1.3rem;color:#fff;background:var(--rose);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none}
+.cmd-step:nth-child(2) .n{background:var(--caramel);color:var(--choco)}
+.cmd-step:nth-child(3) .n{background:var(--menthe);color:var(--choco)}
+.cmd-step h3{font-size:1.2rem;margin-bottom:3px}
+.cmd-step p{color:var(--gris);font-size:.94rem}
+.cmd-media{position:relative}
+.cmd-media img{width:100%;height:520px;object-fit:cover;border-radius:18px;transform:rotate(1.2deg);box-shadow:0 34px 56px -28px rgba(74,36,28,.45)}
+.cmd-badge{position:absolute;left:-14px;bottom:26px;background:var(--choco);color:var(--creme);padding:18px 24px;border-radius:14px;transform:rotate(-1.5deg);box-shadow:0 22px 40px -16px rgba(0,0,0,.5);max-width:250px}
+.cmd-badge b{font-family:var(--disp);font-size:1.5rem;display:block;line-height:1.1;color:var(--rose-2)}
+.cmd-badge span{font-size:.82rem;font-weight:700;color:rgba(255,248,241,.75)}
+.galerie{background:var(--choco);color:var(--creme)}
+.galerie h2{color:var(--creme)}
+.galerie .lead{color:rgba(255,248,241,.65)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gal-grid figure{position:relative;overflow:hidden;border-radius:14px}
+.gal-grid img{width:100%;height:270px;object-fit:cover;transition:transform .9s var(--ease)}
+.gal-grid figure:hover img{transform:scale(1.07) rotate(.6deg)}
+.gal-grid figcaption{position:absolute;inset:auto 0 0 0;padding:38px 16px 12px;color:#fff;font-family:var(--disp);font-weight:600;font-size:1.02rem;background:linear-gradient(0deg,rgba(58,26,19,.8),transparent);opacity:0;transition:opacity .45s}
+.gal-grid figure:hover figcaption{opacity:1}
+.avis{background:var(--creme);text-align:center}
+.avis .big-note{font-family:var(--disp);font-weight:800;font-size:clamp(3.4rem,8vw,5.4rem);color:var(--choco);line-height:1}
+.avis .stars{color:var(--caramel);font-size:1.7rem;letter-spacing:6px;margin:10px 0}
+.avis p{color:var(--gris);max-width:52ch;margin:0 auto}
+.avis .eyebrow{justify-content:center}
+.contact{background:var(--creme-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
+.info-list{margin-top:32px;display:grid}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid #EFD9B8}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;background:#fff;border:1px solid var(--rose-2);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:var(--rose)}
+.info-item h4{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gris);font-weight:800;margin-bottom:4px}
+.info-item p{font-weight:700;font-size:1.01rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:var(--choco);color:var(--creme);border-radius:18px;padding:44px 42px;box-shadow:0 34px 60px -28px rgba(74,36,28,.55)}
+.form-card h3{color:var(--creme);font-size:1.75rem;margin-bottom:8px}
+.form-card>p{color:rgba(255,248,241,.65);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.73rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-2);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:rgba(255,248,241,.07);border:1px solid rgba(255,248,241,.2);border-radius:10px;color:var(--creme);padding:14px 16px;font-family:var(--sans);font-size:.97rem;font-weight:600;transition:border-color .3s}
+.f-group select option{color:var(--ink)}
+.f-group textarea{resize:vertical;min-height:88px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--rose-2)}
+.form-card .btn{width:100%;justify-content:center;margin-top:4px}
+.f-note{font-size:.82rem;color:rgba(255,248,241,.52);text-align:center;margin-top:15px}
+footer{background:var(--choco);color:rgba(255,248,241,.72);padding:74px 0 40px}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between}
+.foot-logo{font-family:var(--disp);font-size:1.6rem;font-weight:800;color:var(--creme)}
+.foot-logo b{color:var(--rose-2)}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:12px}
+.foot-col h5{color:var(--creme);font-size:.77rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;font-weight:800}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--rose-2);transform:translateX(4px)}
+.foot-bottom{margin-top:54px;padding-top:26px;border-top:1px solid rgba(255,248,241,.13);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(255,248,241,.45)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--rose);color:#fff;font-size:.8rem;font-weight:700;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.demo-banner b{text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05) rotate(-4deg)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:960px){
+  section{padding:76px 0}
+  .nav-links{display:none}
+  .nav{height:68px}
+  .spec-grid{grid-template-columns:1fr 1fr}
+  .cmd-grid,.contact-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .cmd-media img{height:400px}
+  .f-row{grid-template-columns:1fr}
+  .form-card{padding:34px 24px}
+  .hero{padding-top:118px}
+}
+@media(max-width:560px){
+  body{font-size:15.5px}
+  .wrap{padding:0 20px}
+  .spec-grid,.gal-grid{grid-template-columns:1fr}
+  .hero-ctas .btn,.hero-ctas .note-pill{width:100%;justify-content:center}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}
+  .cmd-badge{left:10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">Passion<b>.</b><small>Pâtisserie — Yopougon</small></a>
+    <nav class="nav-links">
+      <a href="#specialites">Spécialités</a>
+      <a href="#commande">Commander</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Commander
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1920&auto=format&fit=crop" alt="Gâteau d'anniversaire festif avec bougies" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Pâtisserie personnalisée — Yopougon Maroc</span>
+    <h1 class="hero-anim d2">Le gâteau de <em>vos plus belles fêtes.</em></h1>
+    <p class="hero-anim d3">Gâteaux personnalisés, wedding cakes, heart cakes, bento cakes et cupcakes : à Yopougon Maroc, chaque création est pensée pour votre événement — votre thème, vos couleurs, votre date. Commande simple et guidée sur WhatsApp.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Commander sur WhatsApp
+      </a>
+      <span class="note-pill"><span class="stars">★★★★★</span> 4,9/5 sur Google</span>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Yopougon Maroc, Abidjan</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> +225 07 67 47 47 17</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-1.5-1-3-2.6C5.6 14.9 4 12.6 4 9.9 4 7.2 6 5 8.6 5c1.4 0 2.7.7 3.4 1.8C12.7 5.7 14 5 15.4 5 18 5 20 7.2 20 9.9c0 2.7-1.6 5-5 8.5-1.5 1.6-3 2.6-3 2.6z"/></svg> Sur commande, selon votre thème</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Gâteaux personnalisés</span><i>♥</i><span>Wedding cakes</span><i>♥</i><span>Heart cakes</span><i>♥</i><span>Bento cakes</span><i>♥</i><span>Cupcakes</span><i>♥</i><span>Anniversaires &amp; mariages</span><i>♥</i>
+  </div>
+</div>
+
+<section class="spec" id="specialites">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nos spécialités</span>
+      <h2>Des créations <em>rien que pour vous</em></h2>
+      <p class="lead">Pas de catalogue figé : chaque gâteau naît de votre idée. Choisissez la spécialité, puis dites-nous la date, le nombre de parts et le thème — le devis suit sur WhatsApp, sans engagement.</p>
+    </div>
+    <div class="spec-grid">
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=900&auto=format&fit=crop" alt="Gâteau au chocolat personnalisé" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">Signature</span>
+          <h3>Gâteaux personnalisés</h3>
+          <p>Anniversaire, baptême, fête de famille : un gâteau unique, décoré selon votre thème et vos couleurs, pour le nombre de parts qu'il vous faut.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20un%20devis%20pour%20un%20g%C3%A2teau%20personnalis%C3%A9." target="_blank" rel="noopener">Devis sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+      <article class="card reveal dl1">
+        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=900&auto=format&fit=crop" alt="Wedding cake élégant à étages" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">Mariage</span>
+          <h3>Wedding cakes</h3>
+          <p>La pièce maîtresse de votre mariage : un gâteau à étages pensé avec vous, assorti à votre décoration, pour un moment découpe inoubliable.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20un%20devis%20pour%20un%20wedding%20cake." target="_blank" rel="noopener">Devis sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+      <article class="card reveal dl2">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=900&auto=format&fit=crop" alt="Dessert raffiné en forme de cœur" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">Tendresse</span>
+          <h3>Heart cakes</h3>
+          <p>Le gâteau en forme de cœur, star des déclarations et des anniversaires de couple : romantique, photogénique, et entièrement personnalisable.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20un%20devis%20pour%20un%20heart%20cake." target="_blank" rel="noopener">Devis sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=900&auto=format&fit=crop" alt="Petit gâteau bento coloré" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">Mini format</span>
+          <h3>Bento cakes</h3>
+          <p>Le petit gâteau surprise, à offrir ou à partager à deux : format mini, message personnalisé, effet maximum quand on ouvre la boîte.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20un%20devis%20pour%20un%20bento%20cake." target="_blank" rel="noopener">Devis sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+      <article class="card reveal dl1">
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=900&auto=format&fit=crop" alt="Cupcakes colorés et gourmands" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">À partager</span>
+          <h3>Cupcakes</h3>
+          <p>Des cupcakes colorés et gourmands, parfaits pour les goûters d'anniversaire, les événements d'entreprise et les tables de fête.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20un%20devis%20pour%20des%20cupcakes." target="_blank" rel="noopener">Devis sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+      <article class="card reveal dl2">
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=900&auto=format&fit=crop" alt="Gâteau d'anniversaire avec bougies étincelantes" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="tag">Votre idée</span>
+          <h3>Un thème en tête ?</h3>
+          <p>Personnage préféré, couleurs d'équipe, photo souvenir : envoyez-nous votre idée ou une photo d'inspiration, on vous dit ce qu'on peut créer.</p>
+          <a class="link-wa" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20j'ai%20un%20th%C3%A8me%20de%20g%C3%A2teau%20%C3%A0%20vous%20proposer." target="_blank" rel="noopener">Proposer mon thème <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="commande" id="commande">
+  <div class="wrap">
+    <div class="cmd-grid">
+      <div class="reveal">
+        <span class="eyebrow">Commander</span>
+        <h2>Trois infos, <em>et c'est parti</em></h2>
+        <p class="lead" style="margin-top:14px">La commande guidée évite les allers-retours : préparez ces trois informations, la pâtisserie s'occupe du reste et vous envoie son devis.</p>
+        <div class="cmd-steps">
+          <div class="cmd-step"><span class="n">1</span><div><h3>La date de votre fête</h3><p>Le jour où le gâteau doit être prêt — commandez à l'avance pour garantir votre créneau.</p></div></div>
+          <div class="cmd-step"><span class="n">2</span><div><h3>Le nombre de parts</h3><p>Petit comité ou grande fête : la taille du gâteau s'adapte à vos invités.</p></div></div>
+          <div class="cmd-step"><span class="n">3</span><div><h3>Le thème et les couleurs</h3><p>Votre idée, un prénom, un message, une photo d'inspiration : c'est ce qui rendra votre gâteau unique.</p></div></div>
+        </div>
+        <a class="btn btn-rose" href="#contact" style="margin-top:30px">Lancer ma commande guidée</a>
+      </div>
+      <div class="cmd-media reveal dl1">
+        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1100&auto=format&fit=crop" alt="Gâteau de fête décoré avec soin" loading="lazy" decoding="async">
+        <div class="cmd-badge"><b>Fait sur commande</b><span>Chaque gâteau est créé pour votre événement</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>Un aperçu <em>des douceurs</em></h2>
+      <p class="lead">Photos d'illustration — pour voir les créations du moment, écrivez à la pâtisserie sur WhatsApp.</p>
+    </div>
+    <div class="gal-grid reveal">
+      <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" alt="Gâteau au chocolat décoré" loading="lazy" decoding="async"><figcaption>Tout chocolat</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=800&auto=format&fit=crop" alt="Gâteau d'anniversaire festif" loading="lazy" decoding="async"><figcaption>Anniversaires</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=800&auto=format&fit=crop" alt="Assortiment de cupcakes" loading="lazy" decoding="async"><figcaption>Cupcakes party</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800&auto=format&fit=crop" alt="Petit gâteau coloré façon bento" loading="lazy" decoding="async"><figcaption>Bento cakes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="wrap reveal">
+    <span class="eyebrow">Avis Google</span>
+    <div class="big-note">4,9/5</div>
+    <div class="stars">★★★★★</div>
+    <p>Passion Pâtisserie est notée 4,9 sur 5 par ses clients sur Google — la récompense des gâteaux faits avec passion, à Yopougon Maroc.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2>À Yopougon <em>Maroc</em></h2>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Yopougon Maroc, Abidjan — Côte d'Ivoire</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250767474717">+225 07 67 47 47 17</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="12 2.5 14.9 8.6 21.5 9.5 16.7 14.1 17.9 20.7 12 17.5 6.1 20.7 7.3 14.1 2.5 9.5 9.1 8.6"/></svg></span><div><h4>Avis clients</h4><p>Notée 4,9/5 sur Google par ses clients.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Ma commande guidée</h3>
+        <p>Date, parts, thème : remplissez, et votre commande part directement sur le WhatsApp de la pâtisserie, prête à être envoyée.</p>
+        <form id="cmdForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" type="text" placeholder="Ex. Fatou S." required></div>
+            <div class="f-group"><label for="f-date">Date de la fête</label><input id="f-date" type="text" placeholder="Ex. samedi 6 décembre" required></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="f-type">Type de gâteau</label>
+              <select id="f-type" required>
+                <option value="Gâteau personnalisé">Gâteau personnalisé</option>
+                <option value="Wedding cake">Wedding cake</option>
+                <option value="Heart cake">Heart cake</option>
+                <option value="Bento cake">Bento cake</option>
+                <option value="Cupcakes">Cupcakes</option>
+              </select>
+            </div>
+            <div class="f-group"><label for="f-parts">Nombre de parts</label><input id="f-parts" type="text" placeholder="Ex. 20 parts"></div>
+          </div>
+          <div class="f-group"><label for="f-theme">Thème &amp; couleurs</label><input id="f-theme" type="text" placeholder="Ex. rose et doré, prénom Aya, 10 ans"></div>
+          <div class="f-group"><label for="f-msg">Précisions</label><textarea id="f-msg" placeholder="Parfum souhaité, message sur le gâteau, photo d'inspiration à joindre dans WhatsApp..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer ma commande sur WhatsApp
+          </button>
+          <p class="f-note">La pâtisserie confirme la faisabilité et vous envoie son devis dans la conversation.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Passion<b>.</b></div>
+        <p>Pâtisserie personnalisée à Yopougon Maroc, Abidjan. Des gâteaux uniques pour vos anniversaires, mariages et plus belles fêtes.</p>
+      </div>
+      <div class="foot-col"><h5>Spécialités</h5><a href="#specialites">Gâteaux personnalisés</a><a href="#specialites">Wedding cakes</a><a href="#specialites">Heart cakes</a><a href="#specialites">Bento cakes &amp; cupcakes</a></div>
+      <div class="foot-col"><h5>Commander</h5><a href="#commande">Comment commander</a><a href="#galerie">Galerie</a><a href="#contact">Commande guidée</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Yopougon Maroc, Abidjan</a><a href="tel:+2250767474717">+225 07 67 47 47 17</a><a href="https://wa.me/2250767474717" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Passion Pâtisserie — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel de Passion Pâtisserie.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250767474717?text=Bonjour%20Passion%20P%C3%A2tisserie%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau." target="_blank" rel="noopener" aria-label="Commander chez Passion Pâtisserie sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de Passion Pâtisserie.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('marqueeTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+document.getElementById('cmdForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim();
+  var date=document.getElementById('f-date').value.trim();
+  var type=document.getElementById('f-type').value;
+  var parts=document.getElementById('f-parts').value.trim();
+  var theme=document.getElementById('f-theme').value.trim();
+  var msg=document.getElementById('f-msg').value.trim();
+  var lignes=['Bonjour Passion Pâtisserie, je souhaite commander un gâteau.'];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Type : '+type);
+  if(date)lignes.push('Date de la fête : '+date);
+  if(parts)lignes.push('Nombre de parts : '+parts);
+  if(theme)lignes.push('Thème & couleurs : '+theme);
+  if(msg)lignes.push('Précisions : '+msg);
+  window.open('https://wa.me/2250767474717?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>

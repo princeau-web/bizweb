@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benedetto 1981 — Boutique de luxe à Angré, Abidjan · Vêtements, Sacs, Sneakers</title>
+<meta name="description" content="Benedetto 1981, boutique de vêtements et accessoires de luxe à Angré, Abidjan : prêt-à-porter, t-shirts, sacs, sneakers, sandales et mules de marques. Conseils et disponibilité sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230A0A0A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23C6A15B' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ===== BENEDETTO 1981 — noir profond, blanc cassé, or discret. Minimalisme haut de gamme. ===== */
+:root{
+  --noir:#0A0A0A; --noir2:#111110; --noir3:#1A1A18;
+  --blanc:#F7F5F0; --blanc2:#EFECE4; --gris:#8E8A80; --gris2:#B9B4A8;
+  --or:#C6A15B; --or2:#E2C98C;
+  --wa:#25D366;
+  --serif:"Cinzel",Georgia,serif;
+  --sans:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;background:var(--blanc);color:#1C1B18;line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--or);color:var(--noir)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.7rem;font-weight:500;letter-spacing:.42em;text-transform:uppercase;color:var(--or)}
+.eyebrow::before{content:"";width:44px;height:1px;background:var(--or)}
+h1,h2{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--noir)}
+h2{font-size:clamp(2rem,4.2vw,3.2rem);letter-spacing:.04em;text-transform:uppercase}
+h2 em{font-family:var(--sans);font-style:italic;font-weight:300;text-transform:none;letter-spacing:0;color:#8a6d2f}
+.lead{color:#5d594f;font-size:1.05rem;max-width:58ch;font-weight:300}
+section{padding:110px 0}
+.sec-head{max-width:740px;margin-bottom:56px}
+.sec-head .lead{margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:0;font-weight:500;font-size:.88rem;letter-spacing:.18em;text-transform:uppercase;transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-wa{background:var(--wa);color:#06230f;letter-spacing:.1em}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-ghost{border:1px solid rgba(247,245,240,.45);color:var(--blanc)}
+.btn-ghost:hover{border-color:var(--or);color:var(--or2);transform:translateY(-3px)}
+.btn-dark{background:var(--noir);color:var(--blanc)}
+.btn-dark:hover{background:var(--noir3);transform:translateY(-3px)}
+.btn-line{border:1px solid var(--noir);color:var(--noir)}
+.btn-line:hover{background:var(--noir);color:var(--blanc);transform:translateY(-3px)}
+/* Header */
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s var(--ease),border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-color:rgba(198,161,91,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.3rem;letter-spacing:.34em;color:var(--blanc);text-transform:uppercase}
+.logo span{display:block;font-family:var(--sans);font-size:.58rem;letter-spacing:.6em;color:var(--or);margin-top:2px}
+.nav-links{display:flex;gap:38px}
+.nav-links a{color:rgba(247,245,240,.85);font-size:.78rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--or);transition:width .35s var(--ease)}
+.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--or);color:var(--or2);padding:11px 22px;font-weight:500;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;transition:.35s}
+.nav-cta svg{width:15px;height:15px}
+.nav-cta:hover{background:var(--or);color:var(--noir)}
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--noir);color:var(--blanc);overflow:hidden;padding:150px 0 0}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.82;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.55) 48%,rgba(10,10,10,.15) 80%),linear-gradient(0deg,rgba(10,10,10,.94) 0%,rgba(10,10,10,0) 44%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:66px}
+.hero h1{color:var(--blanc);font-size:clamp(2.7rem,6.8vw,5.2rem);letter-spacing:.05em;text-transform:uppercase;max-width:14ch;margin:26px 0 22px}
+.hero h1 em{font-family:var(--sans);font-style:italic;font-weight:300;text-transform:none;letter-spacing:0;color:var(--or2)}
+.hero p{max-width:52ch;color:rgba(247,245,240,.86);font-size:1.08rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 44px;margin-top:58px;padding-top:26px;border-top:1px solid rgba(247,245,240,.18);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,245,240,.72)}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--or)}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.24s}.d3{animation-delay:.38s}.d4{animation-delay:.52s}.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+/* Marquee */
+.marquee{background:var(--noir);border-top:1px solid rgba(198,161,91,.3);border-bottom:1px solid rgba(198,161,91,.3);overflow:hidden;padding:18px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;animation:marquee 32s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--serif);font-size:1.05rem;letter-spacing:.3em;text-transform:uppercase;color:var(--blanc);padding:0 28px}
+.marquee-track i{color:var(--or);font-style:normal;font-size:.75rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* Collections */
+.collections{background:var(--blanc)}
+.col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:62px 0;border-top:1px solid rgba(20,19,16,.12)}
+.col:first-of-type{border-top:none;padding-top:8px}
+.col:nth-child(even) .c-media{order:2}
+.c-media{position:relative}
+.c-media::before{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:1px solid var(--or);z-index:0;transition:transform .6s var(--ease)}
+.col:hover .c-media::before{transform:translate(10px,10px)}
+.c-media .clip{overflow:hidden;position:relative;z-index:1}
+.c-media img{width:100%;height:520px;object-fit:cover;transition:transform .9s var(--ease)}
+.col:hover .c-media img{transform:scale(1.045)}
+.c-num{font-size:.78rem;letter-spacing:.4em;color:var(--or);text-transform:uppercase;font-weight:500}
+.c-body h3{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.4rem);font-weight:500;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 6px;color:var(--noir)}
+.c-tag{font-style:italic;font-size:1.18rem;color:#7a7568;margin-bottom:18px}
+.c-body p{color:#45423a;max-width:48ch}
+.c-points{list-style:none;margin:24px 0 28px;display:grid;gap:10px}
+.c-points li{display:flex;gap:12px;align-items:baseline;font-size:.97rem;color:#26241f}
+.c-points li::before{content:"";width:22px;height:1px;background:var(--or);flex:none;transform:translateY(-4px)}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:500;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--noir);border-bottom:1px solid var(--or);padding-bottom:5px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:16px;height:16px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+/* Maison */
+.maison{background:var(--noir);color:var(--blanc)}
+.maison h2{color:var(--blanc)}
+.maison .lead{color:rgba(247,245,240,.65)}
+.m-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.m-media{position:relative}
+.m-media img{width:100%;height:600px;object-fit:cover}
+.m-media::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(198,161,91,.4);pointer-events:none}
+.m-badge{position:absolute;left:-24px;bottom:34px;background:var(--or);color:var(--noir);padding:18px 24px;max-width:260px;box-shadow:0 24px 44px -18px rgba(0,0,0,.65)}
+.m-badge b{font-family:var(--serif);font-size:1.4rem;font-weight:600;display:block;line-height:1.15;letter-spacing:.04em}
+.m-badge span{font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.m-items{display:grid;margin-top:42px}
+.m-item{display:flex;gap:26px;padding:26px 0;border-top:1px solid rgba(247,245,240,.14)}
+.m-item:first-child{border-top:none;padding-top:4px}
+.m-item .n{font-family:var(--serif);color:var(--or);font-size:1.3rem;line-height:1;flex:none;width:44px}
+.m-item h3{font-family:var(--serif);color:var(--blanc);font-size:1.2rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:7px;font-weight:500}
+.m-item p{color:rgba(247,245,240,.65);font-size:.97rem;max-width:46ch}
+/* Galerie */
+.galerie{background:var(--blanc2)}
+.masonry{columns:3;column-gap:20px}
+.masonry figure{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden}
+.masonry img{width:100%;transition:transform .9s var(--ease)}
+.masonry figure:hover img{transform:scale(1.06)}
+.masonry figcaption{position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;color:var(--blanc);font-style:italic;font-size:1.02rem;background:linear-gradient(0deg,rgba(10,10,10,.8),transparent);opacity:0;transform:translateY(8px);transition:.45s var(--ease)}
+.masonry figure:hover figcaption{opacity:1;transform:none}
+/* Instagram */
+.insta{background:var(--noir);text-align:center;padding:96px 0}
+.insta .eyebrow{justify-content:center}
+.insta .eyebrow::after{content:"";width:44px;height:1px;background:var(--or)}
+.insta h2{color:var(--blanc);font-size:clamp(1.9rem,4.6vw,3.2rem);margin:20px 0 14px}
+.insta h2 a{color:var(--or2);font-family:var(--sans);font-style:italic;font-weight:300;text-transform:none;letter-spacing:0}
+.insta p{color:rgba(247,245,240,.65);max-width:52ch;margin:0 auto}
+.insta .btn{margin-top:34px}
+/* Contact */
+.contact{background:var(--blanc)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:start}
+.info-list{display:grid;margin-top:36px}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid rgba(20,19,16,.12)}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;border:1px solid var(--or);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:#8a6d2f}
+.info-item h4{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:#7a7568;font-weight:600;margin-bottom:5px}
+.info-item p{font-weight:400;font-size:1.02rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:var(--noir);color:var(--blanc);padding:44px 42px;box-shadow:0 34px 60px -30px rgba(10,10,10,.5)}
+.form-card h3{font-family:var(--serif);color:var(--blanc);font-size:1.55rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;font-weight:500}
+.form-card>p{color:rgba(247,245,240,.62);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--or2);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:rgba(247,245,240,.06);border:1px solid rgba(247,245,240,.18);color:var(--blanc);padding:14px 16px;font-family:var(--sans);font-size:.98rem;font-weight:300;transition:.3s;appearance:none}
+.f-group select option{color:#1C1B18}
+.f-group textarea{resize:vertical;min-height:96px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--or);background:rgba(247,245,240,.09)}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.f-note{font-size:.82rem;color:rgba(247,245,240,.5);text-align:center;margin-top:16px}
+/* Footer */
+footer{background:var(--noir);color:rgba(247,245,240,.72);padding:76px 0 40px;border-top:1px solid rgba(198,161,91,.3)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between;align-items:flex-start}
+.foot-logo{font-family:var(--serif);font-size:1.5rem;letter-spacing:.32em;text-transform:uppercase;color:var(--blanc)}
+.foot-logo span{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.6em;color:var(--or);margin-top:3px}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:14px}
+.foot-col h5{color:var(--blanc);font-size:.76rem;letter-spacing:.26em;text-transform:uppercase;margin-bottom:18px;font-weight:500}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--or2);transform:translateX(4px)}
+.foot-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(247,245,240,.12);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(247,245,240,.45)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--or);color:var(--noir);font-size:.8rem;font-weight:500;letter-spacing:.02em;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.demo-banner b{font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:1020px){.col{gap:40px}.m-grid{gap:44px}.m-badge{left:14px}}
+@media(max-width:880px){
+  section{padding:78px 0}.nav-links{display:none}.nav{height:68px}
+  .col{grid-template-columns:1fr;gap:34px;padding:48px 0}.col:nth-child(even) .c-media{order:0}
+  .c-media img{height:380px}.m-grid,.contact-grid{grid-template-columns:1fr}.m-media img{height:420px}
+  .masonry{columns:2}.f-row{grid-template-columns:1fr}.form-card{padding:34px 24px}.hero{padding-top:120px}.hero-meta{gap:10px 24px}
+}
+@media(max-width:520px){
+  body{font-size:15.5px}.wrap{padding:0 20px}.masonry{columns:1}
+  .hero-ctas .btn{width:100%;justify-content:center}.nav-cta{padding:9px 14px;font-size:.74rem}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}.m-badge{position:static;margin-top:16px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">Benedetto<span>1981 · Angré</span></a>
+    <nav class="nav-links">
+      <a href="#collections">Collections</a>
+      <a href="#maison">La maison</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20un%20renseignement%20sur%20une%20pi%C3%A8ce." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Nous écrire
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1920&auto=format&fit=crop" alt="Boutique de mode haut de gamme Benedetto 1981 à Angré, Abidjan" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Boutique de luxe — Angré, Abidjan</span>
+    <h1 class="hero-anim d2">L'élégance, <em>sans compromis.</em></h1>
+    <p class="hero-anim d3">Depuis 1981, Benedetto compose des silhouettes qui traversent les saisons : prêt-à-porter, sacs et chaussures de marques, sélectionnés pièce par pièce à Angré. Demandez la disponibilité de votre taille ou d'un modèle sur WhatsApp.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20conna%C3%AEtre%20la%20disponibilit%C3%A9%20d%27une%20pi%C3%A8ce." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Demander une pièce
+      </a>
+      <a class="btn btn-ghost" href="#collections">Découvrir les collections</a>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Angré, Abidjan</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> +225 07 68 41 58 85</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Lun–sam 10h30–21h · Dim 14h–19h</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Prêt-à-porter</span><i>◆</i><span>T-Shirts</span><i>◆</i><span>Sacs</span><i>◆</i><span>Sneakers</span><i>◆</i><span>Sandales</span><i>◆</i><span>Mules</span><i>◆</i><span>Depuis 1981</span><i>◆</i>
+  </div>
+</div>
+
+<section class="collections" id="collections">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Collections</span>
+      <h2>Cinq univers, <em>une exigence</em></h2>
+      <p class="lead">Chaque pièce en boutique est choisie pour sa matière, sa coupe et sa tenue dans le temps. Les arrivages évoluent au fil des saisons — demandez les nouveautés et les disponibilités sur WhatsApp.</p>
+    </div>
+
+    <article class="col reveal">
+      <div class="c-media"><div class="clip"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1000&auto=format&fit=crop" alt="Prêt-à-porter de luxe en boutique" loading="lazy" decoding="async"></div></div>
+      <div class="c-body">
+        <span class="c-num">01 — Prêt-à-porter</span>
+        <h3>La silhouette Benedetto</h3>
+        <p class="c-tag">Des pièces qui structurent une allure, saison après saison.</p>
+        <p>Vêtements pour homme et femme sélectionnés parmi des marques de luxe : coupes nettes, matières nobles, finitions irréprochables. En boutique, notre équipe vous aide à composer une silhouette complète, du bureau à la soirée.</p>
+        <ul class="c-points"><li>Conseil personnalisé en boutique</li><li>Nouveaux arrivages réguliers</li><li>Disponibilité des tailles sur WhatsApp</li></ul>
+        <a class="link-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20voir%20les%20nouveaut%C3%A9s%20pr%C3%AAt-%C3%A0-porter." target="_blank" rel="noopener">Voir les nouveautés <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="col reveal">
+      <div class="c-media"><div class="clip"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000&auto=format&fit=crop" alt="T-shirts premium" loading="lazy" decoding="async"></div></div>
+      <div class="c-body">
+        <span class="c-num">02 — T-Shirts</span>
+        <h3>L'essentiel, en version luxe</h3>
+        <p class="c-tag">Le basique que l'on garde des années.</p>
+        <p>Cotons épais, coupes impeccables, logos discrets ou signatures assumées : nos t-shirts de marques se portent seuls ou sous une veste, et gardent leur tenue lavage après lavage.</p>
+        <ul class="c-points"><li>Plusieurs marques et coloris en boutique</li><li>Tailles vérifiables avant votre venue</li><li>Idées cadeaux toute l'année</li></ul>
+        <a class="link-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20cherche%20un%20t-shirt%20dans%20ma%20taille." target="_blank" rel="noopener">Chercher ma taille <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="col reveal">
+      <div class="c-media"><div class="clip"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1000&auto=format&fit=crop" alt="Sac de luxe porté à la main" loading="lazy" decoding="async"></div></div>
+      <div class="c-body">
+        <span class="c-num">03 — Sacs</span>
+        <h3>Le sac, signature d'une allure</h3>
+        <p class="c-tag">À main, à épaule ou bandoulière — la pièce qui finit la tenue.</p>
+        <p>Sacs à épaule, sacs à main et modèles du quotidien : des cuirs et des finitions choisis pour durer, dans des formats qui vont du bureau au dîner.</p>
+        <ul class="c-points"><li>Modèles iconiques et nouveautés</li><li>Conseils d'entretien du cuir</li><li>Photos détaillées envoyées sur WhatsApp</li></ul>
+        <a class="link-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20voir%20vos%20sacs%20disponibles." target="_blank" rel="noopener">Voir les sacs <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="col reveal">
+      <div class="c-media"><div class="clip"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop" alt="Sneakers de marque" loading="lazy" decoding="async"></div></div>
+      <div class="c-body">
+        <span class="c-num">04 — Sneakers</span>
+        <h3>New Balance &amp; icônes du moment</h3>
+        <p class="c-tag">Le confort des grandes marques, le style en plus.</p>
+        <p>Des sneakers authentiques, dont les modèles New Balance les plus demandés : éditions courantes et paires plus rares, à essayer en boutique à Angré.</p>
+        <ul class="c-points"><li>Modèles authentiques, en boutique</li><li>Pointures à confirmer sur WhatsApp</li><li>Essayage sur place</li></ul>
+        <a class="link-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20cherche%20des%20sneakers%20dans%20ma%20pointure." target="_blank" rel="noopener">Trouver ma pointure <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="col reveal">
+      <div class="c-media"><div class="clip"><img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?q=80&w=1000&auto=format&fit=crop" alt="Sandales et mules élégantes" loading="lazy" decoding="async"></div></div>
+      <div class="c-body">
+        <span class="c-num">05 — Sandales &amp; Mules</span>
+        <h3>L'élégance décontractée</h3>
+        <p class="c-tag">Pour les journées d'Abidjan comme pour les soirées.</p>
+        <p>Sandales et mules de marques, en cuir ou matières raffinées : la touche finale d'une tenue d'été, à porter du matin au soir sans renoncer au style.</p>
+        <ul class="c-points"><li>Modèles homme et femme</li><li>Cuirs et finitions haut de gamme</li><li>Conseil morphologie en boutique</li></ul>
+        <a class="link-wa" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20voir%20vos%20sandales%20et%20mules." target="_blank" rel="noopener">Découvrir la sélection <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="maison" id="maison">
+  <div class="wrap">
+    <div class="m-grid">
+      <div class="m-media reveal">
+        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=1200&auto=format&fit=crop" alt="Intérieur de la boutique Benedetto 1981 à Angré" loading="lazy" decoding="async">
+        <div class="m-badge"><b>Depuis 1981</b><span>Une adresse, une signature</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">La maison</span>
+          <h2>L'esprit <em>Benedetto</em></h2>
+          <p class="lead">À Angré, Benedetto 1981 cultive un luxe sobre : peu de pièces, mais les bonnes — et une équipe qui connaît chaque modèle en boutique.</p>
+        </div>
+        <div class="m-items">
+          <div class="m-item reveal"><span class="n">01</span><div><h3>Une sélection, pas un stock</h3><p>Chaque arrivage est choisi à la main. Si une pièce est chez Benedetto, c'est qu'elle a passé notre exigence de matière, de coupe et de finition.</p></div></div>
+          <div class="m-item reveal dl1"><span class="n">02</span><div><h3>L'authenticité, toujours</h3><p>Des marques et des modèles authentiques, présentés et essayables en boutique. Vous voyez, vous touchez, vous essayez — sans mauvaise surprise.</p></div></div>
+          <div class="m-item reveal dl2"><span class="n">03</span><div><h3>Un conseil d'allure</h3><p>Une hésitation entre deux pièces ? Notre équipe compose avec vous : associations, tailles, occasions — repartez avec une silhouette, pas seulement un article.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>En boutique, <em>en images</em></h2>
+      <p class="lead">L'ambiance et les pièces du moment. Pour les arrivages au quotidien, suivez-nous sur Instagram.</p>
+    </div>
+    <div class="masonry reveal">
+      <figure><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800&auto=format&fit=crop" alt="Rayon de la boutique" loading="lazy" decoding="async"><figcaption>La boutique, à Angré</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop" alt="T-shirt premium" loading="lazy" decoding="async"><figcaption>Les essentiels</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Sneakers" loading="lazy" decoding="async"><figcaption>Sneakers du moment</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop" alt="Sac de luxe" loading="lazy" decoding="async"><figcaption>La maroquinerie</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=800&auto=format&fit=crop" alt="Prêt-à-porter" loading="lazy" decoding="async"><figcaption>Prêt-à-porter</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=800&auto=format&fit=crop" alt="Présentoir de vêtements" loading="lazy" decoding="async"><figcaption>Les nouveautés</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?q=80&w=800&auto=format&fit=crop" alt="Sandales" loading="lazy" decoding="async"><figcaption>Sandales &amp; mules</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop" alt="Détail de tissus" loading="lazy" decoding="async"><figcaption>Le souci de la matière</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="insta">
+  <div class="wrap reveal">
+    <span class="eyebrow">Suivez-nous</span>
+    <h2>Les arrivages, en direct sur <a href="https://www.instagram.com/benedetto_1981" target="_blank" rel="noopener">@benedetto_1981</a></h2>
+    <p>Nouveautés, pièces rares, coulisses de la boutique : c'est sur Instagram que Benedetto 1981 vit au quotidien. Écrivez-nous en message privé ou sur WhatsApp pour réserver une pièce.</p>
+    <a class="btn btn-ghost" href="https://www.instagram.com/benedetto_1981" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+      Découvrir le compte Instagram
+    </a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2>À Angré, <em>au cœur d'Abidjan</em></h2>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Angré, Abidjan — Côte d'Ivoire</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250768415885">+225 07 68 41 58 85</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span><div><h4>Instagram</h4><p><a href="https://www.instagram.com/benedetto_1981" target="_blank" rel="noopener">@benedetto_1981</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horaires</h4><p>Lundi – samedi : environ 10h30 – 21h · Dimanche : 14h – 19h.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Demander une pièce</h3>
+        <p>Décrivez la pièce recherchée : votre demande part directement sur le WhatsApp de la boutique, prête à être envoyée.</p>
+        <form id="rdvForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" type="text" placeholder="Ex. Marc D." required></div>
+            <div class="f-group"><label for="f-tel">Votre téléphone</label><input id="f-tel" name="tel" type="tel" placeholder="07 xx xx xx xx"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label for="f-presta">Univers souhaité</label>
+              <select id="f-presta" name="presta" required>
+                <option value="Prêt-à-porter">Prêt-à-porter</option>
+                <option value="T-Shirts">T-Shirts</option>
+                <option value="Sacs">Sacs</option>
+                <option value="Sneakers">Sneakers</option>
+                <option value="Sandales & Mules">Sandales &amp; Mules</option>
+                <option value="Autre demande">Autre demande</option>
+              </select>
+            </div>
+            <div class="f-group"><label for="f-date">Taille / pointure</label><input id="f-date" name="date" type="text" placeholder="Ex. taille L, pointure 43"></div>
+          </div>
+          <div class="f-group"><label for="f-msg">Votre message</label><textarea id="f-msg" name="msg" placeholder="Marque, modèle, couleur recherchés..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer sur WhatsApp
+          </button>
+          <p class="f-note">Réponse de la boutique directement dans votre conversation WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Benedetto<span>1981 · Angré</span></div>
+        <p>Boutique de vêtements et accessoires de luxe à Angré, Abidjan. Prêt-à-porter, sacs, sneakers, sandales et mules de marques — depuis 1981.</p>
+      </div>
+      <div class="foot-col"><h5>Collections</h5><a href="#collections">Prêt-à-porter</a><a href="#collections">T-Shirts</a><a href="#collections">Sacs</a><a href="#collections">Sneakers</a><a href="#collections">Sandales &amp; Mules</a></div>
+      <div class="foot-col"><h5>La maison</h5><a href="#maison">L'esprit Benedetto</a><a href="#galerie">Galerie</a><a href="https://www.instagram.com/benedetto_1981" target="_blank" rel="noopener">Instagram — @benedetto_1981</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Angré, Abidjan</a><a href="tel:+2250768415885">+225 07 68 41 58 85</a><a href="https://wa.me/2250768415885" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Benedetto 1981 — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel de Benedetto 1981.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250768415885?text=Bonjour%20Benedetto%201981%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noopener" aria-label="Discuter avec Benedetto 1981 sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de Benedetto 1981.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('marqueeTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+document.getElementById('rdvForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim(),tel=document.getElementById('f-tel').value.trim(),presta=document.getElementById('f-presta').value,date=document.getElementById('f-date').value.trim(),msg=document.getElementById('f-msg').value.trim();
+  var lignes=['Bonjour Benedetto 1981, je souhaite un renseignement sur une pièce.'];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Univers : '+presta);
+  if(date)lignes.push('Taille / pointure : '+date);
+  if(msg)lignes.push('Message : '+msg);
+  if(tel)lignes.push('Mon téléphone : '+tel);
+  window.open('https://wa.me/2250768415885?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>

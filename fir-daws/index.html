@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fir-daws — Institut Fitness &amp; Spa · Riviera Faya, Abidjan · Musculation, Fitness, Boxing, Massage</title>
+<meta name="description" content="Fir-daws Institut Fitness & Spa, Riviera Faya, Abidjan : musculation, fitness, cardio, boxing, karaté, gym, massage et spa. Ouvert 7j/7 de 8h à 20h. Infos et inscriptions sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1116'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='32' fill='%23C8F542' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#0E1116;--fond2:#151A21;--fond3:#1C232D;--lime:#C8F542;--lime2:#A8D92E;--blanc:#F5F7F2;--gris:#9AA5B1;--wa:#25D366;--sans:"Inter",system-ui,sans-serif;--disp:"Archivo",system-ui,sans-serif;--ease:cubic-bezier(.22,.8,.28,1)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--fond);color:var(--blanc);line-height:1.65;font-size:16.5px;padding-bottom:46px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}::selection{background:var(--lime);color:var(--fond)}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--lime)}
+.eyebrow::before{content:"";width:38px;height:2px;background:var(--lime)}
+h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.02;text-transform:uppercase;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.6vw,3.3rem)}h2 em,h1 em{font-style:normal;color:var(--lime)}
+.lead{color:var(--gris);font-size:1.06rem;max-width:57ch}section{padding:105px 0}.sec-head{max-width:740px;margin-bottom:52px}.sec-head .lead{margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:6px;font-family:var(--disp);font-weight:800;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;transition:transform .35s var(--ease),box-shadow .35s,background .35s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#06230F;box-shadow:0 12px 30px -10px rgba(37,211,102,.5)}.btn-wa:hover{transform:translateY(-3px)}
+.btn-lime{background:var(--lime);color:var(--fond)}.btn-lime:hover{background:var(--lime2);transform:translateY(-3px)}
+.btn-ghost{border:1px solid rgba(245,247,242,.35);color:var(--blanc)}.btn-ghost:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s,box-shadow .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(14,17,22,.94);backdrop-filter:blur(12px);border-color:rgba(200,245,66,.25);box-shadow:0 10px 40px -18px rgba(0,0,0,.7)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{font-family:var(--disp);font-weight:900;font-size:1.45rem;text-transform:uppercase;letter-spacing:.04em;color:var(--blanc)}.logo b{color:var(--lime)}.logo small{display:block;font-family:var(--sans);font-size:.58rem;letter-spacing:.4em;color:var(--gris);font-weight:700}
+.nav-links{display:flex;gap:32px}.nav-links a{color:rgba(245,247,242,.82);font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--lime);transition:width .35s}.nav-links a:hover{color:var(--blanc)}.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--lime);color:var(--fond);padding:12px 22px;border-radius:6px;font-family:var(--disp);font-weight:800;font-size:.84rem;text-transform:uppercase}.nav-cta svg{width:16px;height:16px}.nav-cta:hover{background:var(--lime2);transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;padding:150px 0 0;background:var(--fond)}
+.hero-media{position:absolute;inset:0}.hero-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:zoom 9s var(--ease) forwards}@keyframes zoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,17,22,.94) 0%,rgba(14,17,22,.6) 50%,rgba(14,17,22,.15) 82%),linear-gradient(0deg,rgba(14,17,22,.96),rgba(14,17,22,0) 46%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:64px}
+.hero h1{font-size:clamp(2.8rem,7.4vw,5.8rem);max-width:14ch;margin:24px 0 22px;font-weight:900}
+.hero p{max-width:54ch;color:rgba(245,247,242,.88);font-size:1.09rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 42px;margin-top:52px;padding-top:24px;border-top:1px solid rgba(245,247,242,.18);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(245,247,242,.72);font-weight:600}
+.hero-meta span{display:inline-flex;gap:10px;align-items:center}.hero-meta svg{width:15px;height:15px;stroke:var(--lime)}
+.anim{opacity:0;transform:translateY(24px);animation:rise 1s var(--ease) forwards}.d1{animation-delay:.1s}.d2{animation-delay:.24s}.d3{animation-delay:.38s}.d4{animation-delay:.52s}.d5{animation-delay:.66s}@keyframes rise{to{opacity:1;transform:none}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--fond3);border-bottom:1px solid var(--fond3);background:var(--fond2)}
+.stat{padding:36px 30px;text-align:center;border-left:1px solid var(--fond3)}.stat:first-child{border-left:none}
+.stat b{font-family:var(--disp);font-size:2.1rem;font-weight:900;color:var(--lime);display:block;line-height:1}
+.stat span{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.act{background:var(--fond2);border:1px solid var(--fond3);border-radius:14px;overflow:hidden;transition:transform .5s var(--ease),border-color .5s}
+.act:hover{transform:translateY(-8px);border-color:rgba(200,245,66,.5)}
+.act img{width:100%;height:215px;object-fit:cover;transition:transform .8s var(--ease)}.act:hover img{transform:scale(1.06)}
+.act-b{padding:24px}.act-b h3{font-size:1.25rem;margin-bottom:8px}.act-b p{color:var(--gris);font-size:.96rem}
+.num{font-family:var(--disp);color:var(--lime);font-size:.78rem;font-weight:800;letter-spacing:.28em;display:block;margin-bottom:10px}
+.link-wa{display:inline-flex;gap:8px;align-items:center;margin-top:15px;font-weight:700;color:var(--blanc);border-bottom:2px solid var(--lime);padding-bottom:3px}.link-wa svg{width:16px;height:16px;fill:#25D366}.link-wa:hover{color:var(--lime)}
+.spa{background:linear-gradient(135deg,#131B16,#0E1116 60%);border-top:1px solid var(--fond3);border-bottom:1px solid var(--fond3)}
+.spa-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.spa-media img{width:100%;height:500px;object-fit:cover;border-radius:16px}
+.spa h2 em{color:var(--lime)}
+.points{list-style:none;margin:24px 0 30px;display:grid;gap:12px}.points li{display:flex;gap:12px;font-weight:600}.points li::before{content:"";width:8px;height:8px;background:var(--lime);flex:none;margin-top:9px;transform:rotate(45deg)}
+.parcours{background:var(--fond)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--fond2);border:1px solid var(--fond3);border-radius:14px;padding:32px 28px}
+.step .n{font-family:var(--disp);font-size:2.4rem;font-weight:900;color:transparent;-webkit-text-stroke:1.5px var(--lime);display:block;margin-bottom:14px}
+.step h3{font-size:1.2rem;margin-bottom:8px}.step p{color:var(--gris);font-size:.96rem}
+.galerie{background:var(--fond2);border-top:1px solid var(--fond3)}
+.masonry{columns:3;column-gap:18px}.masonry figure{break-inside:avoid;margin-bottom:18px;border-radius:12px;overflow:hidden;position:relative}
+.masonry img{width:100%;transition:transform .8s var(--ease)}.masonry figure:hover img{transform:scale(1.06)}
+.masonry figcaption{position:absolute;inset:auto 0 0 0;padding:40px 18px 14px;color:var(--blanc);font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:.9rem;letter-spacing:.08em;background:linear-gradient(0deg,rgba(14,17,22,.85),transparent);opacity:0;transition:opacity .4s}.masonry figure:hover figcaption{opacity:1}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
+.info-item{display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--fond3)}.info-item:first-child{border-top:none}
+.ic{width:46px;height:46px;flex:none;border:1px solid var(--lime);border-radius:10px;display:grid;place-items:center}.ic svg{width:19px;height:19px;stroke:var(--lime)}
+.info-item h4{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gris);font-weight:800;margin-bottom:4px}.info-item p{font-weight:600}
+.form-card{background:var(--fond2);border:1px solid var(--fond3);border-radius:16px;padding:42px}
+.form-card h3{font-size:1.55rem;margin-bottom:8px}.form-card>p{color:var(--gris);font-size:.95rem;margin-bottom:26px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.f-group{margin-bottom:16px}
+.f-group label{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin-bottom:8px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:var(--fond3);border:1px solid #2A333F;border-radius:8px;color:var(--blanc);padding:13px 15px;font-family:var(--sans);font-size:.97rem}
+.f-group select option{color:#111}.f-group textarea{resize:vertical;min-height:90px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--lime)}
+.form-card .btn{width:100%;justify-content:center}.f-note{font-size:.82rem;color:var(--gris);text-align:center;margin-top:14px}
+footer{background:#0A0D10;color:rgba(245,247,242,.65);padding:72px 0 38px;border-top:1px solid var(--fond3)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:42px;justify-content:space-between}.foot-logo{font-family:var(--disp);font-weight:900;font-size:1.55rem;text-transform:uppercase;color:var(--blanc)}.foot-logo b{color:var(--lime)}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:12px}.foot-col h5{color:var(--blanc);font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem}.foot-col a:hover{color:var(--lime)}
+.foot-bottom{margin-top:52px;padding-top:24px;border-top:1px solid var(--fond3);display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between;font-size:.83rem;color:rgba(245,247,242,.42)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--lime);color:var(--fond);font-size:.8rem;font-weight:700;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.35)}
+.demo-banner b{text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s}
+.wa-float svg{width:30px;height:30px;fill:#fff}.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.visible{opacity:1;transform:none}.dl1{transition-delay:.12s}.dl2{transition-delay:.24s}
+@media(max-width:920px){.grid,.steps{grid-template-columns:1fr 1fr}.spa-grid,.contact-grid{grid-template-columns:1fr}.nav-links{display:none}section{padding:76px 0}.stats{grid-template-columns:1fr}.stat{border-left:none;border-top:1px solid var(--fond3)}.stat:first-child{border-top:none}}
+@media(max-width:560px){.grid,.steps{grid-template-columns:1fr}.masonry{columns:1}.f-row{grid-template-columns:1fr}.wrap{padding:0 20px}.hero-ctas .btn{width:100%;justify-content:center}.spa-media img{height:360px}.form-card{padding:32px 22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="header"><div class="wrap nav">
+<a class="logo" href="#">Fir<b>-</b>daws<small>Institut Fitness &amp; Spa</small></a>
+<nav class="nav-links"><a href="#activites">Activités</a><a href="#spa">Spa</a><a href="#parcours">Démarrer</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20souhaite%20des%20informations%20pour%20m%27inscrire." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg>S'inscrire</a>
+</div></header>
+
+<section class="hero"><div class="hero-media"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" alt="Entraînement en salle de sport chez Fir-daws à Abidjan" fetchpriority="high"></div>
+<div class="wrap hero-inner">
+<span class="eyebrow anim d1">Fitness &amp; Spa — Riviera Faya, Abidjan</span>
+<h1 class="anim d2">Ton corps. <em>Ta discipline.</em> Ton institut.</h1>
+<p class="anim d3">Musculation, fitness, cardio, boxing, karaté… et un espace spa pour récupérer. À la Riviera Faya, Fir-daws t'accueille 7j/7 pour te remettre en forme, à ton rythme, entouré d'une équipe qui te pousse vers le haut.</p>
+<div class="hero-ctas anim d4">
+<a class="btn btn-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20souhaite%20des%20informations%20pour%20m%27inscrire." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg>Je m'inscris sur WhatsApp</a>
+<a class="btn btn-ghost" href="#activites">Voir les activités</a></div>
+<div class="hero-meta anim d5">
+<span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Riviera Faya, route Cité SIR — près de l'église Ephrata</span>
+<span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>+225 01 40 19 50 50</span>
+<span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>7j/7 · 8h–20h</span>
+</div></div></section>
+
+<div class="stats">
+<div class="stat reveal"><b>7j/7</b><span>Ouvert tous les jours</span></div>
+<div class="stat reveal dl1"><b>9</b><span>Activités sport &amp; bien-être</span></div>
+<div class="stat reveal dl2"><b>8h–20h</b><span>Large amplitude horaire</span></div>
+</div>
+
+<section id="activites"><div class="wrap">
+<div class="sec-head reveal"><span class="eyebrow">Nos activités</span><h2>Force, cardio, combat — <em>et récupération</em></h2><p class="lead">Un seul lieu pour t'entraîner sérieusement et souffler vraiment. Demande le planning et les formules d'abonnement sur WhatsApp : l'équipe te répond et t'oriente selon ton objectif.</p></div>
+<div class="grid">
+<article class="act reveal"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=900&auto=format&fit=crop" alt="Musculation avec haltères" loading="lazy"><div class="act-b"><span class="num">01</span><h3>Musculation</h3><p>Un plateau complet pour construire ta force et sculpter ton corps, que tu débutes ou que tu confirmes.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20musculation." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+<article class="act reveal dl1"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=900&auto=format&fit=crop" alt="Cours de fitness collectif" loading="lazy"><div class="act-b"><span class="num">02</span><h3>Fitness &amp; Gym</h3><p>Des séances dynamiques en groupe pour brûler, tonifier et garder la motivation semaine après semaine.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20cours%20de%20fitness." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+<article class="act reveal dl2"><img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=900&auto=format&fit=crop" alt="Cardio training" loading="lazy"><div class="act-b"><span class="num">03</span><h3>Cardio &amp; Bike Cardio</h3><p>Endurance, souffle et perte de poids : le cardio sous toutes ses formes, y compris le bike cardio en musique.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20cardio." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+<article class="act reveal"><img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=900&auto=format&fit=crop" alt="Entraînement de boxing" loading="lazy"><div class="act-b"><span class="num">04</span><h3>Boxing</h3><p>Technique, réflexes et condition physique totale : la boxe pour te défouler et apprendre à te défendre.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20boxing." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+<article class="act reveal dl1"><img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=900&auto=format&fit=crop" alt="Arts martiaux et karaté" loading="lazy"><div class="act-b"><span class="num">05</span><h3>Karaté</h3><p>Discipline, respect et maîtrise de soi : le karaté pour les jeunes comme pour les adultes, dans un cadre encadré.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20karat%C3%A9." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+<article class="act reveal dl2"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=900&auto=format&fit=crop" alt="Séance de gym douce et étirements" loading="lazy"><div class="act-b"><span class="num">06</span><h3>Gym &amp; remise en forme</h3><p>Une pratique douce et progressive pour retrouver mobilité, posture et énergie au quotidien, à tout âge.</p><a class="link-wa" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20remise%20en%20forme." target="_blank" rel="noopener">Infos WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a></div></article>
+</div></div></section>
+
+<section class="spa" id="spa"><div class="wrap"><div class="spa-grid">
+<div class="spa-media reveal"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop" alt="Massage relaxant au spa" loading="lazy"></div>
+<div class="reveal dl1"><span class="eyebrow">Espace Spa &amp; Massage</span><h2 style="margin:14px 0">Après l'effort, <em>le réconfort</em></h2><p class="lead">L'entraînement construit, la récupération consolide. L'espace spa de Fir-daws est là pour détendre les muscles, relâcher la tête et repartir neuf.</p>
+<ul class="points"><li>Massages de récupération après la séance</li><li>Un espace pensé pour la détente et le calme</li><li>Le complément idéal de tes entraînements</li><li>Sur réservation via WhatsApp</li></ul>
+<a class="btn btn-lime" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20souhaite%20r%C3%A9server%20un%20massage%20au%20spa." target="_blank" rel="noopener">Réserver un massage</a></div>
+</div></div></section>
+
+<section class="parcours" id="parcours"><div class="wrap">
+<div class="sec-head reveal"><span class="eyebrow">Démarrer</span><h2>Tu commences <em>en 3 étapes</em></h2></div>
+<div class="steps">
+<div class="step reveal"><span class="n">01</span><h3>Écris-nous</h3><p>Un message WhatsApp suffit : dis-nous ton objectif — forme, force, perte de poids, détente — et tes disponibilités.</p></div>
+<div class="step reveal dl1"><span class="n">02</span><h3>Découvre l'institut</h3><p>Passe nous voir à la Riviera Faya : visite des espaces, rencontre avec l'équipe et choix de ta formule d'abonnement.</p></div>
+<div class="step reveal dl2"><span class="n">03</span><h3>Première séance</h3><p>Tu démarres encadré, avec des repères clairs. Ensuite, la régularité fait le reste — on est là tous les jours, de 8h à 20h.</p></div>
+</div></div></section>
+
+<section class="galerie" id="galerie"><div class="wrap">
+<div class="sec-head reveal"><span class="eyebrow">Galerie</span><h2>L'ambiance <em>Fir-daws</em></h2><p class="lead">L'énergie de la salle, l'intensité des cours, le calme du spa. Pour le quotidien de l'institut, suivez-nous sur Facebook.</p></div>
+<div class="masonry reveal">
+<figure><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Plateau de musculation" loading="lazy"><figcaption>Le plateau muscu</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" alt="Travail aux haltères" loading="lazy"><figcaption>Force &amp; technique</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop" alt="Cours collectif" loading="lazy"><figcaption>Cours collectifs</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=800&auto=format&fit=crop" alt="Boxing" loading="lazy"><figcaption>Boxing</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop" alt="Spa et massage" loading="lazy"><figcaption>L'espace spa</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" alt="Entraînement personnel" loading="lazy"><figcaption>Coaching</figcaption></figure>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-grid">
+<div class="reveal"><span class="eyebrow">Nous trouver</span><h2>Riviera Faya, <em>route Cité SIR</em></h2>
+<div style="margin-top:34px">
+<div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Riviera Faya, nouveau goudron, route Cité SIR — près de l'église Ephrata, Abidjan</p></div></div>
+<div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone</h4><p><a href="tel:+2250140195050">+225 01 40 19 50 50</a></p></div></div>
+<div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horaires</h4><p>Ouvert 7j/7 : 8h – 20h, sans interruption.</p></div></div>
+</div></div>
+<div class="form-card reveal dl1"><h3>Demander les formules</h3><p>Remplis ce court formulaire : ta demande partira directement sur le WhatsApp de l'institut, prête à être envoyée.</p>
+<form id="inscForm">
+<div class="f-row"><div class="f-group"><label for="f-nom">Ton nom</label><input id="f-nom" type="text" placeholder="Ex. Kouadio J." required></div>
+<div class="f-group"><label for="f-tel">Ton téléphone</label><input id="f-tel" type="tel" placeholder="07 xx xx xx xx"></div></div>
+<div class="f-group"><label for="f-act">Activité qui t'intéresse</label><select id="f-act"><option>Musculation</option><option>Fitness &amp; Gym</option><option>Cardio / Bike Cardio</option><option>Boxing</option><option>Karaté</option><option>Massage &amp; Spa</option><option>Plusieurs activités</option></select></div>
+<div class="f-group"><label for="f-msg">Ton objectif / message</label><textarea id="f-msg" placeholder="Ex. perdre du poids, prendre du muscle, me détendre..."></textarea></div>
+<button type="submit" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg>Envoyer sur WhatsApp</button>
+<p class="f-note">L'équipe te répond avec le planning et les formules adaptées à ton objectif.</p></form></div>
+</div></div></section>
+
+<footer><div class="wrap"><div class="foot-grid">
+<div><div class="foot-logo">Fir<b>-</b>daws</div><p>Institut Fitness &amp; Spa — centre de remise en forme et de bien-être à la Riviera Faya, Abidjan. Ouvert 7j/7, de 8h à 20h.</p></div>
+<div class="foot-col"><h5>Activités</h5><a href="#activites">Musculation</a><a href="#activites">Fitness &amp; Cardio</a><a href="#activites">Boxing &amp; Karaté</a><a href="#spa">Massage &amp; Spa</a></div>
+<div class="foot-col"><h5>L'institut</h5><a href="#parcours">Démarrer</a><a href="#galerie">Galerie</a><a href="#contact">Nous trouver</a></div>
+<div class="foot-col"><h5>Contact</h5><a href="#contact">Riviera Faya, route Cité SIR, Abidjan</a><a href="tel:+2250140195050">+225 01 40 19 50 50</a><a href="https://wa.me/2250142839964" target="_blank" rel="noopener">WhatsApp direct</a></div>
+</div><div class="foot-bottom"><span>© 2026 Fir-daws Institut Fitness &amp; Spa — Abidjan. Photos d'illustration libres de droits (Unsplash).</span><span>Maquette de démonstration réalisée par Business QG — site non officiel de Fir-daws Institut Fitness &amp; Spa.</span></div></div></footer>
+
+<a class="wa-float" href="https://wa.me/2250142839964?text=Bonjour%20Fir-daws%2C%20je%20souhaite%20des%20informations%20pour%20m%27inscrire." target="_blank" rel="noopener" aria-label="Contacter Fir-daws sur WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de Fir-daws Institut Fitness &amp; Spa.</div>
+<script>
+var header=document.getElementById('header');function onScroll(){header.classList.toggle('scrolled',window.scrollY>40)}window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.getElementById('inscForm').addEventListener('submit',function(ev){ev.preventDefault();var nom=document.getElementById('f-nom').value.trim(),tel=document.getElementById('f-tel').value.trim(),act=document.getElementById('f-act').value,msg=document.getElementById('f-msg').value.trim();var l=['Bonjour Fir-daws, je souhaite des informations pour m\'inscrire.'];if(nom)l.push('Nom : '+nom);l.push('Activité : '+act);if(msg)l.push('Objectif : '+msg);if(tel)l.push('Mon téléphone : '+tel);window.open('https://wa.me/2250142839964?text='+encodeURIComponent(l.join('\n')),'_blank')});
+</script>
+</body></html>

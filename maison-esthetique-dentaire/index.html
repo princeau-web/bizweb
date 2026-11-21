@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Esthétique Dentaire — Dentisterie esthétique à Zone 4, Abidjan</title>
+<meta name="description" content="Maison Esthétique Dentaire, Rue du Canal, Zone 4, Abidjan : esthétique du sourire, facettes, blanchiment et soins dentaires. Demandez votre rendez-vous sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F3EAD8'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23A98B54' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blanc:#FDFCFA; --ivoire:#F7F2E9; --champagne:#EFE3CC; --champagne-2:#E3D2AC;
+  --perle:#E8E6E1; --gris:#7C766C; --gris-doux:#A79E91; --ink:#33302B; --noir:#211E1A;
+  --or:#A98B54; --or-2:#C6A96C; --wa:#25D366;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;background:var(--blanc);color:var(--ink);line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--champagne-2);color:var(--noir)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.7rem;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:var(--or)}
+.eyebrow::before{content:"";width:44px;height:1px;background:var(--or)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--noir)}
+h2{font-size:clamp(2.2rem,4.6vw,3.4rem)}
+h1 em,h2 em{font-style:italic;color:var(--or)}
+.lead{color:var(--gris);font-size:1.05rem;max-width:58ch;font-weight:300}
+section{padding:104px 0}
+.sec-head{max-width:700px;margin-bottom:54px}
+.sec-head .lead{margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:100px;font-weight:500;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-wa{background:var(--wa);color:#07240f;box-shadow:0 14px 30px -12px rgba(37,211,102,.55)}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-or{background:var(--noir);color:var(--ivoire)}
+.btn-or:hover{background:var(--or);transform:translateY(-3px)}
+.btn-ghost{border:1px solid rgba(253,252,250,.55);color:#fff;background:rgba(255,255,255,.04);backdrop-filter:blur(4px)}
+.btn-ghost:hover{border-color:var(--champagne-2);color:var(--champagne);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s,box-shadow .45s,border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(253,252,250,.94);backdrop-filter:blur(12px);border-color:var(--perle);box-shadow:0 12px 34px -20px rgba(33,30,26,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.35rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;transition:color .4s;line-height:1.15}
+.logo small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.42em;color:var(--champagne-2)}
+header.scrolled .logo{color:var(--noir)}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:rgba(255,255,255,.85);font-size:.78rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;position:relative;padding:6px 0;transition:color .3s}
+header.scrolled .nav-links a{color:var(--ink)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--or);transition:width .35s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--or);color:#fff;padding:12px 22px;border-radius:100px;font-weight:500;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;transition:transform .35s,background .35s}
+.nav-cta svg{width:16px;height:16px}
+.nav-cta:hover{background:var(--or-2);transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--noir);color:#fff;overflow:hidden;padding:150px 0 0}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards;opacity:.92}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,21,17,.82) 0%,rgba(24,21,17,.45) 48%,rgba(24,21,17,.08) 80%),linear-gradient(0deg,rgba(24,21,17,.88) 0%,rgba(24,21,17,0) 44%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:62px}
+.hero .eyebrow{color:var(--champagne-2)}
+.hero h1{color:#fff;font-size:clamp(3rem,7.4vw,5.8rem);font-weight:500;max-width:13ch;margin:26px 0 22px}
+.hero h1 em{color:var(--champagne-2)}
+.hero p{max-width:52ch;color:rgba(255,255,255,.87);font-size:1.08rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 42px;margin-top:56px;padding-top:26px;border-top:1px solid rgba(255,255,255,.2);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--champagne-2)}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.hero-anim.d1{animation-delay:.1s}.hero-anim.d2{animation-delay:.24s}.hero-anim.d3{animation-delay:.38s}.hero-anim.d4{animation-delay:.52s}.hero-anim.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.strip{background:var(--ivoire);border-bottom:1px solid var(--perle);padding:22px 0;overflow:hidden;white-space:nowrap}
+.strip-track{display:inline-flex;animation:marquee 32s linear infinite}
+.strip span{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--gris);padding:0 26px}
+.strip i{color:var(--or);font-style:normal;font-size:.75rem;align-self:center}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.services{background:var(--blanc)}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.svc{background:var(--ivoire);border:1px solid var(--perle);border-radius:6px;padding:44px 40px;transition:transform .5s var(--ease),box-shadow .5s,border-color .5s;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(var(--or-2),var(--champagne));opacity:0;transition:opacity .4s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(33,30,26,.28);border-color:var(--champagne-2)}
+.svc:hover::before{opacity:1}
+.svc .num{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--or);letter-spacing:.24em}
+.svc h3{font-size:1.85rem;margin:12px 0 10px}
+.svc p{color:var(--gris);font-size:.99rem;max-width:46ch}
+.svc ul{list-style:none;margin:20px 0 24px;display:grid;gap:9px}
+.svc li{display:flex;gap:11px;align-items:baseline;font-size:.95rem}
+.svc li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--or);flex:none}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:500;font-size:.9rem;letter-spacing:.04em;color:var(--noir);border-bottom:1px solid var(--or);padding-bottom:3px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:16px;height:16px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+.parcours{background:var(--noir);color:var(--ivoire)}
+.parcours h2{color:#fff}
+.parcours .lead{color:rgba(247,242,233,.65)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:14px}
+.step{border:1px solid rgba(239,227,204,.22);border-radius:6px;padding:38px 32px;background:rgba(255,255,255,.02);transition:border-color .4s,transform .4s var(--ease)}
+.step:hover{border-color:var(--or-2);transform:translateY(-5px)}
+.step .n{font-family:var(--serif);font-style:italic;font-size:2.2rem;color:var(--champagne-2);line-height:1}
+.step h3{color:#fff;font-size:1.45rem;margin:16px 0 8px}
+.step p{color:rgba(247,242,233,.66);font-size:.96rem}
+.cabinet{background:var(--ivoire)}
+.cab-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:66px;align-items:center}
+.cab-media{position:relative}
+.cab-media img{width:100%;height:560px;object-fit:cover;border-radius:6px}
+.cab-media::after{content:"";position:absolute;inset:0;border-radius:6px;box-shadow:inset 0 0 0 1px rgba(169,139,84,.4)}
+.cab-badge{position:absolute;left:-20px;bottom:30px;background:#fff;border:1px solid var(--champagne);padding:18px 24px;border-radius:6px;max-width:260px;box-shadow:0 24px 44px -20px rgba(33,30,26,.3)}
+.cab-badge b{font-family:var(--serif);font-size:1.4rem;font-weight:600;display:block;line-height:1.15;color:var(--noir)}
+.cab-badge span{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--or)}
+.cab-items{margin-top:36px;display:grid}
+.cab-item{display:flex;gap:22px;padding:24px 0;border-top:1px solid var(--perle)}
+.cab-item:first-child{border-top:none;padding-top:4px}
+.cab-item .n{font-family:var(--serif);font-style:italic;color:var(--or);font-size:1.35rem;flex:none;width:40px}
+.cab-item h3{font-size:1.3rem;margin-bottom:6px}
+.cab-item p{color:var(--gris);font-size:.97rem;max-width:46ch}
+.galerie{background:var(--blanc)}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gal-grid figure{position:relative;overflow:hidden;border-radius:6px}
+.gal-grid img{width:100%;height:340px;object-fit:cover;transition:transform .9s var(--ease)}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{position:absolute;inset:auto 0 0 0;padding:40px 18px 14px;color:#fff;font-family:var(--serif);font-style:italic;font-size:1.05rem;background:linear-gradient(0deg,rgba(24,21,17,.72),transparent);opacity:0;transition:opacity .45s}
+.gal-grid figure:hover figcaption{opacity:1}
+.contact{background:var(--ivoire)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:66px;align-items:start}
+.info-list{margin-top:34px;display:grid}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid var(--perle)}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;border:1px solid var(--or);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:var(--or)}
+.info-item h4{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gris-doux);font-weight:600;margin-bottom:4px}
+.info-item p{font-weight:400;font-size:1.01rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:#fff;border:1px solid var(--champagne);border-radius:8px;padding:44px 42px;box-shadow:0 34px 60px -34px rgba(33,30,26,.3)}
+.form-card h3{font-size:1.75rem;margin-bottom:8px}
+.form-card>p{color:var(--gris);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:var(--ivoire);border:1px solid var(--perle);border-radius:4px;color:var(--ink);padding:14px 16px;font-family:var(--sans);font-size:.98rem;font-weight:300;transition:border-color .3s}
+.f-group textarea{resize:vertical;min-height:92px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--or)}
+.form-card .btn{width:100%;justify-content:center;margin-top:4px}
+.f-note{font-size:.82rem;color:var(--gris-doux);text-align:center;margin-top:15px}
+footer{background:var(--noir);color:rgba(247,242,233,.7);padding:74px 0 40px}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between}
+.foot-logo{font-family:var(--serif);font-size:1.5rem;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.foot-logo small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.42em;color:var(--champagne-2);margin-top:4px}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:14px}
+.foot-col h5{color:#fff;font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--champagne-2);transform:translateX(4px)}
+.foot-bottom{margin-top:54px;padding-top:26px;border-top:1px solid rgba(247,242,233,.13);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(247,242,233,.45)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--or);color:#fff;font-size:.8rem;font-weight:500;letter-spacing:.02em;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.2)}
+.demo-banner b{text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:900px){
+  section{padding:76px 0}
+  .nav-links{display:none}
+  .nav{height:68px}
+  .svc-grid,.steps,.contact-grid,.cab-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .cab-media img{height:400px}
+  .cab-badge{left:12px}
+  .f-row{grid-template-columns:1fr}
+  .form-card{padding:34px 24px}
+  .hero{padding-top:118px}
+}
+@media(max-width:520px){
+  body{font-size:15.5px}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}
+  .cab-badge{position:static;margin-top:14px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">Maison<small>Esthétique Dentaire</small></a>
+    <nav class="nav-links">
+      <a href="#soins">Soins</a>
+      <a href="#parcours">Votre parcours</a>
+      <a href="#cabinet">Le cabinet</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250142828181?text=Bonjour%20Maison%20Esth%C3%A9tique%20Dentaire%2C%20je%20souhaite%20demander%20un%20rendez-vous." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Rendez-vous
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1920&auto=format&fit=crop" alt="Cabinet dentaire moderne et lumineux" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Dentisterie esthétique — Zone 4, Abidjan</span>
+    <h1 class="hero-anim d2">Un sourire, <em>sublimé</em> en douceur.</h1>
+    <p class="hero-anim d3">Esthétique du sourire, facettes, blanchiment et soins dentaires : la Maison Esthétique Dentaire vous accueille Rue du Canal, à Zone 4, pour un premier échange sans engagement — diagnostic, conseils et devis personnalisé.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250142828181?text=Bonjour%20Maison%20Esth%C3%A9tique%20Dentaire%2C%20je%20souhaite%20demander%20un%20rendez-vous." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Demander un rendez-vous
+      </a>
+      <a class="btn btn-ghost" href="#soins">Découvrir nos soins</a>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Rue du Canal, Zone 4 — Immeuble HR Motors, 6e étage</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> +225 01 42 82 81 81</span>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track" id="stripTrack">
+    <span>Esthétique du sourire</span><i>✦</i><span>Facettes</span><i>✦</i><span>Blanchiment</span><i>✦</i><span>Soins dentaires</span><i>✦</i><span>Devis personnalisé</span><i>✦</i>
+  </div>
+</div>
+
+<section class="services" id="soins">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nos soins</span>
+      <h2>L'esthétique du sourire, <em>avec mesure</em></h2>
+      <p class="lead">Chaque sourire est unique : le cabinet commence toujours par écouter votre demande et examiner votre situation avant de proposer un soin. Les tarifs sont établis sur devis personnalisé, après ce premier échange.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="num">01</span>
+        <h3>Esthétique du sourire</h3>
+        <p>Une approche globale de l'harmonie de votre sourire : forme, alignement visuel et teinte sont étudiés ensemble, dans le respect de vos traits et de vos envies.</p>
+        <ul><li>Étude personnalisée de votre sourire</li><li>Proposition expliquée, sans pression</li><li>Résultat recherché : naturel et harmonieux</li></ul>
+        <a class="link-wa" href="https://wa.me/2250142828181?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20l'esth%C3%A9tique%20du%20sourire." target="_blank" rel="noopener">En parler sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </article>
+      <article class="svc reveal dl1">
+        <span class="num">02</span>
+        <h3>Facettes dentaires</h3>
+        <p>De fines facettes posées sur la face visible des dents pour harmoniser leur forme et leur teinte. Le cabinet vous explique le déroulement et vérifie avec vous si cette solution convient à votre cas.</p>
+        <ul><li>Conseil personnalisé avant toute décision</li><li>Teinte choisie avec vous, en lumière naturelle</li><li>Suivi après la pose</li></ul>
+        <a class="link-wa" href="https://wa.me/2250142828181?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20les%20facettes%20dentaires." target="_blank" rel="noopener">En parler sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <span class="num">03</span>
+        <h3>Blanchiment dentaire</h3>
+        <p>Un éclaircissement encadré par le cabinet, adapté à l'état de vos dents et à vos attentes. Le praticien vous présente le principe, le déroulement et les précautions à connaître avant de commencer.</p>
+        <ul><li>Examen préalable de vos dents</li><li>Attentes discutées en toute transparence</li><li>Conseils pour entretenir l'éclat</li></ul>
+        <a class="link-wa" href="https://wa.me/2250142828181?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20blanchiment%20dentaire." target="_blank" rel="noopener">En parler sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </article>
+      <article class="svc reveal dl1">
+        <span class="num">04</span>
+        <h3>Soins dentaires</h3>
+        <p>Les soins du quotidien pour garder des dents saines : consultations, contrôle et prise en charge de vos besoins courants, dans un cadre calme et lumineux au cœur de Zone 4.</p>
+        <ul><li>Consultation et bilan</li><li>Explications claires à chaque étape</li><li>Rendez-vous simple par WhatsApp</li></ul>
+        <a class="link-wa" href="https://wa.me/2250142828181?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20soin%20dentaire." target="_blank" rel="noopener">En parler sur WhatsApp <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="parcours" id="parcours">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Votre parcours</span>
+      <h2>Simple, clair, <em>sans surprise</em></h2>
+      <p class="lead">Trois étapes pour décider sereinement, à votre rythme.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="n">1</span><h3>Premier échange</h3><p>Écrivez au cabinet sur WhatsApp : décrivez votre envie ou votre gêne, posez vos questions. Vous recevez une réponse et un créneau de consultation.</p></div>
+      <div class="step reveal dl1"><span class="n">2</span><h3>Consultation &amp; devis</h3><p>Au cabinet, votre situation est examinée et les options vous sont expliquées. Vous repartez avec un devis personnalisé, libre à vous de décider.</p></div>
+      <div class="step reveal dl2"><span class="n">3</span><h3>Soin &amp; suivi</h3><p>Le soin est réalisé selon le plan convenu ensemble, avec un suivi et des conseils d'entretien adaptés à votre sourire.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cabinet" id="cabinet">
+  <div class="wrap">
+    <div class="cab-grid">
+      <div class="cab-media reveal">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1200&auto=format&fit=crop" alt="Praticien en consultation dans un cabinet dentaire lumineux" loading="lazy" decoding="async">
+        <div class="cab-badge"><b>Zone 4, Rue du Canal</b><span>Immeuble HR Motors — 6e étage</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">Le cabinet</span>
+          <h2>Un écrin <em>de calme</em> pour votre sourire</h2>
+          <p class="lead">Au 6e étage de l'Immeuble HR Motors, la Maison Esthétique Dentaire mise sur la lumière, la clarté et l'écoute — loin de l'image froide que l'on se fait parfois d'un cabinet dentaire.</p>
+        </div>
+        <div class="cab-items">
+          <div class="cab-item reveal"><span class="n">01</span><div><h3>L'écoute d'abord</h3><p>Votre demande est entendue avant tout acte : ce que vous aimez dans votre sourire, ce que vous aimeriez améliorer, vos questions.</p></div></div>
+          <div class="cab-item reveal dl1"><span class="n">02</span><div><h3>La transparence</h3><p>Options, déroulement et devis sont expliqués clairement. Aucun soin n'est engagé sans votre accord éclairé.</p></div></div>
+          <div class="cab-item reveal dl2"><span class="n">03</span><div><h3>Le sens du détail</h3><p>Teinte, forme, harmonie : l'esthétique du sourire est un travail de précision, pensé pour rester naturel.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>Le sourire, <em>en images</em></h2>
+      <p class="lead">Photos d'illustration — l'ambiance lumineuse et épurée qui inspire le cabinet.</p>
+    </div>
+    <div class="gal-grid reveal">
+      <figure><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop" alt="Sourire naturel et lumineux" loading="lazy" decoding="async"><figcaption>Sourire naturel</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop" alt="Équipement dentaire moderne" loading="lazy" decoding="async"><figcaption>Un cabinet moderne</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Portrait souriant en lumière douce" loading="lazy" decoding="async"><figcaption>Confiance retrouvée</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2>Au cœur <em>de Zone 4</em></h2>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Rue du Canal, Zone 4, Abidjan — Immeuble HR Motors, 6e étage</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250142828181">+225 01 42 82 81 81</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Rendez-vous</h4><p>Sur rendez-vous uniquement — demandez votre créneau sur WhatsApp, réponse du cabinet dans la conversation.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Demander un rendez-vous</h3>
+        <p>Remplissez ce court formulaire : votre demande partira directement sur le WhatsApp du cabinet, prête à être envoyée.</p>
+        <form id="rdvForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" type="text" placeholder="Ex. Nadia K." required></div>
+            <div class="f-group"><label for="f-tel">Votre téléphone</label><input id="f-tel" type="tel" placeholder="07 xx xx xx xx"></div>
+          </div>
+          <div class="f-group">
+            <label for="f-soin">Soin souhaité</label>
+            <select id="f-soin" required>
+              <option value="Esthétique du sourire">Esthétique du sourire</option>
+              <option value="Facettes dentaires">Facettes dentaires</option>
+              <option value="Blanchiment dentaire">Blanchiment dentaire</option>
+              <option value="Soin dentaire / consultation">Soin dentaire / consultation</option>
+              <option value="Demande de devis">Demande de devis</option>
+            </select>
+          </div>
+          <div class="f-group"><label for="f-msg">Votre message</label><textarea id="f-msg" placeholder="Décrivez votre envie ou votre question..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer sur WhatsApp
+          </button>
+          <p class="f-note">Sans engagement : le cabinet vous répond et vous propose un créneau.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Maison<small>Esthétique Dentaire</small></div>
+        <p>Dentisterie esthétique à Zone 4, Abidjan : esthétique du sourire, facettes, blanchiment et soins dentaires.</p>
+      </div>
+      <div class="foot-col"><h5>Nos soins</h5><a href="#soins">Esthétique du sourire</a><a href="#soins">Facettes</a><a href="#soins">Blanchiment</a><a href="#soins">Soins dentaires</a></div>
+      <div class="foot-col"><h5>Le cabinet</h5><a href="#parcours">Votre parcours</a><a href="#cabinet">Le cabinet</a><a href="#galerie">Galerie</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Rue du Canal, Zone 4, Abidjan</a><a href="tel:+2250142828181">+225 01 42 82 81 81</a><a href="https://wa.me/2250142828181" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Maison Esthétique Dentaire — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel de Maison Esthétique Dentaire.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250142828181?text=Bonjour%20Maison%20Esth%C3%A9tique%20Dentaire%2C%20je%20souhaite%20demander%20un%20rendez-vous." target="_blank" rel="noopener" aria-label="Discuter avec la Maison Esthétique Dentaire sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de Maison Esthétique Dentaire.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('stripTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+document.getElementById('rdvForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim();
+  var tel=document.getElementById('f-tel').value.trim();
+  var soin=document.getElementById('f-soin').value;
+  var msg=document.getElementById('f-msg').value.trim();
+  var lignes=['Bonjour Maison Esthétique Dentaire, je souhaite demander un rendez-vous.'];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Soin souhaité : '+soin);
+  if(msg)lignes.push('Message : '+msg);
+  if(tel)lignes.push('Mon téléphone : '+tel);
+  window.open('https://wa.me/2250142828181?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pistache &amp; Chocolat — Pâtisserie fine à Abidjan · Prima Center, Marcory</title>
+<meta name="description" content="Pistache & Chocolat, pâtisserie et salon de thé au Prima Center (Marcory, Abidjan) : praliné, brioches, mousses au chocolat et gâteaux sur commande. Ouvert 7j/7, 7h–20h.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233E2A20'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23A8B97F' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== PISTACHE & CHOCOLAT — Direction artistique : pistache, crème, cacao ===== */
+:root{
+  --cacao:#3E2A20; --cacao2:#523829; --cacao3:#6B4A36;
+  --creme:#FAF6EE; --creme2:#F3EAD9; --sable:#E7D9BE;
+  --pist:#7A8B3D; --pist2:#A8B97F; --pist-fond:#EEF1E0;
+  --ink:#33241B; --gris:#8A7561; --wa:#25D366;
+  --serif:"Fraunces",Georgia,serif; --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--creme);color:var(--ink);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--pist);color:#fff}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;font-weight:800;letter-spacing:.34em;text-transform:uppercase;color:var(--pist)}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--pist)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;color:var(--cacao)}
+h2{font-size:clamp(2.1rem,4.4vw,3.3rem);letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--pist)}
+.lead{color:var(--gris);font-size:1.06rem;max-width:56ch}
+section{padding:110px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head .lead{margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:100px;font-weight:700;font-size:.95rem;letter-spacing:.02em;transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#08240f;box-shadow:0 12px 30px -10px rgba(37,211,102,.55)}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-cacao{background:var(--cacao);color:var(--creme)}
+.btn-cacao:hover{background:var(--cacao2);transform:translateY(-3px);box-shadow:0 18px 34px -14px rgba(62,42,32,.5)}
+.btn-ghost{border:1px solid rgba(250,246,238,.45);color:var(--creme);background:rgba(255,255,255,.02);backdrop-filter:blur(4px)}
+.btn-ghost:hover{border-color:var(--pist2);color:var(--pist2);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s,box-shadow .45s,border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(62,42,32,.94);backdrop-filter:blur(12px);border-color:rgba(168,185,127,.3);box-shadow:0 10px 40px -18px rgba(0,0,0,.6)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.45rem;color:var(--creme);font-weight:500}
+.logo b{color:var(--pist2);font-weight:500;font-style:italic}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:rgba(250,246,238,.82);font-size:.82rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--pist2);transition:width .35s var(--ease)}
+.nav-links a:hover{color:var(--creme)} .nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--pist);color:#fff;padding:12px 22px;border-radius:100px;font-weight:800;font-size:.85rem;transition:transform .35s,background .35s}
+.nav-cta svg{width:16px;height:16px}.nav-cta:hover{background:#687a32;transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--cacao);color:var(--creme);overflow:hidden;padding:150px 0 0}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(62,42,32,.9) 0%,rgba(62,42,32,.58) 48%,rgba(62,42,32,.14) 80%),linear-gradient(0deg,rgba(62,42,32,.94) 0%,rgba(62,42,32,0) 44%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:64px}
+.hero .eyebrow{color:var(--pist2)}
+.hero h1{color:var(--creme);font-size:clamp(2.9rem,7vw,5.4rem);font-weight:400;letter-spacing:-.015em;max-width:13ch;margin:26px 0 24px}
+.hero h1 em{color:var(--pist2)}
+.hero p{max-width:52ch;color:rgba(250,246,238,.87);font-size:1.09rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 42px;margin-top:56px;padding-top:26px;border-top:1px solid rgba(250,246,238,.18);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(250,246,238,.74);font-weight:600}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--pist2)}
+.stars{color:var(--pist2);letter-spacing:.2em}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.hero-anim.d1{animation-delay:.1s}.hero-anim.d2{animation-delay:.24s}.hero-anim.d3{animation-delay:.38s}.hero-anim.d4{animation-delay:.52s}.hero-anim.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.marquee{background:var(--cacao);border-top:1px solid rgba(168,185,127,.3);border-bottom:1px solid rgba(168,185,127,.3);overflow:hidden;padding:20px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;animation:marquee 30s linear infinite;will-change:transform}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.28rem;color:var(--creme);padding:0 26px}
+.marquee-track i{color:var(--pist2);font-style:normal;font-size:.8rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* Créations */
+.creations{background:var(--creme)}
+.creation{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:60px 0;border-top:1px solid rgba(62,42,32,.12)}
+.creation:first-of-type{border-top:none;padding-top:8px}
+.creation:nth-child(even) .s-media{order:2}
+.s-media{position:relative}
+.s-media::before{content:"";position:absolute;inset:0;transform:translate(18px,18px);border:1px solid var(--pist);border-radius:200px 200px 6px 6px;z-index:0;transition:transform .6s var(--ease)}
+.creation:hover .s-media::before{transform:translate(10px,10px)}
+.s-media .img-clip{overflow:hidden;border-radius:200px 200px 6px 6px;position:relative;z-index:1}
+.s-media .img-clip img{width:100%;height:500px;object-fit:cover;transition:transform .9s var(--ease)}
+.creation:hover .img-clip img{transform:scale(1.045)}
+.s-num{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--pist);letter-spacing:.24em;text-transform:uppercase;font-weight:500}
+.s-body h3{font-size:clamp(1.9rem,3.2vw,2.6rem);margin:14px 0 6px}
+.s-tag{font-family:var(--serif);font-style:italic;font-size:1.22rem;color:var(--gris);margin-bottom:20px}
+.s-body p{color:#5a4636;max-width:48ch}
+.s-points{list-style:none;margin:26px 0 30px;display:grid;gap:11px}
+.s-points li{display:flex;gap:12px;align-items:baseline;font-size:.97rem;font-weight:600}
+.s-points li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--pist);flex:none;transform:translateY(-2px)}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:.95rem;color:var(--cacao);border-bottom:2px solid var(--pist);padding-bottom:4px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:17px;height:17px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+/* Sur commande */
+.commande{background:var(--pist-fond)}
+.cmd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cmd-step{background:#fff;border:1px solid rgba(122,139,61,.22);border-radius:8px;padding:36px 30px;transition:transform .4s var(--ease),box-shadow .4s}
+.cmd-step:hover{transform:translateY(-6px);box-shadow:0 26px 44px -24px rgba(62,42,32,.35)}
+.cmd-step .n{font-family:var(--serif);font-style:italic;font-size:2rem;color:var(--pist);line-height:1}
+.cmd-step h3{font-size:1.4rem;margin:16px 0 10px}
+.cmd-step p{color:var(--gris);font-size:.96rem}
+.cmd-cta{text-align:center;margin-top:44px}
+/* Maison */
+.maison{background:var(--cacao);color:var(--creme)}
+.maison h2{color:var(--creme)} .maison .lead{color:rgba(250,246,238,.66)}
+.exp-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.exp-media{position:relative}
+.exp-media img{width:100%;height:580px;object-fit:cover;border-radius:8px}
+.exp-badge{position:absolute;left:-22px;bottom:34px;background:var(--pist);color:#fff;padding:18px 24px;border-radius:6px;max-width:260px;box-shadow:0 24px 44px -18px rgba(0,0,0,.6)}
+.exp-badge b{font-family:var(--serif);font-size:1.5rem;font-weight:500;display:block;line-height:1.1}
+.exp-badge span{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.92}
+.exp-items{display:grid;margin-top:42px}
+.exp-item{display:flex;gap:26px;padding:26px 0;border-top:1px solid rgba(250,246,238,.14)}
+.exp-item:first-child{border-top:none;padding-top:6px}
+.exp-item .n{font-family:var(--serif);font-style:italic;color:var(--pist2);font-size:1.5rem;line-height:1;flex:none;width:44px}
+.exp-item h3{color:var(--creme);font-size:1.35rem;margin-bottom:8px}
+.exp-item p{color:rgba(250,246,238,.66);font-size:.98rem;max-width:46ch}
+/* Galerie */
+.galerie{background:var(--creme2)}
+.masonry{columns:3;column-gap:20px}
+.masonry figure{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;border-radius:6px}
+.masonry img{width:100%;transition:transform .9s var(--ease)}
+.masonry figure:hover img{transform:scale(1.06)}
+.masonry figcaption{position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;color:var(--creme);font-family:var(--serif);font-style:italic;font-size:1.05rem;background:linear-gradient(0deg,rgba(62,42,32,.8),transparent);opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s}
+.masonry figure:hover figcaption{opacity:1;transform:none}
+/* Avis */
+.avis{background:var(--creme);text-align:center;padding:96px 0}
+.avis .big-note{font-family:var(--serif);font-size:clamp(3.4rem,8vw,5.5rem);color:var(--pist);line-height:1}
+.avis h2{font-size:clamp(2rem,5vw,3.4rem);margin:16px 0 12px}
+.avis p{color:var(--gris);max-width:54ch;margin:0 auto}
+.avis .btn{margin-top:32px}
+/* Contact */
+.contact{background:var(--creme)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:start}
+.info-list{display:grid;margin-top:34px}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid rgba(62,42,32,.12)}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;border:1px solid var(--pist);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:var(--pist)}
+.info-item h4{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gris);font-weight:800;margin-bottom:5px}
+.info-item p{font-weight:600;font-size:1.02rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:var(--cacao);color:var(--creme);border-radius:8px;padding:44px 42px;box-shadow:0 34px 60px -30px rgba(62,42,32,.5)}
+.form-card h3{color:var(--creme);font-size:1.65rem;margin-bottom:8px}
+.form-card>p{color:rgba(250,246,238,.62);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--pist2);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:rgba(250,246,238,.06);border:1px solid rgba(250,246,238,.18);border-radius:4px;color:var(--creme);padding:14px 16px;font-family:var(--sans);font-size:.98rem;transition:border-color .3s,background .3s;appearance:none}
+.f-group select option{color:var(--ink)}
+.f-group textarea{resize:vertical;min-height:96px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--pist2);background:rgba(250,246,238,.09)}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.f-note{font-size:.82rem;color:rgba(250,246,238,.5);text-align:center;margin-top:16px}
+footer{background:var(--cacao);color:rgba(250,246,238,.72);padding:76px 0 40px;border-top:1px solid rgba(168,185,127,.3)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between;align-items:flex-start}
+.foot-logo{font-family:var(--serif);font-size:1.6rem;color:var(--creme)}
+.foot-logo b{color:var(--pist2);font-weight:500;font-style:italic}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:14px}
+.foot-col h5{color:var(--creme);font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;font-weight:800}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--pist2);transform:translateX(4px)}
+.foot-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(250,246,238,.12);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(250,246,238,.45)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--pist);color:#fff;font-size:.8rem;font-weight:700;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.22)}
+.demo-banner b{font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:1020px){.creation{gap:40px}.exp-grid{gap:44px}.exp-badge{left:14px}}
+@media(max-width:880px){
+  section{padding:78px 0}.nav-links{display:none}.nav{height:66px}
+  .creation{grid-template-columns:1fr;gap:34px;padding:48px 0}.creation:nth-child(even) .s-media{order:0}
+  .s-media .img-clip img{height:380px}
+  .cmd-grid{grid-template-columns:1fr}.exp-grid,.contact-grid{grid-template-columns:1fr}
+  .exp-media img{height:420px}.masonry{columns:2}.f-row{grid-template-columns:1fr}
+  .form-card{padding:34px 24px}.hero{padding-top:120px}.hero-meta{gap:10px 24px}
+}
+@media(max-width:520px){
+  body{font-size:15.5px}.wrap{padding:0 20px}.masonry{columns:1}
+  .hero-ctas .btn{width:100%;justify-content:center}.nav-cta{padding:10px 16px;font-size:.8rem}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}.exp-badge{position:static;margin-top:16px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">Pistache <b>&amp; Chocolat</b></a>
+    <nav class="nav-links">
+      <a href="#creations">Créations</a>
+      <a href="#commande">Sur commande</a>
+      <a href="#maison">La maison</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Commander
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1920&auto=format&fit=crop" alt="Pâtisseries fines chez Pistache & Chocolat à Abidjan" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Pâtisserie · Salon de thé — Prima Center, Marcory</span>
+    <h1 class="hero-anim d2">La douceur, <em>en art majeur.</em></h1>
+    <p class="hero-anim d3">Praliné fondant, brioches dorées, mousses au chocolat aériennes et gâteaux sur commande : au Prima Center, Pistache &amp; Chocolat compose chaque jour des douceurs qui se dégustent d'abord avec les yeux.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Commander sur WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#creations">Découvrir nos créations</a>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><span class="stars">★★★★★</span> 4,6/5 — 188 avis Google</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Prima Center, Marcory, Abidjan</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 7j/7 · 7h–20h</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Praliné</span><i>✦</i><span>Frangipane</span><i>✦</i><span>Brioche dorée</span><i>✦</i><span>Mousse au chocolat</span><i>✦</i><span>Gâteaux sur commande</span><i>✦</i><span>Salon de thé</span><i>✦</i>
+  </div>
+</div>
+
+<section class="creations" id="creations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nos créations</span>
+      <h2>Quatre douceurs, <em>une signature</em></h2>
+      <p class="lead">Une vitrine courte et maîtrisée, renouvelée au fil des saisons. Pour une création précise ou un gâteau d'exception, écrivez-nous sur WhatsApp : nous composons avec vous.</p>
+    </div>
+
+    <article class="creation reveal">
+      <div class="s-media"><div class="img-clip"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" alt="Gâteau au chocolat et praliné" loading="lazy" decoding="async"></div></div>
+      <div class="s-body">
+        <span class="s-num">01 — Praliné</span>
+        <h3>Le praliné, notre fierté</h3>
+        <p class="s-tag">Noisettes torréfiées, chocolat, croustillant.</p>
+        <p>Entremets, éclairs ou verrines : notre praliné est travaillé dans les règles — fruits secs torréfiés, caramel juste, chocolat de caractère. Fondant, croustillant, jamais trop sucré.</p>
+        <ul class="s-points"><li>Torréfaction et assemblage maison</li><li>Équilibre sucre / chocolat maîtrisé</li><li>En part individuelle ou à partager</li></ul>
+        <a class="link-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20commander%20une%20cr%C3%A9ation%20au%20pralin%C3%A9." target="_blank" rel="noopener">Commander <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="creation reveal">
+      <div class="s-media"><div class="img-clip"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1000&auto=format&fit=crop" alt="Dessert à la frangipane et aux fruits" loading="lazy" decoding="async"></div></div>
+      <div class="s-body">
+        <span class="s-num">02 — Frangipane</span>
+        <h3>La frangipane, tout en finesse</h3>
+        <p class="s-tag">Crème d'amande douce, pâte feuilletée dorée.</p>
+        <p>Galettes, tartes et feuilletés : notre frangipane à la crème d'amande est onctueuse, parfumée juste ce qu'il faut, dans un feuilletage croustillant et régulier.</p>
+        <ul class="s-points"><li>Crème d'amande onctueuse</li><li>Feuilletage croustillant</li><li>Parfaite avec un thé ou un café au salon</li></ul>
+        <a class="link-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20commander%20une%20cr%C3%A9ation%20%C3%A0%20la%20frangipane." target="_blank" rel="noopener">Commander <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="creation reveal">
+      <div class="s-media"><div class="img-clip"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000&auto=format&fit=crop" alt="Brioches et pains dorés" loading="lazy" decoding="async"></div></div>
+      <div class="s-body">
+        <span class="s-num">03 — Brioche</span>
+        <h3>La brioche du matin</h3>
+        <p class="s-tag">Moelleuse, dorée, dès 7h au Prima Center.</p>
+        <p>Pétrie et façonnée chaque jour, notre brioche sort du four pour l'ouverture : mie filante, croûte dorée, parfum de beurre fin. Le petit-déjeuner comme on l'aime, sur place ou à emporter.</p>
+        <ul class="s-points"><li>Façonnée et cuite chaque matin</li><li>À déguster au salon de thé dès 7h</li><li>Idéale pour les petits-déjeuners d'équipe</li></ul>
+        <a class="link-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20commander%20des%20brioches." target="_blank" rel="noopener">Commander <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+
+    <article class="creation reveal">
+      <div class="s-media"><div class="img-clip"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1000&auto=format&fit=crop" alt="Mousse au chocolat en verrine" loading="lazy" decoding="async"></div></div>
+      <div class="s-body">
+        <span class="s-num">04 — Mousse au chocolat</span>
+        <h3>La mousse, nuage de cacao</h3>
+        <p class="s-tag">Aérienne, intense, délicatement amer.</p>
+        <p>Notre mousse au chocolat joue la légèreté : une texture de nuage, un cacao présent sans lourdeur, servie bien fraîche en verrine ou en entremets à partager.</p>
+        <ul class="s-points"><li>Texture aérienne, cacao intense</li><li>En verrine individuelle ou grand format</li><li>La fin parfaite d'un déjeuner au Prima Center</li></ul>
+        <a class="link-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20commander%20une%20mousse%20au%20chocolat." target="_blank" rel="noopener">Commander <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="commande" id="commande">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Gâteaux sur commande</span>
+      <h2>Votre gâteau, <em>composé pour vous</em></h2>
+      <p class="lead">Anniversaire, mariage, baptême ou simple plaisir : nos gâteaux sur commande naissent d'un échange avec vous. Trois étapes, tout simplement.</p>
+    </div>
+    <div class="cmd-grid">
+      <div class="cmd-step reveal"><span class="n">1</span><h3>Écrivez-nous</h3><p>Sur WhatsApp : l'occasion, la date, le nombre de parts et vos parfums préférés — praliné, chocolat, fruits...</p></div>
+      <div class="cmd-step reveal dl1"><span class="n">2</span><h3>Composons ensemble</h3><p>Nous vous proposons une création adaptée : forme, parfums, décor et message personnalisé sur le gâteau.</p></div>
+      <div class="cmd-step reveal dl2"><span class="n">3</span><h3>Récupérez &amp; régalez</h3><p>Votre gâteau vous attend au Prima Center, prêt à être dégusté. Il ne reste qu'à souffler les bougies.</p></div>
+    </div>
+    <div class="cmd-cta reveal">
+      <a class="btn btn-cacao" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau%20sur%20mesure." target="_blank" rel="noopener">Lancer ma commande de gâteau</a>
+    </div>
+  </div>
+</section>
+
+<section class="maison" id="maison">
+  <div class="wrap">
+    <div class="exp-grid">
+      <div class="exp-media reveal">
+        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1200&auto=format&fit=crop" alt="Pause café et pâtisserie au salon de thé" loading="lazy" decoding="async">
+        <div class="exp-badge"><b>7j/7 · 7h–20h</b><span>au Prima Center, Marcory</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">La maison</span>
+          <h2>Un salon de thé, <em>une parenthèse</em></h2>
+          <p class="lead">Au cœur du Prima Center, Pistache &amp; Chocolat est pensé comme un lieu à part : une décoration soignée, une vitrine qui change au fil du jour, et le parfum du cacao dès la porte franchie.</p>
+        </div>
+        <div class="exp-items">
+          <div class="exp-item reveal"><span class="n">01</span><div><h3>Le fait maison, chaque jour</h3><p>Brioches du matin, entremets du jour, gâteaux composés à la commande : ici, la vitrine se remplit au rythme de l'atelier, pas d'un catalogue figé.</p></div></div>
+          <div class="exp-item reveal dl1"><span class="n">02</span><div><h3>Le cacao de Côte d'Ivoire</h3><p>Travailler le chocolat dans le pays du cacao : une évidence que nous cultivons dans nos mousses, nos pralinés et nos entremets signature.</p></div></div>
+          <div class="exp-item reveal dl2"><span class="n">03</span><div><h3>4,6/5 — 188 avis Google</h3><p>Nos clientes et clients saluent la finesse des créations et la douceur de l'accueil. Merci à eux : c'est pour eux que la vitrine se réinvente.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>La vitrine, <em>en images</em></h2>
+      <p class="lead">Des couleurs pistache, des dorures de brioche, des reflets de chocolat.</p>
+    </div>
+    <div class="masonry reveal">
+      <figure><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800&auto=format&fit=crop" alt="Assortiment de pâtisseries fines" loading="lazy" decoding="async"><figcaption>L'assortiment du jour</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" alt="Gâteau au chocolat" loading="lazy" decoding="async"><figcaption>Chocolat &amp; praliné</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800&auto=format&fit=crop" alt="Dessert dressé avec soin" loading="lazy" decoding="async"><figcaption>Le dressage, en finesse</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Pains et brioches dorés" loading="lazy" decoding="async"><figcaption>Four du matin</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=800&auto=format&fit=crop" alt="Gâteau d'anniversaire" loading="lazy" decoding="async"><figcaption>Gâteaux de fête</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800&auto=format&fit=crop" alt="Verrine de mousse au chocolat" loading="lazy" decoding="async"><figcaption>Mousse au chocolat</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="justify-content:center">Ils nous notent</span>
+    <div class="big-note">4,6<span style="font-size:.45em;color:var(--gris)">/5</span></div>
+    <h2>188 avis Google</h2>
+    <p>Une note qui récompense le goût, la régularité et l'accueil — du premier café de 7h au dernier gâteau de 20h, tous les jours.</p>
+    <a class="btn btn-wa" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2>Au Prima Center, <em>à Marcory</em></h2>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Prima Center, Marcory, Abidjan — Côte d'Ivoire</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250779066760">+225 07 79 06 67 60</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horaires</h4><p>Ouvert 7j/7 : 7h – 20h.</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><div><h4>Note Google</h4><p>4,6/5 — 188 avis de clients.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Commander votre douceur</h3>
+        <p>Remplissez ce court formulaire : votre demande partira directement sur le WhatsApp de la pâtisserie, prête à être envoyée.</p>
+        <form id="cmdForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" type="text" placeholder="Ex. Fatou D." required></div>
+            <div class="f-group"><label for="f-tel">Votre téléphone</label><input id="f-tel" name="tel" type="tel" placeholder="07 xx xx xx xx"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label for="f-type">Type de commande</label>
+              <select id="f-type" name="type" required>
+                <option value="Gâteau sur commande">Gâteau sur commande</option>
+                <option value="Création praliné">Création praliné</option>
+                <option value="Frangipane">Frangipane</option>
+                <option value="Brioches">Brioches</option>
+                <option value="Mousse au chocolat">Mousse au chocolat</option>
+                <option value="Autre douceur">Autre douceur</option>
+              </select></div>
+            <div class="f-group"><label for="f-date">Date de retrait souhaitée</label><input id="f-date" name="date" type="text" placeholder="Ex. samedi 10h"></div>
+          </div>
+          <div class="f-group"><label for="f-msg">Votre message</label><textarea id="f-msg" name="msg" placeholder="Occasion, nombre de parts, parfums, message sur le gâteau..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer ma commande sur WhatsApp
+          </button>
+          <p class="f-note">Réponse douce et rapide de l'équipe, directement dans votre conversation WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="foot-logo">Pistache <b>&amp; Chocolat</b></div><p>Pâtisserie fine et salon de thé au Prima Center, Marcory. Praliné, frangipane, brioches, mousses au chocolat et gâteaux sur commande — 7j/7, de 7h à 20h.</p></div>
+      <div class="foot-col"><h5>Créations</h5><a href="#creations">Praliné</a><a href="#creations">Frangipane</a><a href="#creations">Brioche</a><a href="#creations">Mousse au chocolat</a><a href="#commande">Gâteaux sur commande</a></div>
+      <div class="foot-col"><h5>La maison</h5><a href="#maison">Notre histoire</a><a href="#galerie">Galerie</a><a href="#contact">Nous trouver</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Prima Center, Marcory, Abidjan</a><a href="tel:+2250779066760">+225 07 79 06 67 60</a><a href="https://wa.me/2250779066760" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Pistache &amp; Chocolat — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel de Pistache &amp; Chocolat.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250779066760?text=Bonjour%20Pistache%20%26%20Chocolat%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener" aria-label="Commander chez Pistache & Chocolat sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel de Pistache &amp; Chocolat.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40)}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('marqueeTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.getElementById('cmdForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim(),tel=document.getElementById('f-tel').value.trim(),
+      type=document.getElementById('f-type').value,date=document.getElementById('f-date').value.trim(),
+      msg=document.getElementById('f-msg').value.trim();
+  var lignes=['Bonjour Pistache & Chocolat, je souhaite passer une commande.'];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Commande : '+type);
+  if(date)lignes.push('Retrait souhaité : '+date);
+  if(msg)lignes.push('Message : '+msg);
+  if(tel)lignes.push('Mon téléphone : '+tel);
+  window.open('https://wa.me/2250779066760?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>

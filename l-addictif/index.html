@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant l'Addictif — Bistrot gourmand aux 2 Plateaux Vallon, Abidjan · Cuisine européenne &amp; africaine</title>
+<meta name="description" content="Restaurant l'Addictif, rue du Commissariat du 12e, 2 Plateaux Vallon, Abidjan : cuisine européenne et africaine gourmande — entrecôte sauce forestière, pavlova, mousse au chocolat, mojito hibiscus. Réservez sur WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231C3026'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23C9A86A' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== L'ADDICTIF — vert profond, crème, laiton. Bistrot gourmand raffiné. ===== */
+:root{
+  --vert:#1C3026; --vert2:#243D30; --vert3:#2F4D3C;
+  --creme:#F8F2E4; --creme2:#F0E6CF; --laiton:#C9A86A; --laiton2:#E3CD97;
+  --ink:#23281F; --gris:#7C7663;
+  --wa:#25D366;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;background:var(--creme);color:var(--ink);line-height:1.7;font-size:16.5px;-webkit-font-smoothing:antialiased;padding-bottom:46px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+::selection{background:var(--laiton);color:var(--vert)}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.7rem;font-weight:500;letter-spacing:.38em;text-transform:uppercase;color:#9a7f3f}
+.eyebrow::before,.eyebrow::after{content:"";width:30px;height:1px;background:var(--laiton)}
+.eyebrow.left::after{display:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--vert)}
+h2{font-size:clamp(2.1rem,4.4vw,3.3rem)}
+h2 em,h1 em{font-style:italic;font-weight:400;color:#9a7f3f}
+.lead{color:var(--gris);font-size:1.06rem;max-width:56ch}
+section{padding:110px 0}
+.sec-head{max-width:720px;margin:0 auto 56px;text-align:center}
+.sec-head .lead{margin:18px auto 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:2px;font-weight:500;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-wa{background:var(--wa);color:#06230f}
+.btn-wa:hover{transform:translateY(-3px)}
+.btn-ghost{border:1px solid rgba(248,242,228,.5);color:var(--creme)}
+.btn-ghost:hover{border-color:var(--laiton);color:var(--laiton2);transform:translateY(-3px)}
+.btn-dark{background:var(--vert);color:var(--creme)}
+.btn-dark:hover{background:var(--vert3);transform:translateY(-3px)}
+header{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .45s var(--ease),border-color .45s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(24,40,32,.95);backdrop-filter:blur(12px);border-color:rgba(201,168,106,.3)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.logo{font-family:var(--serif);font-size:1.45rem;color:var(--creme);letter-spacing:.06em}
+.logo i{color:var(--laiton);font-style:italic}
+.logo small{display:block;font-family:var(--sans);font-size:.58rem;font-weight:500;letter-spacing:.44em;text-transform:uppercase;color:rgba(248,242,228,.6)}
+.nav-links{display:flex;gap:36px}
+.nav-links a{color:rgba(248,242,228,.86);font-size:.79rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--laiton);transition:width .35s var(--ease)}
+.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--laiton);color:var(--vert);padding:12px 22px;border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;transition:.35s}
+.nav-cta svg{width:15px;height:15px}
+.nav-cta:hover{background:var(--laiton2);transform:translateY(-2px)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;background:var(--vert);color:var(--creme);overflow:hidden;padding:150px 0 90px;text-align:center}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.5;transform:scale(1.06);animation:heroZoom 9s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(28,48,38,.25) 0%,rgba(28,48,38,.88) 78%),linear-gradient(0deg,rgba(28,48,38,.96) 0%,rgba(28,48,38,0) 40%)}
+.hero-inner{position:relative;z-index:2;width:100%}
+.hero .eyebrow{color:var(--laiton2);justify-content:center}
+.hero h1{color:var(--creme);font-size:clamp(2.9rem,7vw,5.4rem);max-width:16ch;margin:26px auto 24px}
+.hero h1 em{color:var(--laiton2)}
+.hero p{max-width:54ch;margin:0 auto;color:rgba(248,242,228,.88);font-size:1.09rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px;justify-content:center}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 44px;margin:58px auto 0;padding-top:26px;border-top:1px solid rgba(248,242,228,.2);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(248,242,228,.74);justify-content:center;max-width:900px}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta svg{width:15px;height:15px;stroke:var(--laiton)}
+.hero-anim{opacity:0;transform:translateY(26px);animation:riseIn 1s var(--ease) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.24s}.d3{animation-delay:.38s}.d4{animation-delay:.52s}.d5{animation-delay:.68s}
+@keyframes riseIn{to{opacity:1;transform:none}}
+.marquee{background:var(--vert);border-top:1px solid rgba(201,168,106,.35);border-bottom:1px solid rgba(201,168,106,.35);overflow:hidden;padding:19px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;align-items:center;animation:marquee 32s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--serif);font-style:italic;font-size:1.22rem;color:var(--creme);padding:0 26px}
+.marquee-track i{color:var(--laiton);font-style:normal;font-size:.78rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* Signatures — liste bistrot centrée */
+.signatures{background:var(--creme)}
+.sig-list{max-width:860px;margin:0 auto}
+.sig{display:grid;grid-template-columns:120px 1fr;gap:34px;padding:38px 0;border-bottom:1px solid rgba(28,48,38,.14);align-items:start}
+.sig:first-child{padding-top:6px}
+.sig:last-child{border-bottom:none}
+.sig img{width:120px;height:120px;object-fit:cover;border-radius:50%;border:3px solid var(--creme2);box-shadow:0 0 0 1px var(--laiton);transition:transform .6s var(--ease)}
+.sig:hover img{transform:scale(1.06) rotate(2deg)}
+.sig-top{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.sig-top h3{font-size:1.55rem}
+.sig-top .dots{flex:1;border-bottom:1px dotted rgba(154,127,63,.55);min-width:30px;transform:translateY(-5px)}
+.sig-top .tag{font-size:.7rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#9a7f3f;border:1px solid var(--laiton);padding:4px 10px;border-radius:100px;white-space:nowrap}
+.sig p{color:#55503f;max-width:58ch;margin-top:8px}
+.sig .link-wa{margin-top:14px}
+.link-wa{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;color:var(--vert);border-bottom:1px solid var(--laiton);padding-bottom:4px;transition:color .3s,gap .3s var(--ease)}
+.link-wa svg{width:16px;height:16px;fill:#1eb85a}
+.link-wa:hover{color:#128c4b;gap:14px}
+/* Maison */
+.maison{background:var(--vert);color:var(--creme)}
+.maison h2{color:var(--creme)}
+.maison h2 em{color:var(--laiton2)}
+.maison .eyebrow{color:var(--laiton2)}
+.maison .lead{color:rgba(248,242,228,.67)}
+.m-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.m-media{position:relative}
+.m-media img{width:100%;height:600px;object-fit:cover}
+.m-media::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,168,106,.55);pointer-events:none}
+.m-badge{position:absolute;left:-24px;bottom:34px;background:var(--laiton);color:var(--vert);padding:18px 24px;max-width:260px;box-shadow:0 24px 44px -18px rgba(0,0,0,.6);z-index:2}
+.m-badge b{font-family:var(--serif);font-size:1.45rem;font-weight:600;display:block;line-height:1.15}
+.m-badge span{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.m-items{display:grid;margin-top:42px}
+.m-item{display:flex;gap:26px;padding:27px 0;border-top:1px solid rgba(248,242,228,.15)}
+.m-item:first-child{border-top:none;padding-top:4px}
+.m-item .n{font-family:var(--serif);font-style:italic;color:var(--laiton);font-size:1.5rem;line-height:1;flex:none;width:44px}
+.m-item h3{color:var(--creme);font-size:1.32rem;margin-bottom:7px}
+.m-item p{color:rgba(248,242,228,.67);font-size:.97rem;max-width:46ch}
+/* Galerie */
+.galerie{background:var(--creme2)}
+.masonry{columns:3;column-gap:20px}
+.masonry figure{break-inside:avoid;margin-bottom:20px;position:relative;overflow:hidden;border-radius:2px}
+.masonry img{width:100%;transition:transform .9s var(--ease)}
+.masonry figure:hover img{transform:scale(1.06)}
+.masonry figcaption{position:absolute;inset:auto 0 0 0;padding:44px 20px 16px;color:var(--creme);font-family:var(--serif);font-style:italic;font-size:1.05rem;background:linear-gradient(0deg,rgba(28,48,38,.85),transparent);opacity:0;transform:translateY(8px);transition:.45s var(--ease)}
+.masonry figure:hover figcaption{opacity:1;transform:none}
+/* Avis / bandeau */
+.bandeau{background:var(--vert);text-align:center;padding:96px 0}
+.bandeau .eyebrow{color:var(--laiton2);justify-content:center}
+.bandeau blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3.6vw,2.5rem);color:var(--creme);max-width:22ch;margin:22px auto 16px;line-height:1.3}
+.bandeau p{color:rgba(248,242,228,.65);max-width:52ch;margin:0 auto}
+.bandeau .btn{margin-top:34px}
+/* Contact */
+.contact{background:var(--creme)}
+.contact .sec-head{text-align:left;margin-left:0}
+.contact .sec-head .lead{margin-left:0}
+.contact .eyebrow::after{display:none}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:start}
+.info-list{display:grid}
+.info-item{display:flex;gap:20px;padding:22px 0;border-top:1px solid rgba(28,48,38,.14)}
+.info-item:first-child{border-top:none;padding-top:4px}
+.info-item .ic{width:46px;height:46px;flex:none;border:1px solid var(--laiton);border-radius:50%;display:grid;place-items:center}
+.info-item .ic svg{width:19px;height:19px;stroke:#9a7f3f}
+.info-item h4{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gris);font-weight:600;margin-bottom:5px}
+.info-item p{font-weight:400;font-size:1.02rem}
+.info-item a:hover{color:#128c4b}
+.form-card{background:var(--vert);color:var(--creme);padding:44px 42px;box-shadow:0 34px 60px -30px rgba(28,48,38,.55)}
+.form-card h3{color:var(--creme);font-size:1.65rem;margin-bottom:8px}
+.form-card>p{color:rgba(248,242,228,.64);font-size:.95rem;margin-bottom:28px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--laiton2);margin-bottom:9px}
+.f-group input,.f-group select,.f-group textarea{width:100%;background:rgba(248,242,228,.07);border:1px solid rgba(248,242,228,.2);border-radius:2px;color:var(--creme);padding:14px 16px;font-family:var(--sans);font-size:.98rem;font-weight:300;transition:.3s;appearance:none}
+.f-group select option{color:var(--ink)}
+.f-group textarea{resize:vertical;min-height:96px}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--laiton);background:rgba(248,242,228,.1)}
+.form-card .btn{width:100%;justify-content:center;margin-top:6px}
+.f-note{font-size:.82rem;color:rgba(248,242,228,.52);text-align:center;margin-top:16px}
+footer{background:var(--vert);color:rgba(248,242,228,.72);padding:76px 0 40px;border-top:1px solid rgba(201,168,106,.35)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between;align-items:flex-start}
+.foot-logo{font-family:var(--serif);font-size:1.6rem;color:var(--creme)}
+.foot-logo i{color:var(--laiton)}
+.foot-grid p{max-width:34ch;font-size:.94rem;margin-top:14px}
+.foot-col h5{color:var(--creme);font-size:.77rem;letter-spacing:.26em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.foot-col a{display:block;padding:5px 0;font-size:.95rem;transition:color .3s,transform .3s var(--ease)}
+.foot-col a:hover{color:var(--laiton2);transform:translateX(4px)}
+.foot-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(248,242,228,.13);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between;font-size:.83rem;color:rgba(248,242,228,.46)}
+.demo-banner{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--laiton);color:var(--vert);font-size:.8rem;font-weight:500;text-align:center;padding:12px 18px;box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.demo-banner b{font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.wa-float{position:fixed;right:22px;bottom:64px;z-index:90;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 16px 34px -8px rgba(18,140,75,.55);transition:transform .35s var(--ease)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.45);opacity:0}100%{opacity:0}}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.dl1{transition-delay:.12s}.reveal.dl2{transition-delay:.24s}
+@media(max-width:1020px){.m-grid{gap:44px}.m-badge{left:14px}}
+@media(max-width:880px){
+  section{padding:78px 0}.nav-links{display:none}.nav{height:68px}
+  .m-grid,.contact-grid{grid-template-columns:1fr}.m-media img{height:420px}
+  .masonry{columns:2}.f-row{grid-template-columns:1fr}.form-card{padding:34px 24px}
+  .hero{padding-top:130px}.hero-meta{gap:10px 24px}
+  .sig{grid-template-columns:88px 1fr;gap:22px}.sig img{width:88px;height:88px}
+}
+@media(max-width:520px){
+  body{font-size:15.5px}.wrap{padding:0 20px}.masonry{columns:1}
+  .hero-ctas .btn{width:100%;justify-content:center}.nav-cta{padding:10px 15px;font-size:.76rem}
+  .wa-float{width:54px;height:54px;right:16px;bottom:70px}.m-badge{position:static;margin-top:16px;max-width:none}
+  .sig{grid-template-columns:1fr}.sig img{width:100%;height:190px;border-radius:4px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#">L<i>'</i>Addictif<small>Bistrot · 2 Plateaux Vallon</small></a>
+    <nav class="nav-links">
+      <a href="#signatures">Signatures</a>
+      <a href="#maison">La maison</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Réserver
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1920&auto=format&fit=crop" alt="Dîner raffiné au restaurant l'Addictif, 2 Plateaux Vallon, Abidjan" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow hero-anim d1">Bistrot gourmand — 2 Plateaux Vallon</span>
+    <h1 class="hero-anim d2">Gourmand, généreux… <em>addictif.</em></h1>
+    <p class="hero-anim d3">Rue du Commissariat du 12e, L'Addictif marie cuisine européenne et africaine dans des assiettes gourmandes et généreuses : entrecôte sauce forestière, pavlova aux fruits exotiques, mojito à l'hibiscus. Une adresse dont on ne se lasse pas — réservez sur WhatsApp.</p>
+    <div class="hero-ctas hero-anim d4">
+      <a class="btn btn-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+        Réserver une table
+      </a>
+      <a class="btn btn-ghost" href="#signatures">Voir les signatures</a>
+    </div>
+    <div class="hero-meta hero-anim d5">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Rue du Commissariat du 12e, Vallon</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> +225 07 12 46 46 46</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Midi &amp; soir — voir horaires</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Entrecôte forestière</span><i>✦</i><span>Pavlova exotique</span><i>✦</i><span>Mousse au chocolat</span><i>✦</i><span>Mojito hibiscus</span><i>✦</i><span>Profiteroles</span><i>✦</i><span>Cuisine européenne &amp; africaine</span><i>✦</i>
+  </div>
+</div>
+
+<section class="signatures" id="signatures">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">La carte</span>
+      <h2>Nos plats <em>signatures</em></h2>
+      <p class="lead">Cinq assiettes et créations qui ont fait la réputation de la maison. La carte complète — entrées, plats, desserts et boissons — vous est envoyée sur WhatsApp sur simple demande.</p>
+    </div>
+    <div class="sig-list">
+      <article class="sig reveal">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=600&auto=format&fit=crop" alt="Entrecôte sauce forestière" loading="lazy" decoding="async">
+        <div>
+          <div class="sig-top"><h3>Entrecôte sauce forestière</h3><span class="dots"></span><span class="tag">Le plat</span></div>
+          <p>Une entrecôte de bœuf généreuse, nappée d'une sauce forestière aux champignons, riche et parfumée. Le plat emblème de L'Addictif : celui qu'on recommande dès la deuxième visite.</p>
+          <a class="link-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20r%C3%A9serve%20une%20table%20pour%20go%C3%BBter%20l%27entrec%C3%B4te%20foresti%C3%A8re." target="_blank" rel="noopener">La goûter ce week-end <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sig reveal">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600&auto=format&fit=crop" alt="Pavlova aux fruits exotiques" loading="lazy" decoding="async">
+        <div>
+          <div class="sig-top"><h3>Pavlova aux fruits exotiques</h3><span class="dots"></span><span class="tag">Le dessert</span></div>
+          <p>Meringue croustillante dehors, fondante dedans, crème légère et fruits exotiques frais : notre pavlova « Ana de Russie » est le final en douceur que les habitués ne laissent jamais passer.</p>
+          <a class="link-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">Réserver et finir en pavlova <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sig reveal">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=600&auto=format&fit=crop" alt="Mousse au chocolat noir" loading="lazy" decoding="async">
+        <div>
+          <div class="sig-top"><h3>Mousse au chocolat façon soufflée</h3><span class="dots"></span><span class="tag">Chocolat</span></div>
+          <p>Une mousse au chocolat noir travaillée façon soufflée : intense, aérienne, servie à la cuillère. Simple en apparence, redoutable en bouche — c'est écrit dans notre nom.</p>
+          <a class="link-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20voir%20la%20carte%20des%20desserts." target="_blank" rel="noopener">La carte des desserts <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sig reveal">
+        <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=600&auto=format&fit=crop" alt="Mojito hibiscus" loading="lazy" decoding="async">
+        <div>
+          <div class="sig-top"><h3>Mojito hibiscus</h3><span class="dots"></span><span class="tag">Au bar</span></div>
+          <p>Le mojito revisité à l'hibiscus : frais, acidulé, d'un rouge profond qui annonce la couleur. La signature du bar, à l'apéritif ou pour accompagner la soirée au Vallon.</p>
+          <a class="link-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20r%C3%A9serve%20une%20table%20pour%20ce%20soir." target="_blank" rel="noopener">Réserver pour ce soir <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+
+      <article class="sig reveal">
+        <img src="https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?q=80&w=600&auto=format&fit=crop" alt="Profiteroles" loading="lazy" decoding="async">
+        <div>
+          <div class="sig-top"><h3>Profiteroles</h3><span class="dots"></span><span class="tag">Classique</span></div>
+          <p>Choux dorés, glace onctueuse, chocolat chaud versé à table : les profiteroles comme on les aime, généreuses et sans chichi. Le classique des bistrots, exécuté dans les règles.</p>
+          <a class="link-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20voir%20la%20carte%20compl%C3%A8te." target="_blank" rel="noopener">Recevoir la carte complète <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24z"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="maison" id="maison">
+  <div class="wrap">
+    <div class="m-grid">
+      <div class="m-media reveal">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1200&auto=format&fit=crop" alt="La salle du bistrot L'Addictif au Vallon" loading="lazy" decoding="async">
+        <div class="m-badge"><b>Le bistrot du Vallon</b><span>Rue du Commissariat du 12e</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="eyebrow left">La maison</span>
+          <h2>Deux cuisines, <em>une même gourmandise</em></h2>
+          <p class="lead">L'Addictif fait se rencontrer l'Europe et l'Afrique dans l'assiette, avec une règle simple : des portions généreuses et des saveurs franches.</p>
+        </div>
+        <div class="m-items">
+          <div class="m-item reveal"><span class="n">01</span><div><h3>Europe &amp; Afrique à la même table</h3><p>Entrecôte forestière d'un côté, inspirations africaines de l'autre : la carte voyage sans jamais perdre le fil — le goût, généreux et généreusement servi.</p></div></div>
+          <div class="m-item reveal dl1"><span class="n">02</span><div><h3>Le fait maison, du plat au dessert</h3><p>Sauces, desserts, cocktails : la pavlova, la mousse au chocolat et le mojito hibiscus sont préparés sur place, chaque jour de service.</p></div></div>
+          <div class="m-item reveal dl2"><span class="n">03</span><div><h3>Midi tranquille, soir animé</h3><p>Déjeuner posé en semaine, dîner entre amis le week-end : le service s'adapte au rythme du Vallon — pensez à réserver le soir, la salle se remplit vite.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>En images, <em>à table</em></h2>
+      <p class="lead">Les assiettes, les desserts, la salle. Pour le quotidien du restaurant, suivez-nous sur Instagram.</p>
+    </div>
+    <div class="masonry reveal">
+      <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Dîner au restaurant" loading="lazy" decoding="async"><figcaption>Les dîners au Vallon</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop" alt="Plat de viande" loading="lazy" decoding="async"><figcaption>L'entrecôte forestière</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800&auto=format&fit=crop" alt="Dessert fruité" loading="lazy" decoding="async"><figcaption>La pavlova</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800&auto=format&fit=crop" alt="Dessert au chocolat" loading="lazy" decoding="async"><figcaption>Tout chocolat</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=800&auto=format&fit=crop" alt="Cocktail" loading="lazy" decoding="async"><figcaption>Au bar</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Salle de bistrot" loading="lazy" decoding="async"><figcaption>La salle</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop" alt="Assiette fraîche" loading="lazy" decoding="async"><figcaption>Frais du jour</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1505976378723-9726b54e9bb9?q=80&w=800&auto=format&fit=crop" alt="Dessert gourmand" loading="lazy" decoding="async"><figcaption>Finir en douceur</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="bandeau">
+  <div class="wrap reveal">
+    <span class="eyebrow">On vous attend</span>
+    <blockquote>« Une cuisine gourmande et généreuse — on y vient une fois, on y revient toujours. »</blockquote>
+    <p>Déjeuner, dîner, occasion spéciale ou simple envie : réservez votre table au Vallon en un message WhatsApp.</p>
+    <a class="btn btn-wa" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+      Réserver sur WhatsApp
+    </a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="sec-head">
+          <span class="eyebrow">Nous trouver</span>
+          <h2>Au Vallon, <em>2 Plateaux</em></h2>
+        </div>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><h4>Adresse</h4><p>Rue du Commissariat du 12e, 2 Plateaux Vallon, Cocody — Abidjan, Côte d'Ivoire</p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span><div><h4>Téléphone &amp; WhatsApp</h4><p><a href="tel:+2250712464646">+225 07 12 46 46 46</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span><div><h4>Instagram</h4><p><a href="https://www.instagram.com/restaurantladdictif" target="_blank" rel="noopener">@restaurantladdictif</a></p></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Horaires</h4><p>Midi et soir, selon les jours — horaires variables (service du soir dès 18h45 certains jours). Le plus sûr : nous écrire sur WhatsApp avant de venir.</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal dl1">
+        <h3>Réserver une table</h3>
+        <p>Quelques infos, et votre demande part directement sur le WhatsApp du restaurant, prête à être envoyée.</p>
+        <form id="rdvForm">
+          <div class="f-row">
+            <div class="f-group"><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" type="text" placeholder="Ex. Nadia K." required></div>
+            <div class="f-group"><label for="f-tel">Votre téléphone</label><input id="f-tel" name="tel" type="tel" placeholder="07 xx xx xx xx"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label for="f-presta">Nombre de personnes</label>
+              <select id="f-presta" name="presta" required>
+                <option value="2 personnes">2 personnes</option>
+                <option value="3 à 4 personnes">3 à 4 personnes</option>
+                <option value="5 à 8 personnes">5 à 8 personnes</option>
+                <option value="Groupe / événement">Groupe / événement</option>
+              </select>
+            </div>
+            <div class="f-group"><label for="f-date">Date &amp; service</label><input id="f-date" name="date" type="text" placeholder="Ex. samedi, service du soir"></div>
+          </div>
+          <div class="f-group"><label for="f-msg">Votre message</label><textarea id="f-msg" name="msg" placeholder="Occasion, plats signatures que vous visez, demandes particulières..."></textarea></div>
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+            Envoyer ma réservation
+          </button>
+          <p class="f-note">Confirmation rapide du restaurant, directement sur WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">L<i>'</i>Addictif</div>
+        <p>Bistrot gourmand aux 2 Plateaux Vallon, Abidjan. Cuisine européenne et africaine généreuse — entrecôte forestière, pavlova, mojito hibiscus.</p>
+      </div>
+      <div class="foot-col"><h5>Signatures</h5><a href="#signatures">Entrecôte forestière</a><a href="#signatures">Pavlova exotique</a><a href="#signatures">Mousse au chocolat</a><a href="#signatures">Mojito hibiscus</a><a href="#signatures">Profiteroles</a></div>
+      <div class="foot-col"><h5>La maison</h5><a href="#maison">L'esprit L'Addictif</a><a href="#galerie">Galerie</a><a href="https://www.instagram.com/restaurantladdictif" target="_blank" rel="noopener">Instagram — @restaurantladdictif</a></div>
+      <div class="foot-col"><h5>Contact</h5><a href="#contact">Rue du Commissariat du 12e, Vallon</a><a href="tel:+2250712464646">+225 07 12 46 46 46</a><a href="https://wa.me/2250712464646" target="_blank" rel="noopener">WhatsApp direct</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Restaurant l'Addictif — Abidjan. Photos d'illustration libres de droits (Unsplash).</span>
+      <span>Maquette de démonstration réalisée par Business QG — site non officiel du Restaurant l'Addictif.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250712464646?text=Bonjour%20L%27Addictif%2C%20je%20souhaite%20r%C3%A9server%20une%20table." target="_blank" rel="noopener" aria-label="Discuter avec le Restaurant l'Addictif sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 0 1 8.24 8.24c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.02 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+</a>
+
+<div class="demo-banner"><b>Démo</b> — Maquette de démonstration réalisée par Business QG — site non officiel du Restaurant l'Addictif.</div>
+
+<script>
+var header=document.getElementById('header');
+function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var track=document.getElementById('marqueeTrack');track.innerHTML+=track.innerHTML;
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+document.getElementById('rdvForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var nom=document.getElementById('f-nom').value.trim(),tel=document.getElementById('f-tel').value.trim(),presta=document.getElementById('f-presta').value,date=document.getElementById('f-date').value.trim(),msg=document.getElementById('f-msg').value.trim();
+  var lignes=["Bonjour L'Addictif, je souhaite réserver une table."];
+  if(nom)lignes.push('Nom : '+nom);
+  lignes.push('Convives : '+presta);
+  if(date)lignes.push('Date & service : '+date);
+  if(msg)lignes.push('Message : '+msg);
+  if(tel)lignes.push('Mon téléphone : '+tel);
+  window.open('https://wa.me/2250712464646?text='+encodeURIComponent(lignes.join('\n')),'_blank');
+});
+</script>
+</body>
+</html>
