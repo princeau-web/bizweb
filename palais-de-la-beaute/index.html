@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Palais de la Beauté — Institut à Marcory, Abidjan | Onglerie • Soins • Massage</title>
+<meta name="description" content="Le Palais de la Beauté, institut de beauté à Marcory Zone 4, Abidjan : onglerie, soins du visage et du corps, massage. Réservez sur WhatsApp au +225 07 09 85 85 26.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --moka:#2E2019;
+  --moka-2:#453126;
+  --cuivre:#B0703C;
+  --cuivre-d:#8F5627;
+  --ivoire:#FAF5EC;
+  --ivoire-2:#F3EAD9;
+  --ivoire-3:#EADFC8;
+  --encre:#33261C;
+  --encre-doux:#7A675A;
+  --ligne:rgba(46,32,25,.16);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--ivoire);
+  color:var(--encre);
+  line-height:1.65;
+  font-weight:400;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,.serif{font-family:'Marcellus',serif;font-weight:400;line-height:1.12;letter-spacing:.01em}
+.wrap{width:min(1160px,92%);margin:0 auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.7rem;
+  text-transform:uppercase;letter-spacing:.34em;font-size:.68rem;font-weight:700;color:var(--cuivre-d);
+}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:var(--cuivre)}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.95rem 2rem;border-radius:999px;font-weight:600;font-size:.96rem;
+  letter-spacing:.02em;transition:.25s ease;border:1px solid transparent;cursor:pointer;
+}
+.btn-cuivre{background:var(--cuivre);color:#FFF6E9}
+.btn-cuivre:hover{background:var(--cuivre-d);transform:translateY(-2px)}
+.btn-contour{border-color:var(--moka);color:var(--moka);background:transparent}
+.btn-contour:hover{background:var(--moka);color:var(--ivoire)}
+.btn-clair{background:var(--ivoire);color:var(--moka)}
+.btn-clair:hover{background:#fff;transform:translateY(-2px)}
+
+/* ---------- Bandeau démo ---------- */
+.demo-banner{
+  background:var(--cuivre);color:#FFF6E9;text-align:center;
+  font-size:.82rem;letter-spacing:.04em;padding:.55rem 1rem;
+}
+.demo-banner strong{font-weight:700}
+
+/* ---------- Navigation ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(250,245,236,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--ligne);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+.logo{display:flex;align-items:center;gap:.75rem}
+.logo-mark{
+  width:46px;height:46px;border-radius:50%;
+  background:var(--moka);color:var(--ivoire-2);
+  display:grid;place-items:center;
+  font-family:'Marcellus',serif;font-size:1.05rem;
+  border:1px solid var(--cuivre);outline:1px solid var(--cuivre);outline-offset:2px;
+}
+.logo-text{font-family:'Marcellus',serif;font-size:1.32rem;color:var(--moka);line-height:1.05}
+.logo-text small{display:block;font-family:'Manrope',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--cuivre-d);margin-top:.28rem}
+.nav-links{display:flex;gap:2rem;font-size:.94rem;font-weight:500}
+.nav-links a{position:relative;padding:.2rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--cuivre);transition:.25s}
+.nav-links a:hover::after{width:100%}
+.nav .btn{padding:.62rem 1.35rem}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding:3.6rem 0 4.6rem;position:relative}
+.hero-cadre{
+  border:1px solid var(--cuivre);outline:1px solid var(--cuivre);outline-offset:6px;
+  padding:clamp(1.6rem,4vw,3.4rem);position:relative;background:var(--ivoire);
+}
+.hero-top{text-align:center;max-width:46rem;margin:0 auto}
+.hero-top .couronne{font-size:1.5rem;color:var(--cuivre);letter-spacing:.6em;text-indent:.6em}
+.hero h1{font-size:clamp(2.7rem,6vw,4.6rem);color:var(--moka);margin:.7rem 0 .4rem}
+.hero h1 em{font-style:normal;color:var(--cuivre-d)}
+.hero .surtitre{font-size:.78rem;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--encre-doux)}
+.hero p.lead{font-size:1.1rem;color:var(--encre-doux);margin:1.2rem auto 1.9rem;max-width:36rem}
+.hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.hero-duo{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.6rem}
+.hero-duo figure{border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9.5;position:relative}
+.hero-duo figure.grande{grid-column:span 1}
+.hero-duo img{width:100%;height:100%;object-fit:cover}
+.hero-duo figcaption{
+  position:absolute;left:1rem;bottom:1rem;background:rgba(46,32,25,.82);color:var(--ivoire);
+  font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  padding:.45rem .9rem;border-radius:999px;backdrop-filter:blur(4px);
+}
+@media(max-width:720px){.hero-duo{grid-template-columns:1fr}}
+.hero-infos{display:flex;gap:2.4rem;justify-content:center;margin-top:2.4rem;flex-wrap:wrap;text-align:center}
+.hero-infos div{min-width:150px}
+.hero-infos strong{display:block;font-family:'Marcellus',serif;font-size:1.18rem;color:var(--moka)}
+.hero-infos span{font-size:.84rem;color:var(--encre-doux)}
+
+/* ---------- Bande Instagram ---------- */
+.bande{background:var(--moka);color:var(--ivoire);padding:2.6rem 0}
+.bande-in{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.bande h2{font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ivoire)}
+.bande h2 em{font-style:normal;color:var(--ivoire-3)}
+.bande p{color:#D8C7B4;font-size:.98rem;max-width:34rem}
+.bande .chiffre{font-family:'Marcellus',serif;font-size:2.6rem;color:var(--cuivre);line-height:1}
+.bande .chiffre small{display:block;font-family:'Manrope',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#D8C7B4;margin-top:.4rem}
+
+/* ---------- Sections ---------- */
+section{padding:4.6rem 0}
+.sec-head{text-align:center;max-width:40rem;margin:0 auto 2.8rem}
+.sec-head h2{font-size:clamp(2rem,4vw,2.9rem);color:var(--moka);margin:.7rem 0 .8rem}
+.sec-head p{color:var(--encre-doux)}
+
+/* ---------- Prestations ---------- */
+.prestas{display:grid;grid-template-columns:repeat(6,1fr);gap:1.2rem}
+.presta{
+  grid-column:span 2;background:#fff;border:1px solid var(--ligne);border-radius:var(--radius);
+  padding:2rem 1.6rem;position:relative;transition:.25s ease;display:flex;flex-direction:column;
+}
+.presta:hover{transform:translateY(-4px);box-shadow:0 24px 44px -22px rgba(46,32,25,.35);border-color:var(--cuivre)}
+.presta.large{grid-column:span 3}
+.presta .num{
+  font-family:'Marcellus',serif;font-size:1rem;color:var(--cuivre-d);
+  border:1px solid var(--cuivre);border-radius:50%;width:44px;height:44px;
+  display:grid;place-items:center;margin-bottom:1.1rem;background:var(--ivoire);
+}
+.presta h3{font-size:1.42rem;color:var(--moka);margin-bottom:.55rem}
+.presta p{font-size:.94rem;color:var(--encre-doux);flex:1}
+.presta a{
+  margin-top:1.2rem;font-weight:700;font-size:.9rem;color:var(--cuivre-d);
+  display:inline-flex;align-items:center;gap:.45rem;
+}
+.presta a:hover{gap:.75rem}
+.presta a{transition:gap .2s ease}
+@media(max-width:900px){.presta,.presta.large{grid-column:span 6}}
+
+/* ---------- Expérience ---------- */
+.exp{background:var(--ivoire-2)}
+.exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center}
+.exp-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.exp-photos figure{border-radius:var(--radius);overflow:hidden}
+.exp-photos figure:first-child{grid-row:span 2;aspect-ratio:auto;height:100%}
+.exp-photos img{width:100%;height:100%;object-fit:cover}
+.exp-photos figure:not(:first-child){aspect-ratio:4/3}
+.exp h2{font-size:clamp(1.9rem,3.6vw,2.7rem);color:var(--moka);margin:.7rem 0 1rem}
+.exp p{color:var(--encre-doux);margin-bottom:1rem}
+.exp ul{list-style:none;margin:1.2rem 0 1.8rem}
+.exp li{padding:.55rem 0 .55rem 1.9rem;position:relative;font-weight:500}
+.exp li::before{content:"❦";position:absolute;left:0;color:var(--cuivre)}
+@media(max-width:860px){.exp-grid{grid-template-columns:1fr}}
+
+/* ---------- Galerie ---------- */
+.galerie{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.galerie figure{border-radius:var(--radius);overflow:hidden;aspect-ratio:1/1.15}
+.galerie figure:nth-child(2),.galerie figure:nth-child(7){aspect-ratio:1/1.15;transform:translateY(14px)}
+.galerie img{width:100%;height:100%;object-fit:cover;transition:.4s ease}
+.galerie figure:hover img{transform:scale(1.06)}
+@media(max-width:860px){.galerie{grid-template-columns:repeat(2,1fr)}.galerie figure:nth-child(2),.galerie figure:nth-child(7){transform:none}}
+
+/* ---------- Réservation ---------- */
+.resa{background:var(--moka);color:var(--ivoire)}
+.resa .sec-head h2{color:var(--ivoire)}
+.resa .sec-head p{color:#D8C7B4}
+.resa-box{
+  background:var(--ivoire);color:var(--encre);border-radius:var(--radius);
+  max-width:640px;margin:0 auto;padding:2.2rem;
+  outline:1px solid var(--cuivre);outline-offset:5px;
+}
+.resa-box label{display:block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--moka);margin:1rem 0 .4rem}
+.resa-box label:first-child{margin-top:0}
+.resa-box input,.resa-box select,.resa-box textarea{
+  width:100%;padding:.85rem 1rem;border:1px solid var(--ligne);border-radius:10px;
+  font-family:'Manrope',sans-serif;font-size:.98rem;background:#fff;color:var(--encre);
+}
+.resa-box textarea{resize:vertical;min-height:84px}
+.resa-box .btn{width:100%;justify-content:center;margin-top:1.4rem}
+.resa-note{text-align:center;font-size:.86rem;color:#D8C7B4;margin-top:1.2rem}
+
+/* ---------- Contact / pied ---------- */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.contact-card{background:#fff;border:1px solid var(--ligne);border-radius:var(--radius);padding:1.8rem;text-align:center}
+.contact-card .ic{font-size:1.5rem;color:var(--cuivre-d)}
+.contact-card h3{font-size:1.25rem;color:var(--moka);margin:.6rem 0 .4rem}
+.contact-card p{font-size:.93rem;color:var(--encre-doux)}
+.contact-card a.lien{color:var(--cuivre-d);font-weight:700}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+footer{background:var(--moka);color:#D8C7B4;padding:2.6rem 0 2rem;text-align:center}
+footer .logo-text{color:var(--ivoire)}
+footer p{font-size:.88rem;margin-top:.8rem}
+footer .demo-mention{
+  margin-top:1.4rem;border-top:1px solid rgba(250,245,236,.18);padding-top:1.2rem;
+  font-size:.8rem;color:#B9A58F;
+}
+.wa-float{
+  position:fixed;right:18px;bottom:18px;z-index:80;width:58px;height:58px;border-radius:50%;
+  background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);
+  transition:.25s ease;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Maquette de démonstration — <strong>site non officiel du salon Le Palais de la Beauté</strong> · Aperçu gratuit, sans engagement</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">
+      <span class="logo-mark">PB</span>
+      <span class="logo-text">Le Palais de la Beauté<small>Marcory · Abidjan</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#prestations">Prestations</a>
+      <a href="#experience">L'institut</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-cuivre" href="https://wa.me/2250709858526?text=Bonjour%20Le%20Palais%20de%20la%20Beaut%C3%A9%2C%20je%20souhaite%20r%C3%A9server%20un%20soin." target="_blank" rel="noopener">Réserver</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-cadre">
+      <div class="hero-top">
+        <div class="couronne">❦ ❦ ❦</div>
+        <p class="surtitre">Institut de beauté · Marcory Zone 4</p>
+        <h1>Le Palais de la <em>Beauté</em></h1>
+        <p class="lead">Onglerie signature, soins du visage et du corps, massages bien-être : un écrin de douceur au cœur de Marcory, où chaque visite devient un moment pour soi.</p>
+        <div class="hero-cta">
+          <a class="btn btn-cuivre" href="https://wa.me/2250709858526?text=Bonjour%20Le%20Palais%20de%20la%20Beaut%C3%A9%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener">Prendre rendez-vous sur WhatsApp</a>
+          <a class="btn btn-contour" href="#prestations">Découvrir les prestations</a>
+        </div>
+      </div>
+      <div class="hero-duo">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1000&q=80&auto=format&fit=crop" alt="Beauté et éclat du teint">
+          <figcaption>Soins du visage</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1000&q=80&auto=format&fit=crop" alt="Manucure soignée">
+          <figcaption>Onglerie signature</figcaption>
+        </figure>
+      </div>
+      <div class="hero-infos">
+        <div><strong>Marcory Zone 4</strong><span>Rue Pierre et Marie Curie, Immeuble Malkoun</span></div>
+        <div><strong>+225 07 09 85 85 26</strong><span>Appels & WhatsApp</span></div>
+        <div><strong>Sur rendez-vous</strong><span>Écrivez-nous pour votre créneau</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= BANDE INSTAGRAM ================= -->
+<div class="bande">
+  <div class="wrap bande-in">
+    <div>
+      <h2>« Ongles Abidjan » — <em>la signature du Palais</em></h2>
+      <p>Sur Instagram, le Palais de la Beauté est connu sous le nom « Ongles Abidjan » : poses, nail art et finitions impeccables, partagés chaque semaine avec sa communauté.</p>
+    </div>
+    <div class="chiffre">13 500+<small>Abonnés Instagram</small></div>
+    <a class="btn btn-clair" href="https://www.instagram.com/lepalaisdelabeaute_/" target="_blank" rel="noopener">Suivre @lepalaisdelabeaute_</a>
+  </div>
+</div>
+
+<!-- ================= PRESTATIONS ================= -->
+<section id="prestations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Nos prestations</span>
+      <h2>Cinq rituels, un seul palais</h2>
+      <p>De l'onglerie — la spécialité qui a fait notre nom sur Instagram — aux soins du corps et au massage, chaque prestation est pensée comme un moment de palais : calme, précision et finition.</p>
+    </div>
+    <div class="prestas">
+      <article class="presta large">
+        <span class="num">I</span>
+        <h3>Onglerie signature</h3>
+        <p>Manucure complète, pose d'ongles, renfort, vernis longue tenue et nail art : c'est le savoir-faire « Ongles Abidjan » qui fait la réputation du Palais sur Instagram. Des mains nettes, une finition qui dure.</p>
+        <a href="https://wa.me/2250709858526?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20une%20prestation%20d%27onglerie%20(manucure%20%2F%20pose)." target="_blank" rel="noopener">Demander un devis →</a>
+      </article>
+      <article class="presta large">
+        <span class="num">II</span>
+        <h3>Beauté des pieds</h3>
+        <p>Pédicure soignée, soin des pieds et mise en beauté des ongles : douceur, hydratation et finition impeccable, pour des pieds aussi choyés que vos mains.</p>
+        <a href="https://wa.me/2250709858526?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20une%20p%C3%A9dicure%20%2F%20beaut%C3%A9%20des%20pieds." target="_blank" rel="noopener">Demander un devis →</a>
+      </article>
+      <article class="presta">
+        <span class="num">III</span>
+        <h3>Soins du visage</h3>
+        <p>Nettoyage en profondeur, éclat du teint et hydratation : un soin adapté à votre peau, pour ressortir le visage lumineux et reposé.</p>
+        <a href="https://wa.me/2250709858526?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20soin%20du%20visage." target="_blank" rel="noopener">Demander un devis →</a>
+      </article>
+      <article class="presta">
+        <span class="num">IV</span>
+        <h3>Massage bien-être</h3>
+        <p>Le massage fait partie de l'ADN du Palais depuis sa création : un moment de détente profonde pour relâcher les tensions et repartir légère.</p>
+        <a href="https://wa.me/2250709858526?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20massage%20bien-%C3%AAtre." target="_blank" rel="noopener">Demander un devis →</a>
+      </article>
+      <article class="presta">
+        <span class="num">V</span>
+        <h3>Soins du corps</h3>
+        <p>Gommage, hydratation et rituels de beauté du corps : une peau douce et satinée, de la tête aux pieds, dans le calme de l'institut.</p>
+        <a href="https://wa.me/2250709858526?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20soin%20du%20corps." target="_blank" rel="noopener">Demander un devis →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPÉRIENCE ================= -->
+<section id="experience" class="exp">
+  <div class="wrap exp-grid">
+    <div class="exp-photos">
+      <figure><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=900&q=80&auto=format&fit=crop" alt="Espace détente et massage"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80&auto=format&fit=crop" alt="Intérieur de l'institut"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=900&q=80&auto=format&fit=crop" alt="Soin en cours"></figure>
+    </div>
+    <div>
+      <span class="eyebrow">L'institut</span>
+      <h2>Un palais dédié à votre beauté, à Marcory</h2>
+      <p>Installé à Marcory Zone 4, rue Pierre et Marie Curie (Immeuble Malkoun), Le Palais de la Beauté réunit en un seul lieu l'onglerie, les soins de beauté et le massage — les trois métiers inscrits dans sa vocation depuis sa création.</p>
+      <p>Hygiène irréprochable, gestes précis et accueil attentionné : l'institut fait l'objet d'un contrôle sanitaire officiel de l'INHP, dont le certificat de conformité est renouvelé chaque année.</p>
+      <ul>
+        <li>Onglerie signature « Ongles Abidjan », suivie par plus de 13 500 abonnés</li>
+        <li>Soins du visage, du corps et massage au même endroit</li>
+        <li>Établissement contrôlé et certifié conforme par l'INHP</li>
+        <li>Réponse rapide sur WhatsApp, rendez-vous confirmé en quelques messages</li>
+      </ul>
+      <a class="btn btn-cuivre" href="https://wa.me/2250709858526?text=Bonjour%20Le%20Palais%20de%20la%20Beaut%C3%A9%2C%20je%20souhaite%20des%20informations%20sur%20vos%20prestations." target="_blank" rel="noopener">Écrire à l'institut</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIE ================= -->
+<section id="galerie">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Galerie</span>
+      <h2>L'univers du Palais en images</h2>
+      <p>Ongles impeccables, peaux lumineuses et instants de détente : un aperçu de l'atmosphère qui vous attend à Marcory.</p>
+    </div>
+    <div class="galerie">
+      <figure><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80&auto=format&fit=crop" alt="Nail art délicat"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&q=80&auto=format&fit=crop" alt="Mise en beauté"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80&auto=format&fit=crop" alt="Massage relaxant"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80&auto=format&fit=crop" alt="Ongles soignés"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80&auto=format&fit=crop" alt="Soin du visage"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80&auto=format&fit=crop" alt="Maquillage et éclat"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80&auto=format&fit=crop" alt="Rituel spa aux pierres"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?w=800&q=80&auto=format&fit=crop" alt="Détail manucure"></figure>
+    </div>
+    <div style="text-align:center;margin-top:2.4rem">
+      <a class="btn btn-contour" href="https://wa.me/2250709858526?text=Bonjour%2C%20j%27ai%20vu%20vos%20r%C3%A9alisations%20et%20je%20souhaite%20r%C3%A9server%20la%20m%C3%AAme%20prestation." target="_blank" rel="noopener">Je veux la même chose → WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RÉSERVATION ================= -->
+<section id="reservation" class="resa">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Réservation</span>
+      <h2>Votre moment commence ici</h2>
+      <p>Remplissez ce court formulaire : WhatsApp s'ouvre avec votre demande déjà rédigée, prête à être envoyée à l'institut.</p>
+    </div>
+    <form class="resa-box" id="resaForm">
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Ex : Aïcha Koné" required>
+      <label for="prestation">Prestation souhaitée</label>
+      <select id="prestation" name="prestation">
+        <option>Onglerie signature (manucure / pose)</option>
+        <option>Beauté des pieds (pédicure)</option>
+        <option>Soin du visage</option>
+        <option>Massage bien-être</option>
+        <option>Soin du corps</option>
+        <option>Autre demande</option>
+      </select>
+      <label for="date">Jour souhaité</label>
+      <input type="text" id="date" name="date" placeholder="Ex : samedi prochain, en fin de matinée">
+      <label for="message">Précisions (optionnel)</label>
+      <textarea id="message" name="message" placeholder="Dites-nous en plus : envie particulière, question sur une prestation..."></textarea>
+      <button type="submit" class="btn btn-cuivre">Envoyer ma demande sur WhatsApp</button>
+    </form>
+    <p class="resa-note">L'institut reçoit votre message sur WhatsApp et vous confirme le rendez-vous directement. Aucun paiement en ligne : tout se règle sur place.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Nous trouver, nous écrire</h2>
+      <p>Au cœur de Marcory Zone 4, à deux pas des grands axes du sud d'Abidjan.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="ic">📍</div>
+        <h3>Adresse</h3>
+        <p>Rue Pierre et Marie Curie, Immeuble Malkoun<br>Marcory Zone 4, Abidjan — Côte d'Ivoire</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0xfc1ef1ddb74ae7b:0xa441ae8962622e41?entry=s&sa=X&ved=1t:8290&hl=fr-ci&ictx=111" target="_blank" rel="noopener">Voir l'emplacement →</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="ic">📞</div>
+        <h3>Téléphone & WhatsApp</h3>
+        <p>+225 07 09 85 85 26<br>Sur rendez-vous — écrivez-nous pour réserver votre créneau.</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://wa.me/2250709858526?text=Bonjour%20Le%20Palais%20de%20la%20Beaut%C3%A9%2C%20je%20souhaite%20un%20renseignement." target="_blank" rel="noopener">Discuter sur WhatsApp →</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="ic">📸</div>
+        <h3>Instagram</h3>
+        <p>« Ongles Abidjan »<br>@lepalaisdelabeaute_ — poses et nail art en images, chaque semaine.</p>
+        <p style="margin-top:.7rem"><a class="lien" href="https://www.instagram.com/lepalaisdelabeaute_/" target="_blank" rel="noopener">Voir le compte →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo-text" style="font-size:1.3rem">Le Palais de la Beauté</span>
+    <p>Onglerie · Soins du visage & du corps · Massage — Marcory Zone 4, Abidjan · +225 07 09 85 85 26</p>
+    <p><a href="https://wa.me/2250709858526" target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp</a> · <a href="https://www.instagram.com/lepalaisdelabeaute_/" target="_blank" rel="noopener" style="text-decoration:underline">Instagram</a></p>
+    <p class="demo-mention">Maquette de démonstration — site non officiel du salon Le Palais de la Beauté, réalisée à titre d'aperçu gratuit. Les photos sont des images d'illustration.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2250709858526?text=Bonjour%20Le%20Palais%20de%20la%20Beaut%C3%A9%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" aria-label="Contacter le salon sur WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.4-2.2c1.4.8 3 1.2 4.6 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.5 0-2.9-.4-4.2-1.2l-.3-.2-3.9 1.2 1.2-3.8-.2-.4a9.7 9.7 0 0 1-1.5-5.4C7.1 9.6 11 5.6 16 5.6S24.9 9.6 24.9 14.9 21 24.7 16 24.7zm5.3-7.1c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.1-.3.2-.6.1a7.9 7.9 0 0 1-2.3-1.2 8.7 8.7 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 2-1.3.3-.7.3-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+document.getElementById('resaForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var nom = document.getElementById('nom').value.trim();
+  var prestation = document.getElementById('prestation').value;
+  var date = document.getElementById('date').value.trim();
+  var message = document.getElementById('message').value.trim();
+  var texte = "Bonjour Le Palais de la Beauté, je suis " + nom + ". Je souhaite réserver : " + prestation + ".";
+  if(date){ texte += " Jour souhaité : " + date + "."; }
+  if(message){ texte += " Précisions : " + message; }
+  texte += " Merci de me confirmer le rendez-vous.";
+  window.open("https://wa.me/2250709858526?text=" + encodeURIComponent(texte), "_blank");
+});
+</script>
+
+</body>
+</html>
