@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Tracker from "./components/Tracker";
 
 export const metadata: Metadata = {
   title: "TikCast_en — Faceless Shorts Ebook",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main>{children}</main>
+        <Tracker />
         <footer className="site">
           <div className="wrap">
             By the creator of TikCast_en — “In this town…” faceless Shorts.

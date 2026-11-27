@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { randomUUID } from "node:crypto";
 import { supabaseAdmin, type Order } from "@/lib/supabase";
 import {
   getHeaderCI,
@@ -88,9 +89,12 @@ export async function POST(req: Request) {
   const supabase = supabaseAdmin();
 
   // 4) Deduplicate: one row per event id. Unique violation => duplicate.
+  // NOTE: webhook_events.id is a text PRIMARY KEY with NO default in the
+  // real schema — the insert MUST provide it (omitting it fails 23502,
+  // which was the original "Could not record event" bug).
   const { error: dedupeError } = await supabase
     .from("webhook_events")
-    .insert({ event_id: eventId, event_type: eventType, payload: envelope });
+    .insert({ id: randomUUID(), event_id: eventId, event_type: eventType, payload: envelope });
   if (dedupeError) {
     if (dedupeError.code === "23505") {
       return NextResponse.json({ received: true, duplicate: true });

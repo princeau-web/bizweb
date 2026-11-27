@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "./Tracker";
 
 // Buy form: collects the buyer's email and asks the SERVER to create the
 // order + SasPay checkout session. The browser never sees any secret key.
@@ -13,6 +14,7 @@ export default function BuyForm() {
     e.preventDefault();
     setBusy(true);
     setError(null);
+    track("checkout_start");
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
