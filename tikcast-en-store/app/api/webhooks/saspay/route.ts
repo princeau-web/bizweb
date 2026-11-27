@@ -90,7 +90,7 @@ export async function POST(req: Request) {
   // 4) Deduplicate: one row per event id. Unique violation => duplicate.
   const { error: dedupeError } = await supabase
     .from("webhook_events")
-    .insert({ event_id: eventId, type: eventType, payload: envelope });
+    .insert({ event_id: eventId, event_type: eventType, payload: envelope });
   if (dedupeError) {
     if (dedupeError.code === "23505") {
       return NextResponse.json({ received: true, duplicate: true });
@@ -105,9 +105,18 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Processing failed, please retry" }, { status });
   };
 
+  // Success path: stamp processed_at, then answer 200.
+  const done = async (body: Record<string, unknown>) => {
+    await supabase
+      .from("webhook_events")
+      .update({ processed_at: new Date().toISOString() })
+      .eq("event_id", eventId);
+    return NextResponse.json(body);
+  };
+
   try {
     if (eventType === "webhook.test") {
-      return NextResponse.json({ received: true, test: true });
+      return done({ received: true, test: true });
     }
 
     // Resolve the order: metadata.order_id first, then the SasPay session id.
@@ -132,7 +141,7 @@ export async function POST(req: Request) {
     }
     if (!order && orderId === null && sessionId === null) {
       // Event not tied to a checkout order (e.g. settlement events) — recorded, ignored.
-      return NextResponse.json({ received: true, ignored: true });
+      return done({ received: true, ignored: true });
     }
     if (!order) return await fail(500);
 
@@ -146,11 +155,11 @@ export async function POST(req: Request) {
             .update({ saspay_transaction_id: transactionId })
             .eq("id", order.id);
         }
-        return NextResponse.json({ received: true });
+        return done({ received: true });
       }
 
       case "transaction.success": {
-        if (order.status === "paid") return NextResponse.json({ received: true, already_paid: true });
+        if (order.status === "paid") return done({ received: true, already_paid: true });
 
         // 5) RE-VERIFY server-side — never trust the payload.
         const trustedSessionId = order.saspay_session_id || sessionId;
@@ -172,27 +181,27 @@ export async function POST(req: Request) {
           .eq("id", order.id)
           .eq("status", "pending"); // only a pending order can transition to paid
         if (updateError) return await fail(500);
-        return NextResponse.json({ received: true, paid: true });
+        return done({ received: true, paid: true });
       }
 
       case "transaction.failed": {
         if (order.status === "pending") {
           await supabase.from("orders").update({ status: "failed" }).eq("id", order.id);
         }
-        return NextResponse.json({ received: true });
+        return done({ received: true });
       }
 
       case "transaction.cancelled": {
         if (order.status === "pending") {
           await supabase.from("orders").update({ status: "cancelled" }).eq("id", order.id);
         }
-        return NextResponse.json({ received: true });
+        return done({ received: true });
       }
 
       default:
         // Other signed events (settlement.*, wallet_transfer.*) are recorded
         // in webhook_events and need no order action.
-        return NextResponse.json({ received: true, ignored: true });
+        return done({ received: true, ignored: true });
     }
   } catch {
     return await fail(500);
