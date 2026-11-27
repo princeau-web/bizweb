@@ -1,5 +1,10 @@
 import BuyForm from "./components/BuyForm";
 
+// Public media assets (Supabase Storage, public bucket "site-assets") —
+// real frames and clips from the channel, provided by the owner.
+const ASSET =
+  "https://uljfqvbsmzvvmsloxfrc.supabase.co/storage/v1/object/public/site-assets";
+
 // TikCast_en sales page — ported from the Muse static sales page
 // (deep navy night-town, sky blue #38bdf8, sun yellow #ffd23f).
 // No technical generation costs are shown — only the product and its price.
@@ -76,32 +81,42 @@ export default function HomePage() {
             <span>in — a finished Short out</span>
           </div>
         </div>
+        <div className="hero-faces">
+          <img src={`${ASSET}/images/char-1.jpg`} alt="The town's main character, worried" />
+          <img src={`${ASSET}/images/char-2.jpg`} alt="The town's main character, winking" />
+          <img src={`${ASSET}/images/char-3.jpg`} alt="The town's main character, laughing" />
+          <img src={`${ASSET}/images/char-4.jpg`} alt="The mayor and the twins, from the channel's Shorts" />
+        </div>
       </div>
 
       <section className="wrap" id="watch">
         <h2>Watch the format</h2>
-        <p className="sub">Real Shorts from the channel — this is the style the ebook teaches.</p>
+        <p className="sub">Real Shorts from the channel — this is the style the ebook teaches. They play on their own, in a loop.</p>
         <div className="watch-grid">
-          {/* Replace each placeholder with the channel's own video embeds
-              (YouTube youtube-nocookie iframes) — see README. */}
-          <div className="watch-ph">
-            <div>
-              <b>“Ahh, almost… almost! 🤏”</b>
-              Watch on the channel — video slot 1
-            </div>
-          </div>
-          <div className="watch-ph">
-            <div>
-              <b>“Tung Tung Tung is the chief”</b>
-              Watch on the channel — video slot 2
-            </div>
-          </div>
-          <div className="watch-ph">
-            <div>
-              <b>“Promises need to be kept”</b>
-              Watch on the channel — video slot 3
-            </div>
-          </div>
+          <figure className="watch-item">
+            <video
+              src={`${ASSET}/videos/watch-1.mp4`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+            />
+            <figcaption>“In this town, every house parties at night…”</figcaption>
+          </figure>
+          <figure className="watch-item">
+            <video
+              src={`${ASSET}/videos/watch-2.mp4`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+            />
+            <figcaption>“…except one house.”</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -110,22 +125,22 @@ export default function HomePage() {
         <p className="sub">One ebook, everything inside — yours to come back to any time.</p>
         <div className="grid">
           <div className="card">
-            <span className="emoji">📕</span>
+            <img className="card-img" src={`${ASSET}/images/char-4.jpg`} alt="Characters from the channel's Shorts" />
             <h3>The ebook — 25 pages</h3>
             <p>The full workflow, from measuring a viral style to posting on X first, then TikTok, YouTube Shorts and Reels.</p>
           </div>
           <div className="card">
-            <span className="emoji">🎬</span>
+            <img className="card-img" src={`${ASSET}/images/char-2.jpg`} alt="The main character winking" />
             <h3>The 4-beat script system</h3>
             <p>Paradox, escalation, twist, payoff that loops — with a complete 32-second example script in English.</p>
           </div>
           <div className="card">
-            <span className="emoji">📋</span>
+            <img className="card-img" src={`${ASSET}/images/char-3.jpg`} alt="The main character laughing" />
             <h3>10 copy-paste prompts</h3>
             <p>Research, script, voice, character, scene building and the one-prompt full production — ready to use.</p>
           </div>
           <div className="card">
-            <span className="emoji">🗓️</span>
+            <img className="card-img" src={`${ASSET}/images/char-1.jpg`} alt="The main character, thinking" />
             <h3>7-day + 30-day plans</h3>
             <p>Day by day: your first published Short in 7 days, a real channel rhythm in 30.</p>
           </div>
@@ -165,22 +180,19 @@ export default function HomePage() {
         <p className="sub">Check this before you buy.</p>
         <div className="grid">
           <div className="card">
-            <span className="emoji">📱💻</span>
             <h3>A phone or a computer</h3>
             <p>Both work. Use the device you already have.</p>
           </div>
           <div className="card">
-            <span className="emoji">🤖</span>
             <h3>A Claude account</h3>
             <p>The AI assistant that writes, builds and assembles your Shorts. Not included — created on Claude's site.</p>
           </div>
           <div className="card">
-            <span className="emoji">🎨</span>
             <h3>A Higgsfield account</h3>
             <p>Generates the characters, voices and visuals. Not included — the ebook shows the connection step by step.</p>
           </div>
         </div>
-        <div className="notice">📱 Works on phone AND computer — no expensive gear, no camera, no showing your face.</div>
+        <div className="notice">Works on phone AND computer — no expensive gear, no camera, no showing your face.</div>
       </section>
 
       <section className="wrap" id="faq">

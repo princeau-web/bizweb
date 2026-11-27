@@ -15,7 +15,7 @@ export default function SuccessPage({
   return (
     <div className="wrap" style={{ padding: "56px 20px 70px", textAlign: "center" }}>
       <h1 style={{ fontSize: 38, margin: "0 0 12px" }}>
-        Thank you! 🎉
+        Thank you!
       </h1>
       <p style={{ color: "var(--muted)", maxWidth: 560, margin: "0 auto 28px" }}>
         If your payment was confirmed, your ebook is ready below. Payment confirmation can
